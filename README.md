@@ -137,10 +137,31 @@ git status && git commit           # committing stays manual
 - `just` alone lists the recipes; most recipes call `python3 -m wallman <command>`.
 - `just serve` prints a URL with a token. Open it once: a cookie keeps you signed in. The UI listens on `127.0.0.1` only.
 - Tags (`tags = ["night", "snow"]`, unique lowercase-kebab) and uncertain dates (`year = 1889` or a range, `year = [1880, 1889]`) are edited in the UI details panel and live in `wallpapers.toml`.
-- The UI theme is read from `~/.config/wallman/config.toml` (`[theme] palette`, `mode`, `custom_palette`). Without that file it follows your live Noctalia palette, falling back to the built-in Noctalia palette with a warning in the status bar when Noctalia's settings cannot be read; `just theme-init` writes a commented starting file.
+- The UI theme is read from `~/.config/wallman/config.toml`: see [UI theme](#ui-theme) below.
 - The UI serves a plain-language page about the licenses at `/docs/licenses`.
 - Nothing commits or pushes: the UI and the add/rm/mv/sync commands only stage. Review with `git status`, then commit yourself.
 - Sorting is done by deleting images: in the UI, with `just rm`, or by deleting the files and running `just sync --stage`, which drops their entries and stages their deletion (the pre-commit hook does the same).
 - `just fetch` downloads each missing file from its `download` URL and refuses it if the checksum differs. The `crop = [x, y, w, h]` of an entry is re-applied after the download whenever `crop` is set.
 - External collections such as `images/ml4w/` are git submodules with their own history and `wallpapers.toml`. Commit inside the submodule first, then commit the new pointer here.
 - On every commit the hook runs `just guard` (refuses staged images whose license is not public domain, CC, GPL, LGPL, MIT, BSD or Apache, or that are listed nowhere), `just validate` and `just sync --stage`; `.gitignore` and this README are refreshed and staged with the commit.
+
+## UI theme
+
+`~/.config/wallman/config.toml` is optional: without it the UI follows your live Noctalia palette (built-in,
+community, custom or wallpaper colours), falling back to the built-in Noctalia palette with a warning in the status
+bar when Noctalia's settings cannot be read. `just theme-init` writes a commented copy; saved edits reload the open
+page by themselves.
+
+```toml
+[theme]
+# "noctalia" follows your Noctalia shell; or a built-in palette: Ayu, Catppuccin, Dracula, Eldritch, Gruvbox,
+# Kanagawa, Noctalia, Nord, Rosé Pine, Tokyo-Night; or "custom" with custom_palette below
+palette = "Catppuccin"
+
+# dark | light | auto (auto follows the browser's prefers-color-scheme)
+mode = "dark"
+
+# palette = "custom": a name in ~/.config/wallman/palettes/ (without .json) or a path to a JSON file holding
+# {"dark": {"mPrimary": "#rrggbb", ...}, "light": {...}} with Noctalia's 16 m... colour roles
+# custom_palette = "MyPalette"
+```
