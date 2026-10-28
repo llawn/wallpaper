@@ -1,0 +1,174 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1988-my-neighbor-totoro"
+count = 14
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-001_1988.jpg"
+title = "Tonari no Totoro — still 001"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["bright", "countryside", "flowers", "ghibli", "green", "house", "joyful", "my-neighbor-totoro", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro001.jpg"
+sha256 = "7e3b0919e99e56065d6f6a8818baade6d93f480e47635a85be4df263e757e324"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-018_1988.jpg"
+title = "Tonari no Totoro — still 018"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["bright", "character", "countryside", "ghibli", "green", "joyful", "my-neighbor-totoro", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro018.jpg"
+sha256 = "1180bfc476aac7921468540eb034382b48ed92105c20b79a9590928d33ecc3d7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-019_1988.jpg"
+title = "Tonari no Totoro — still 019"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["creature", "forest", "ghibli", "green", "my-neighbor-totoro", "trees", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro019.jpg"
+sha256 = "11cc13488d53f032e21df2af16e030d5c41e3da4fd8d1ab05466d0d7295c8be4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-021_1988.jpg"
+title = "Tonari no Totoro — still 021"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["bright", "character", "forest", "ghibli", "green", "my-neighbor-totoro", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro021.jpg"
+sha256 = "584ee226e62cffd817acb7b572081b577c6c218a454b903374ec846d45dfa726"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-025_1988.jpg"
+title = "Tonari no Totoro — still 025"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["calm", "dreamy", "flowers", "forest", "ghibli", "green", "my-neighbor-totoro", "vibrant"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro025.jpg"
+sha256 = "1e45051844758c0944755de90619f1279eef55ca4c5f68744d42019f4a5db2d0"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-029_1988.jpg"
+title = "Tonari no Totoro — still 029"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["calm", "character", "creature", "dark", "ghibli", "green", "my-neighbor-totoro", "night", "rain"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro029.jpg"
+sha256 = "91e710b3048fba1cd5257fc8007b74528b5c568669ecf8572173ca932da1293a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-035_1988.jpg"
+title = "Tonari no Totoro — still 035"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "character", "creature", "dark", "field", "ghibli", "joyful", "my-neighbor-totoro", "night", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro035.jpg"
+sha256 = "eb4a82f79fc75d9ae1636c356297172171486a7b8aa1e079a50d2db9d88ac890"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-036_1988.jpg"
+title = "Tonari no Totoro — still 036"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "creature", "dark", "dreamy", "ghibli", "my-neighbor-totoro", "night", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro036.jpg"
+sha256 = "86ca85e38dab583a6019f516c8fd9213fed5d5551a96b913332b3b4334b40360"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-040_1988.jpg"
+title = "Tonari no Totoro — still 040"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "calm", "character", "clouds", "field", "ghibli", "green", "my-neighbor-totoro", "sky", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro040.jpg"
+sha256 = "4fc2e25acba269c9c5183bee7095fdb3b87457aae708ef1a13528b98b6d328af"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-041_1988.jpg"
+title = "Tonari no Totoro — still 041"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "calm", "character", "clouds", "countryside", "dreamy", "field", "ghibli", "my-neighbor-totoro", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro041.jpg"
+sha256 = "57aa2d9072a7bbc08d8ee78cf212bf49e31ddfeb1ac7394da67c8840c6456dec"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-042_1988.jpg"
+title = "Tonari no Totoro — still 042"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["character", "creature", "dark", "forest", "ghibli", "green", "melancholic", "my-neighbor-totoro"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro042.jpg"
+sha256 = "875659c3e70e35305690c17f301aa6bdfcf6cc3929d020f11ea051a5e7e49c24"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-044_1988.jpg"
+title = "Tonari no Totoro — still 044"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "character", "creature", "forest", "ghibli", "green", "joyful", "my-neighbor-totoro", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro044.jpg"
+sha256 = "fc4196223e2d2fbea53d85cdb96c04cc90df00110bee44b978769d6a8461febc"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-047_1988.jpg"
+title = "Tonari no Totoro — still 047"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "calm", "character", "dark", "ghibli", "melancholic", "my-neighbor-totoro", "night", "purple", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro047.jpg"
+sha256 = "efa14452b85918a37d6f550585417391a54622850b054c3bfaa1547b82798c24"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_tonari-no-totoro-still-049_1988.jpg"
+title = "Tonari no Totoro — still 049"
+artist = "Studio Ghibli"
+year = 1988
+tags = ["blue", "character", "creature", "dark", "ghibli", "my-neighbor-totoro", "night", "trees", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1988 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/totoro049.jpg"
+sha256 = "10b19e138226cfeba5323a741816336f364bcde03fdaee5e727e7cdfab0e23fb"
+resolution = [1920, 1038]
