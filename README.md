@@ -123,7 +123,7 @@ just setup                         # hooksPath -> scripts/hooks, submodule init,
 just serve                         # open the UI (prints the URL with its token)
 just add photo.jpg photography/landscape --artist "..." --title "..." --license CC-BY-4.0 --source URL [--crop x,y,w,h]
 just add-url https://... photography/landscape ...   # same, downloaded (download + sha256 recorded)
-just rm painting/marine/foo.jpg    # delete the image, its entry and its git index entry
+just rm painting/marine/foo.jpg    # delete the image and its entry (staged when it was published)
 just mv painting/marine/foo.jpg painting/nocturne
 just crop painting/marine/foo.jpg 0,120,3840,2160   # x,y,w,h; from the original download when there is one
 just sync | validate | guard | gitignore | readme
@@ -139,7 +139,7 @@ git status && git commit           # committing stays manual
 - Tags (`tags = ["night", "snow"]`, unique lowercase-kebab) and uncertain dates (`year = 1889` or a range, `year = [1880, 1889]`) are edited in the UI details panel and live in `wallpapers.toml`.
 - The UI theme is read from `~/.config/wallman/config.toml`: see [UI theme](#ui-theme) below.
 - The UI serves a plain-language page about the licenses at `/docs/licenses`.
-- Nothing commits or pushes: the UI and the add/rm/mv/sync commands only stage. Review with `git status`, then commit yourself.
+- Nothing commits or pushes. Nothing is staged until you publish: Add to git publishes a wallpaper (its image and its entry; download-only images publish their entry only); Remove from git unpublishes it. The `wallpapers.toml` in the git index is generated from the published entries, while the working file keeps every entry. Edits, moves and deletions of published wallpapers are staged as they happen. Personal wallpapers are never published: a `wallpapers.toml` committed whole before this model loses its personal entries from git at the next change in its folder. Review with `git status`, then commit yourself.
 - Sorting is done by deleting images: in the UI, with `just rm`, or by deleting the files and running `just sync --stage`, which drops their entries and stages their deletion (the pre-commit hook does the same).
 - `just fetch` downloads each missing file from its `download` URL and refuses it if the checksum differs. The `crop = [x, y, w, h]` of an entry is re-applied after the download whenever `crop` is set.
 - External collections such as `images/ml4w/` are git submodules with their own history and `wallpapers.toml`. Commit inside the submodule first, then commit the new pointer here.
