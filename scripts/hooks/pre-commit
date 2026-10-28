@@ -1,0 +1,11 @@
+#!/bin/sh
+# 1. sync wallpapers.toml with the images (deleted -> entry removed, added -> entry created), stage the metadata;
+# 2. refuse images that may not be redistributed; 3. validate. Enabled by `just setup`.
+# Skip the sync for one commit with: WALLPAPERS_SYNC=0 git commit ...
+export PYTHONDONTWRITEBYTECODE=1
+cd "$(dirname "$0")/../.." || exit 1
+if [ "${WALLPAPERS_SYNC:-1}" = "1" ]; then
+  python3 -m wallman sync --stage || exit 1
+fi
+python3 -m wallman guard || exit 1
+out="$(python3 -m wallman validate 2>&1)" || { printf '%s\n' "$out"; exit 1; }
