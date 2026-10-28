@@ -143,7 +143,7 @@ git status && git commit           # committing stays manual
 - Sorting is done by deleting images: in the UI, with `just rm`, or by deleting the files and running `just sync --stage`, which drops their entries and stages their deletion (the pre-commit hook does the same).
 - `just fetch` downloads each missing file from its `download` URL and refuses it if the checksum differs. The `crop = [x, y, w, h]` of an entry is re-applied after the download whenever `crop` is set.
 - External collections such as `images/ml4w/` are git submodules with their own history and `wallpapers.toml`. Commit inside the submodule first, then commit the new pointer here.
-- On every commit the hook runs `just guard` (refuses staged images whose license is not public domain, CC, GPL, LGPL, MIT, BSD or Apache, or that are listed nowhere), `just validate` and `just sync --stage`; `.gitignore` and this README are refreshed and staged with the commit.
+- On every commit the hook runs `just guard` (refuses staged images whose license is not public domain, CC, GPL, LGPL, MIT, BSD or Apache, or that are listed nowhere), `just sync --stage` and `just validate`, whose problems are flagged in the commit output without blocking it; `.gitignore` and this README are refreshed and staged with the commit.
 
 ## UI theme
 

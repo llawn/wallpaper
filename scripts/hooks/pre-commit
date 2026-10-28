@@ -1,6 +1,7 @@
 #!/bin/sh
 # 1. sync wallpapers.toml with the images (deleted -> entry removed, added -> entry created), stage the metadata;
-# 2. refuse images that may not be redistributed; 3. validate. Enabled by `just setup`.
+# 2. refuse images that may not be redistributed; 3. validate: problems are flagged, never block the commit.
+# Enabled by `just setup`.
 # Skip the sync for one commit with: WALLPAPERS_SYNC=0 git commit ...
 export PYTHONDONTWRITEBYTECODE=1
 cd "$(dirname "$0")/../.." || exit 1
@@ -8,4 +9,9 @@ if [ "${WALLPAPERS_SYNC:-1}" = "1" ]; then
   python3 -m wallman sync --stage || exit 1
 fi
 python3 -m wallman guard || exit 1
-out="$(python3 -m wallman validate 2>&1)" || { printf '%s\n' "$out"; exit 1; }
+# validate never blocks: its problems (e.g. an image below the size minimum) are flagged and the commit goes on
+if ! out="$(python3 -m wallman validate 2>&1)"; then
+  printf '%s\n' "$out" | grep '^✗' | sed 's/^✗/⚑ flagged:/' >&2
+  printf 'pre-commit: committing anyway; run `just validate` to review the flagged images\n' >&2
+fi
+exit 0

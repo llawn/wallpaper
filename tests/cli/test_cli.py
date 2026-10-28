@@ -251,5 +251,21 @@ class CliTest(unittest.TestCase):
         self.assertIn("commit refused", r.stdout + r.stderr)
 
 
+    def test_pre_commit_hook_flags_validation_problems_without_blocking(self):
+        hook_dir = self.root / "scripts" / "hooks"
+        hook_dir.mkdir(parents=True)
+        shutil.copy(Path(__file__).parents[2] / "scripts/hooks/pre-commit", hook_dir / "pre-commit")
+        shutil.copytree(Path(__file__).parents[2] / "wallman", self.root / "wallman",
+                        ignore=shutil.ignore_patterns("__pycache__"))
+        git(self.root, "config", "core.hooksPath", "scripts/hooks")
+        (self.images / "painting/impressionism/claude-monet_water-lilies_1906.jpg").unlink()  # entry left: missing
+        git(self.root, "add", "-A")
+        env = {**ENV, "WALLPAPERS_SYNC": "0"}
+        r = subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "-C", str(self.root),
+                            "commit", "-q", "-m", "x"], capture_output=True, text=True, env=env)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("⚑ flagged:", r.stderr)
+        self.assertIn("missing", r.stderr)
+
 if __name__ == "__main__":
     unittest.main()
