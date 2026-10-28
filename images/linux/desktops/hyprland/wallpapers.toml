@@ -1,0 +1,39 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "hyprland"
+count = 3
+[[wallpaper]]
+file = "hyprland_wall0.png"
+title = "Wall0"
+artist = "Hyprland project"
+tags = ["blue", "dark", "hyprland", "logo", "minimal", "mysterious", "teal"]
+license = "BSD-3-Clause"
+license_detail = "BSD-3-Clause — hyprwm/Hyprland repository LICENSE"
+source = "https://github.com/hyprwm/Hyprland"
+download = "https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/install/wall0.png"
+sha256 = "0c5e15cefa96b5938db7ad817e29eb9447e6b0eef1efdb73600f2fa51390035e"
+resolution = [7680, 4320]
+[[wallpaper]]
+file = "hyprland_wall1.png"
+title = "Wall1"
+artist = "Hyprland project"
+tags = ["dark", "geometric", "hyprland", "minimal", "teal"]
+license = "BSD-3-Clause"
+license_detail = "BSD-3-Clause — hyprwm/Hyprland repository LICENSE"
+source = "https://github.com/hyprwm/Hyprland"
+download = "https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/install/wall1.png"
+sha256 = "dfe2c0231476fff83d50d0a146cb2701aa96ff660c6d0cd0a9c363c6bb911810"
+resolution = [7680, 4320]
+[[wallpaper]]
+file = "hyprland_wall2.png"
+title = "Wall2"
+artist = "Hyprland project"
+tags = ["blue", "cat", "character", "cozy", "dark", "hyprland", "night", "technology"]
+license = "BSD-3-Clause"
+license_detail = "BSD-3-Clause — hyprwm/Hyprland repository LICENSE"
+source = "https://github.com/hyprwm/Hyprland"
+download = "https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/install/wall2.png"
+sha256 = "97bb1fed9b9e1b71fd8e814aec1bab71ddf5fbc6ffbd6a09c2d70b0881f8132e"
+resolution = [7680, 4191]
