@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>wallman</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" id="theme-dark" href="/api/theme?scheme=dark" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" id="theme-light" href="/api/theme?scheme=light" media="not all and (prefers-color-scheme: dark)">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#grid">Skip to wallpapers</a>
+  <div class="shell" id="shell">
+    <nav class="side" aria-label="Folders">
+      <header class="brand">
+        <p class="wordmark">wallman</p>
+        <a class="brand-link" href="/docs/licenses" target="_blank" rel="noopener">Licenses</a>
+      </header>
+      <details class="tree-fold" id="tree-fold" open>
+        <summary id="tree-heading">Folders</summary>
+        <ul class="tree" id="tree"></ul>
+      </details>
+    </nav>
+
+    <header class="toolbar" id="toolbar" role="search" aria-label="Filter wallpapers">
+      <label class="search">
+        <span class="sr-only">Search artist, title or file</span>
+        <input type="search" id="search" placeholder="Search" autocomplete="off" spellcheck="false">
+        <kbd aria-hidden="true">/</kbd>
+      </label>
+      <div id="menu-tags"></div>
+      <div id="menu-license"></div>
+      <div id="menu-format"></div>
+      <span class="field-pop year-field">
+        <label class="sr-only" for="year-input">Year or period</label>
+        <input type="text" id="year-input" placeholder="Year" autocomplete="off" spellcheck="false">
+      </span>
+      <button type="button" class="toggle" id="issues-toggle" aria-pressed="false">Issues</button>
+      <div id="menu-sort"></div>
+      <div id="menu-more" class="menu-more"></div>
+      <button type="button" class="primary add" id="add-button" aria-keyshortcuts="a">Add</button>
+    </header>
+
+    <main class="gallery" id="gallery">
+      <div class="tag-strip" id="tag-strip" hidden>
+        <ul class="chips" id="tag-chips" aria-label="Tag filters (all must match)"></ul>
+        <button type="button" class="quiet tag-clear" id="tag-clear" hidden>Clear</button>
+      </div>
+      <div class="gallery-head">
+        <h1 id="gallery-title">All wallpapers</h1>
+        <p id="gallery-count" aria-live="polite"></p>
+      </div>
+      <div class="grid-scroll" id="grid" role="listbox" aria-multiselectable="true" aria-labelledby="gallery-title" tabindex="0">
+        <div class="grid-canvas" id="grid-canvas"></div>
+      </div>
+      <p class="empty" id="gallery-empty" hidden></p>
+      <div class="multibar" id="multibar" role="toolbar" aria-label="Selection actions" hidden>
+        <span class="multibar-count" id="multibar-count"></span>
+        <button type="button" class="bar-btn danger-text" id="multi-delete">Delete</button>
+        <button type="button" class="bar-btn" id="multi-git-add">Add to git</button>
+        <button type="button" class="bar-btn" id="multi-git-remove">Remove from git</button>
+        <button type="button" class="bar-btn" id="multi-clear" aria-keyshortcuts="Escape">Clear</button>
+      </div>
+    </main>
+
+    <aside class="details-pane" id="details" aria-labelledby="details-heading" hidden>
+      <h2 class="sr-only" id="details-heading">Details</h2>
+      <figure class="plate">
+        <div class="plate-frame"><img id="details-image" alt=""></div>
+        <figcaption class="plate-cap">
+          <button type="button" class="file-link" id="details-file"></button>
+          <span class="plate-size" id="details-size"></span>
+        </figcaption>
+      </figure>
+      <div class="label" id="details-read"></div>
+      <form id="details-form" novalidate></form>
+      <div class="pane-actions" id="details-actions"></div>
+    </aside>
+
+    <footer class="status" id="status">
+      <button type="button" class="status-toggle" id="status-toggle" aria-expanded="false" aria-controls="status-list">
+        <span id="status-summary">Checking git status</span>
+      </button>
+      <span id="status-rules" class="status-rules"></span>
+      <span id="status-notes" class="status-notes" role="status"></span>
+      <div id="status-list" class="status-list" hidden></div>
+    </footer>
+  </div>
+
+  <dialog id="add-dialog" class="sheet" aria-labelledby="add-title">
+    <form method="dialog" class="sheet-head">
+      <h2 id="add-title">Add wallpaper</h2>
+      <button type="submit" class="quiet" value="cancel" aria-label="Close">Close</button>
+    </form>
+    <section id="add-source" class="add-step">
+      <div class="drop" id="drop-zone">
+        <p class="drop-main">Drop an image here</p>
+        <button type="button" id="choose-file">Choose a file</button>
+        <input type="file" id="file-input" hidden accept="image/jpeg,image/png,image/webp,image/jxl,image/svg+xml,.jxl,.svg">
+        <p class="drop-sub">JPEG, PNG, WebP, JPEG XL or SVG, up to 200 MB</p>
+      </div>
+      <form id="url-form" class="url-form">
+        <label for="url-input">Or download from a URL</label>
+        <div class="row">
+          <input type="url" id="url-input" placeholder="Direct link to the image" required>
+          <button type="submit">Download</button>
+        </div>
+      </form>
+      <p class="busy" id="add-busy" hidden role="status"></p>
+    </section>
+    <section id="add-meta" class="add-step" hidden>
+      <div class="add-summary">
+        <img id="add-preview" alt="">
+        <div>
+          <p id="add-source-name" class="add-name"></p>
+          <p id="add-source-size" class="muted"></p>
+          <p id="add-crop-state" class="muted"></p>
+          <button type="button" class="quiet" id="add-crop">Crop…</button>
+        </div>
+      </div>
+      <form id="add-form" class="meta-form" novalidate></form>
+    </section>
+  </dialog>
+
+  <dialog id="crop-dialog" class="sheet wide" aria-labelledby="crop-title">
+    <form method="dialog">
+      <div class="sheet-head">
+        <h2 id="crop-title">Crop to 16:9</h2>
+        <p id="crop-source" class="muted"></p>
+      </div>
+      <div class="crop-stage">
+        <canvas id="crop-canvas" tabindex="0" role="img"
+                aria-label="Crop frame. Drag to move, drag a corner to resize. Arrow keys move, plus and minus resize, 0 resets."></canvas>
+      </div>
+      <div class="crop-foot">
+        <canvas id="crop-preview" width="160" height="90" aria-hidden="true"></canvas>
+        <output id="crop-output" for="crop-canvas"></output>
+        <span class="spacer"></span>
+        <button type="submit" value="cancel" class="quiet">Cancel</button>
+        <button type="submit" value="apply" class="primary" id="crop-confirm">Apply crop</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="ask-dialog" class="sheet narrow" aria-labelledby="ask-title" aria-describedby="ask-text">
+    <form method="dialog">
+      <h2 id="ask-title"></h2>
+      <p id="ask-text"></p>
+      <p id="ask-note" class="ask-note" hidden></p>
+      <div class="row end" id="ask-buttons"></div>
+    </form>
+  </dialog>
+
+  <dialog id="viewer" class="viewer" aria-labelledby="viewer-title" tabindex="-1">
+    <div class="viewer-stage" id="viewer-stage">
+      <img id="viewer-image" alt="" title="Click for 100% size">
+    </div>
+    <button type="button" class="viewer-nav prev" id="viewer-prev" aria-label="Previous wallpaper" aria-keyshortcuts="ArrowLeft"></button>
+    <button type="button" class="viewer-nav next" id="viewer-next" aria-label="Next wallpaper" aria-keyshortcuts="ArrowRight"></button>
+    <div class="viewer-bar">
+      <p class="viewer-caption"><cite id="viewer-title"></cite> <span id="viewer-meta"></span></p>
+      <span class="viewer-pos" id="viewer-pos"></span>
+      <button type="button" class="viewer-close" id="viewer-close" aria-keyshortcuts="Escape">Close</button>
+    </div>
+  </dialog>
+
+  <div class="toasts" id="toasts"></div>
+</body>
+</html>
