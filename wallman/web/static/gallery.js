@@ -15,17 +15,29 @@ export function yearLabel(year) {
   return String(year);
 }
 
-/** Git state -> glyph and the tooltip that explains it. */
+/**
+ * Git state -> glyph and the tooltip that explains it. A wallpaper is published when its entry is in the
+ * wallpapers.toml of the git index (with its image when the license is shareable).
+ */
 export const GIT_GLYPHS = {
-  committed: ["✓", "Committed to git"],
-  staged: ["+", "Staged: added to git, not committed yet"],
-  modified: ["~", "Modified since the last commit"],
-  untracked: ["?", "Not in git yet"],
+  committed: ["✓", "Published and committed"],
+  metadata: ["◐", "Published (metadata only): its entry is committed, the image stays download-only"],
+  staged: ["+", "Published, not committed yet"],
+  "metadata-staged": ["◐", "Published (metadata only), not committed yet: the image stays download-only"],
+  modified: ["~", "Published, but changed since it was staged, or its image is not in git"],
+  untracked: ["?", "Not published: not in git"],
   ignored: ["⊘", "Kept out of git (download-only license)"],
-  deleted: ["−", "Deleted, the removal is not committed yet"],
+  deleted: ["−", "Removed from git, not committed yet"],
   conflict: ["!", "Merge conflict"],
   pending: ["…", "Git state is being refreshed"],
 };
+
+/** [glyph, state, meaning] for the legend: the states a wallpaper can be in (not the transient ones). */
+export function legendRows() {
+  return Object.entries(GIT_GLYPHS)
+    .filter(([state]) => state !== "pending" && state !== "ignored")
+    .map(([state, [glyph, tip]]) => [glyph, state, tip]);
+}
 
 function describe(item) {
   const parts = [item.title, item.artist];

@@ -1,6 +1,7 @@
 // Status bar (git changes in the repo and submodules, rule counts) and toast notifications.
 
 import { api } from "./api.js";
+import { legendRows } from "./gallery.js";
 
 const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 
@@ -156,6 +157,14 @@ export class StatusBar {
 
   renderList(changes) {
     this.list.replaceChildren();
+    try {
+      this.renderChanges(changes);
+    } finally {
+      this.list.append(...legend());
+    }
+  }
+
+  renderChanges(changes) {
     if (!changes.length) {
       const p = document.createElement("p");
       p.textContent = "Nothing staged or modified. Commit from the terminal when you are ready.";
@@ -182,4 +191,22 @@ export class StatusBar {
       this.list.append(h, ul);
     }
   }
+}
+
+/** What the marks on the tiles mean: [heading, list]. */
+function legend() {
+  const h = document.createElement("h3");
+  h.textContent = "Marks on the tiles";
+  const dl = document.createElement("dl");
+  dl.className = "git-legend";
+  for (const [glyph, state, tip] of legendRows()) {
+    const dt = document.createElement("dt");
+    dt.className = "git";
+    dt.dataset.state = state;
+    dt.textContent = glyph;
+    const dd = document.createElement("dd");
+    dd.textContent = tip;
+    dl.append(dt, dd);
+  }
+  return [h, dl];
 }

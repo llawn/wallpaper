@@ -286,7 +286,13 @@ eq(t.nextFolder("painting", "photo"), "photo", "click another folder");
 eq(t.nextFolder("", ""), "", "all stays all");
 const g = await mod("gallery.js");
 eq(Object.fromEntries(Object.entries(g.GIT_GLYPHS).map(([k, v]) => [k, v[0]])),
-   { committed: "✓", staged: "+", modified: "~", untracked: "?", ignored: "⊘", deleted: "−", conflict: "!", pending: "…" }, "glyphs");
+   { committed: "✓", metadata: "◐", staged: "+", "metadata-staged": "◐", modified: "~", untracked: "?", ignored: "⊘",
+     deleted: "−", conflict: "!", pending: "…" }, "glyphs");
+ok(g.GIT_GLYPHS.metadata[1].includes("metadata only"), "metadata tooltip says metadata only");
+ok(g.GIT_GLYPHS["metadata-staged"][1].includes("metadata only"), "staged metadata tooltip says metadata only");
+const legend = g.legendRows();
+ok(legend.some(([glyph, state]) => glyph === "◐" && state === "metadata"), "legend lists ◐ metadata");
+ok(!legend.some(([, state]) => state === "pending" || state === "ignored"), "legend: wallpaper states only");
 ok(Object.values(g.GIT_GLYPHS).every(([, tip]) => tip.length > 5), "every glyph has a tooltip");
 eq([g.yearLabel(1889), g.yearLabel([1880, 1889]), g.yearLabel(null)], ["1889", "1880–1889", ""], "year labels");
 """)
@@ -405,6 +411,28 @@ eq(d.displayUrl("https://www.example.org/wiki/File:Monet.jpg"), "example.org/wik
 eq(d.displayUrl("https://example.org/"), "example.org", "bare host");
 const shown = d.displayUrl("https://example.org/" + "x".repeat(200));
 ok(shown.length <= 48 && shown.endsWith("…"), "long links shortened: " + shown);
+""")
+
+    def test_details_git_action(self):
+        run_node(self, r"""
+const d = await mod("details.js");
+const lic = new Map([["CC0-1.0", { id: "CC0-1.0", shareable: true }], ["personal", { id: "personal", shareable: false }],
+                     ["all-rights-reserved", { id: "all-rights-reserved", shareable: false }]]);
+const item = (git, license = "CC0-1.0", external = false) => ({ git, license, external });
+const a = d.gitAction(item("untracked"), lic);
+eq([a.kind, a.label], ["add", "Add to git"], "unpublished: Add to git");
+ok(a.title.includes("Publishes the image and its entry"), "shareable tooltip: " + a.title);
+const m = d.gitAction(item("untracked", "all-rights-reserved"), lic);
+ok(m.title.includes("Publishes its entry only (the image stays download-only)"), "download-only tooltip: " + m.title);
+eq(d.gitAction(item("deleted"), lic).kind, "add", "a removal staged: publish again");
+for (const st of ["committed", "staged", "modified", "metadata", "metadata-staged", "conflict"]) {
+  eq(d.gitAction(item(st, st.startsWith("metadata") ? "all-rights-reserved" : "CC0-1.0"), lic).kind, "remove", st);
+}
+eq(d.gitAction(item("committed"), lic).label, "Remove from git", "label");
+eq(d.gitAction(item("untracked", "personal"), lic), null, "personal: never published");
+eq(d.gitAction(item("untracked", "CC0-1.0", true), lic), null, "external collection: no action");
+eq(d.gitAction(item("pending"), lic), null, "unknown state: no action");
+eq(d.gitAction(item("committed", "personal"), lic).kind, "remove", "a published personal one can still be removed");
 """)
 
     def test_meta_form_validation(self):

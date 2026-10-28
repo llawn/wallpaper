@@ -177,7 +177,7 @@ export class AddDialog {
     }
     this.form.submit.disabled = true;
     try {
-      // stage:false: the server never stages on its own; its git_suggestion asks the owner when it is relevant
+      // a new wallpaper is never published on its own; git_suggestion asks the owner when it is relevant
       const item = await api.add({ upload_id: this.upload.upload_id, ...meta, crop: this.crop, stage: false });
       this.dialog.close();
       toast(`Added ${item.file}`);
@@ -190,9 +190,10 @@ export class AddDialog {
     }
   }
 
-  /** The folder's other images are in git: offer to stage this one too (the server never does it on its own). */
+  /** Other wallpapers of the folder are published: offer to publish this one too (never done on its own). */
   async offerGit(item) {
-    const answer = await offer(`Add ${item.file} to git? The other images in ${item.folder} are tracked.`, [
+    const what = item.shareable ? "its image and entry" : "its entry (the image stays download-only)";
+    const answer = await offer(`Add ${item.file} to git? Publishes ${what}, like the other wallpapers in ${item.folder}.`, [
       { value: "add", label: "Add to git", kind: "primary" },
       { value: "later", label: "Not now", kind: "quiet" },
     ], { focus: true });

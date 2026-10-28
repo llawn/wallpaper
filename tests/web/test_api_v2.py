@@ -221,13 +221,22 @@ class ApiV2Test(ApiBase):
         status, body = self.api("GET", "/api/status?full=2")
         self.assertEqual((status, body["error"]), (400, "BadRequest"))
 
-    def test_git_add_not_shareable_422(self):
+    def test_git_add_download_only_publishes_its_entry_and_personal_is_422(self):
         self.many()
         status, body = self.api("POST", "/api/git/add", {"refs": self.refs("a.jpg", "c.jpg")})
-        self.assertEqual((status, body["error"]), (422, "NotShareable"))
-        self.assertIn("poster/pop/c.jpg", body["message"])
+        self.assertEqual(status, 200, body)
         _, p = self.api("GET", "/api/wallpapers?folder=poster")
-        self.assertEqual([i["git"] for i in p["items"]], ["untracked"] * 3)
+        self.assertEqual([i["git"] for i in p["items"]], ["staged", "untracked", "metadata-staged"])
+        staged = git(self.root, "diff", "--cached", "--name-only").split()
+        self.assertIn("images/poster/pop/a.jpg", staged)
+        self.assertNotIn("images/poster/pop/c.jpg", staged)
+        index_toml = git(self.root, "show", ":images/poster/pop/wallpapers.toml")
+        self.assertIn('file = "c.jpg"', index_toml)
+        self.assertNotIn('"b.jpg"', index_toml)
+        self.add_folder("personal/me", [self.entry("me.jpg", "Me", license="personal")], "personal", "me")
+        status, body = self.api("POST", "/api/git/add", {"refs": self.refs("me.jpg", folder="personal/me")})
+        self.assertEqual((status, body["error"]), (422, "NotShareable"))
+        self.assertIn("personal/me/me.jpg", body["message"])
 
     def test_git_add_ignored_path_422(self):
         self.many()
@@ -277,7 +286,11 @@ class ApiV2Test(ApiBase):
     def test_create_git_suggestion(self):
         _, up = self.upload()
         status, made = self.api("POST", "/api/wallpapers", {**self.META, "upload_id": up["upload_id"]})
-        self.assertEqual((status, made["git_suggestion"], made["git"]), (201, None, "staged"))
+        # never published automatically: the sibling is published, so the UI offers to publish it
+        self.assertEqual((status, made["git_suggestion"], made["git"]), (201, "add", "untracked"))
+        status, _ = self.api("POST", "/api/git/add", {"refs": [{"folder": made["folder"], "file": made["file"]}]})
+        _, now = self.api("GET", f"/api/wallpapers/{made['folder']}/{made['file']}")
+        self.assertEqual((status, now["git"]), (200, "staged"))
         _, up = self.upload(color="red")
         meta = {**self.META, "title": "Red Dancers", "upload_id": up["upload_id"], "stage": False}
         status, made = self.api("POST", "/api/wallpapers", meta)

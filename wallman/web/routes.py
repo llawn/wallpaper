@@ -16,7 +16,7 @@ from ..domain.naming import normalise_tags
 from ..domain.models import CropBox, Ref, Wallpaper
 from ..domain.years import parse_year, suggest_years, year_to_toml
 from ..errors import GitError, InvalidImage, NotFound, NotShareable
-from ..services.git_actions import TRACKED_STATES
+from ..services.git_actions import PUBLISHED_STATES
 from ..services.importer import NewWallpaper
 from ..services.library import check_values
 from ..services.library_index import IndexedEntry, Query
@@ -300,15 +300,15 @@ def add_wallpaper(app, m, req):
 
 
 def _git_suggestion(app: App, ref: Ref, described: dict) -> str | None:
-    """"add" when the image is shareable, not tracked yet, and a sibling in its folder is tracked. When the git
-    status after the add is still pending (slow git), the image's own state is asked directly."""
-    if not described["shareable"] or described["git"] in TRACKED_STATES:
+    """"add" when the new wallpaper can be published (not personal, not in an external collection), is not published
+    yet, and a sibling in its folder is published: the UI then offers to publish it too."""
+    if described["license"] == "personal" or described["external"] or described["git"] in PUBLISHED_STATES:
         return None
-    if described["git"] == "pending" and app.vcs.is_tracked(app.store.path(ref.folder, ref.file)):
+    if described["git"] == "pending" and ref in app.git_actions.published([ref]):
         return None
     siblings = app.index.select(Query(folder=ref.folder))
-    tracked = any(e.ref.folder == ref.folder and e.ref != ref and e.git_state in TRACKED_STATES for e in siblings)
-    return "add" if tracked else None
+    published = any(e.ref.folder == ref.folder and e.ref != ref and e.git_state in PUBLISHED_STATES for e in siblings)
+    return "add" if published else None
 
 
 def crop_wallpaper(app, m, req):

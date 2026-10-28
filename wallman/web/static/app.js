@@ -171,14 +171,17 @@ async function remove(refs) {
   }
 }
 
-async function gitAction(kind) {
-  const refs = selectedRefs();
+async function gitAction(kind, refs = selectedRefs()) {
   if (!refs.length) return;
   try {
     const { refs: done } = kind === "add" ? await api.gitAdd(refs) : await api.gitRemove(refs);
     const verb = kind === "add" ? "Added" : "Removed";
     const skipped = refs.length - done.length;
-    toast(`${verb} ${plural(done.length, "file")} ${kind === "add" ? "to" : "from"} git${skipped ? ` (${skipped} unchanged)` : ""}`);
+    toast(`${verb} ${plural(done.length, "wallpaper")} ${kind === "add" ? "to" : "from"} git${skipped ? ` (${skipped} unchanged)` : ""}`);
+    const shown = details.current;
+    if (shown && refs.some((r) => refKey(r) === refKey(shown))) {
+      details.saved(shown, await api.wallpaper(shown)); // its new git state (and so the other button)
+    }
     await refreshAfterChange();
   } catch (err) {
     toastError(err);
@@ -333,6 +336,7 @@ async function main() {
   viewer = new Viewer();
   details = new Details({
     licenses, onSave: save, onCrop: crop, onDelete: (items) => remove(items), onView: openViewer,
+    onGit: (item, kind) => gitAction(kind, [{ folder: item.folder, file: item.file }]),
     onTag: (tag) => toolbar.addTag(tag), onFolder: openFolder,
     onLeave: () => {
       if (queryWaiting) showQuery();

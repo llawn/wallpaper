@@ -49,6 +49,26 @@ export function displayUrl(url, max = 48) {
   return text.length > max ? `${text.slice(0, max - 1)}…` : text;
 }
 
+// per-wallpaper git states of a published wallpaper (its entry is in the index wallpapers.toml)
+const PUBLISHED = new Set(["committed", "staged", "modified", "metadata", "metadata-staged", "conflict"]);  // conflict: only of a published one
+
+/**
+ * The details pane's git button for one wallpaper: {kind: "add"|"remove", label, title}, or null when there is
+ * none (external collection, personal license, state still unknown).
+ */
+export function gitAction(item, licenses) {
+  if (!item || item.external || !item.git || item.git === "pending") return null;
+  if (PUBLISHED.has(item.git)) {
+    return { kind: "remove", label: "Remove from git",
+             title: "Unpublishes it: its entry leaves the staged wallpapers.toml and its image leaves git. The files stay on disk." };
+  }
+  if (item.license === "personal") return null;
+  const shareable = licenses.get(item.license)?.shareable ?? false;
+  return { kind: "add", label: "Add to git",
+           title: shareable ? "Publishes the image and its entry"
+                            : "Publishes its entry only (the image stays download-only)" };
+}
+
 function el(tag, cls, text) {
   const n = document.createElement(tag);
   if (cls) n.className = cls;
@@ -74,13 +94,13 @@ function outLink(href, text, label) {
 
 export class Details {
   /**
-   * @param {{licenses: object[], onSave: (item, changes) => Promise<object|null>, onCrop, onDelete,
+   * @param {{licenses: object[], onSave: (item, changes) => Promise<object|null>, onCrop, onDelete, onGit,
    *          onView: (item) => void, onTag: (tag: string) => void, onFolder: (folder: string) => void,
    *          onLeave?: () => void}} opts
    *        onSave resolves with the updated entry, or null when the save failed (the error is already shown);
    *        onLeave runs whenever edit mode ends
    */
-  constructor({ licenses, onSave, onCrop, onDelete, onView, onTag, onFolder, onLeave = () => {} }) {
+  constructor({ licenses, onSave, onCrop, onDelete, onGit = async () => {}, onView, onTag, onFolder, onLeave = () => {} }) {
     this.pane = document.getElementById("details");
     this.image = document.getElementById("details-image");
     this.fileButton = document.getElementById("details-file");
@@ -100,7 +120,19 @@ export class Details {
     crop.setAttribute("aria-keyshortcuts", "c");
     const del = button("Delete", "quiet danger-text", () => this.item && onDelete([this.item]));
     del.setAttribute("aria-keyshortcuts", "Delete");
-    this.readActions.replaceChildren(this.editButton, crop, el("span", "spacer"), del);
+    // Add to git / Remove from git for this one wallpaper (the selection bar only appears for two or more)
+    this.gitButton = button("", "quiet git-btn", async () => {
+      const action = gitAction(this.item, this.licenses);
+      if (!action) return;
+      this.gitButton.disabled = true;
+      try {
+        await onGit(this.item, action.kind);
+      } finally {
+        this.gitButton.disabled = false;
+      }
+    });
+    this.gitButton.hidden = true;
+    this.readActions.replaceChildren(this.editButton, crop, this.gitButton, el("span", "spacer"), del);
 
     this.cancelButton = button("Cancel", "quiet", () => this.cancel());
     this.form = new MetaForm(document.getElementById("details-form"), {
@@ -142,6 +174,16 @@ export class Details {
     const [w, h] = item.resolution ?? [];
     this.size.textContent = w && h ? `${w} × ${h}` : "";
     if (!this.editing) this.render(item);
+    this.renderGit(item);
+  }
+
+  renderGit(item) {
+    const action = gitAction(item, this.licenses);
+    this.gitButton.hidden = !action;
+    if (!action) return;
+    this.gitButton.textContent = action.label;
+    this.gitButton.title = action.title;
+    this.gitButton.dataset.kind = action.kind;
   }
 
   /** After a successful save or crop: the returned entry becomes what is shown (and the form's baseline). */

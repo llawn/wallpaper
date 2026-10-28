@@ -447,6 +447,9 @@ input[type="search"]::-webkit-search-cancel-button { filter: grayscale(1); opaci
 .git[data-state="untracked"] { color: var(--m-secondary); opacity: .95; }
 .git[data-state="ignored"] { opacity: .5; }
 .git[data-state="deleted"], .git[data-state="conflict"] { color: var(--danger); opacity: 1; }
+.git[data-state="metadata"] { opacity: .55; }
+.git[data-state="metadata-staged"] { color: var(--accent); opacity: 1; }
+.git[data-state="metadata-staged"]::after { content: "+"; font-size: .8em; vertical-align: .35em; margin-left: 1px; }
 
 /* the floating selection bar */
 .multibar {
@@ -813,6 +816,12 @@ dialog.viewer[open] { animation: none; }
 .change.deleted { color: var(--danger); }
 .change.untracked { color: var(--m-secondary); }
 .path { overflow-wrap: anywhere; }
+.git-legend {
+  display: grid; grid-template-columns: 1.6em 1fr; gap: 2px var(--s2);
+  margin: 0; font-size: var(--t-sm);
+}
+.git-legend dt { cursor: default; font-size: var(--t-sm); text-align: center; }
+.git-legend dd { margin: 0; color: var(--muted); }
 
 /* --- dialogs --------------------------------------------------------------------------------- */
 
