@@ -1,0 +1,150 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1984-nausicaa-of-the-valley-of-the-wind"
+count = 12
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-001_1984.jpg"
+title = "Kaze no Tani no Naushika — still 001"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["city", "creature", "dark", "dramatic", "epic", "ghibli", "nausicaa-of-the-valley-of-the-wind", "orange", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa001.jpg"
+sha256 = "c0256cd1362ecb552d7eea25df5fede8ea2aafcde9a0adaacd81a924c4babf63"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-002_1984.jpg"
+title = "Kaze no Tani no Naushika — still 002"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["blue", "dark", "eerie", "forest", "ghibli", "mysterious", "nausicaa-of-the-valley-of-the-wind", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa002.jpg"
+sha256 = "db9f75db8ca9a1a6d155ee764c443804cab1834f6c88ccbeadcffdf68807e820"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-004_1984.jpg"
+title = "Kaze no Tani no Naushika — still 004"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["character", "dark", "forest", "ghibli", "mysterious", "nausicaa-of-the-valley-of-the-wind", "purple", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa004.jpg"
+sha256 = "de28ab0122d0516d32b42f29dadd71966425221859e998bbfe73574bcd33aa58"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-006_1984.jpg"
+title = "Kaze no Tani no Naushika — still 006"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["blue", "bright", "clouds", "ghibli", "mysterious", "nausicaa-of-the-valley-of-the-wind", "ruins", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa006.jpg"
+sha256 = "49304325b3ac2f76d5570f4a0e2095f0df889ab58c1b798a7b73e31c8e9cc8dc"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-007_1984.jpg"
+title = "Kaze no Tani no Naushika — still 007"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["aircraft", "character", "desert", "dramatic", "ghibli", "nausicaa-of-the-valley-of-the-wind", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa007.jpg"
+sha256 = "b45489600cbab542165677854fad68adbd72f4138f492f7e47a241d6dfa9357c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-009_1984.jpg"
+title = "Kaze no Tani no Naushika — still 009"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["creature", "desert", "dramatic", "ghibli", "green", "nausicaa-of-the-valley-of-the-wind", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa009.jpg"
+sha256 = "14ce85945234e2fc6ebbe77ecfc72d1d4d9b3299b29d9e0a84ef335259bb373b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-020_1984.jpg"
+title = "Kaze no Tani no Naushika — still 020"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["dreamy", "garden", "ghibli", "green", "interior", "mysterious", "nausicaa-of-the-valley-of-the-wind", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa020.jpg"
+sha256 = "a374e2d6319c2b873472bd95f5bb9f43df4ae7838d2aeceabc351a2e7ba7569e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-028_1984.jpg"
+title = "Kaze no Tani no Naushika — still 028"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["character", "dreamy", "forest", "ghibli", "golden-hour", "green", "nausicaa-of-the-valley-of-the-wind", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa028.jpg"
+sha256 = "ceb1959a66f12565d81bb4781ee5542fc77f1d297e021319c38f66403290f0d5"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-039_1984.jpg"
+title = "Kaze no Tani no Naushika — still 039"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["blue", "creature", "dark", "dramatic", "ghibli", "nausicaa-of-the-valley-of-the-wind", "night", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa039.jpg"
+sha256 = "9e4a6de7480f02917b7bf30650378c6828470dc1fbad5ae7f0476d5c32336ea1"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-042_1984.jpg"
+title = "Kaze no Tani no Naushika — still 042"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["creature", "dark", "eerie", "ghibli", "nausicaa-of-the-valley-of-the-wind", "night", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa042.jpg"
+sha256 = "6f46ff53730cc5710221e041467e96f478853592556bfaa756248b1ace58fa83"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-044_1984.jpg"
+title = "Kaze no Tani no Naushika — still 044"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["character", "creature", "dramatic", "epic", "ghibli", "nausicaa-of-the-valley-of-the-wind", "orange", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa044.jpg"
+sha256 = "a93f04fe305514aa6c6de296cc5d2ec168ae38b522e6868b3e06030deb641c65"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-no-tani-no-naushika-still-046_1984.jpg"
+title = "Kaze no Tani no Naushika — still 046"
+artist = "Studio Ghibli"
+year = 1984
+tags = ["blue", "dark", "epic", "ghibli", "mysterious", "nausicaa-of-the-valley-of-the-wind", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1984 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/nausicaa046.jpg"
+sha256 = "d93e05008f585c15fabff8f2b801366a62b9ce1785c26eeb7a7ae1ed276b6744"
+resolution = [1920, 1038]
