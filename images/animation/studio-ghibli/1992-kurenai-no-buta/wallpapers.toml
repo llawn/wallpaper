@@ -1,0 +1,198 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1992-porco-rosso"
+count = 16
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-001_1992.jpg"
+title = "Kurenai no buta — still 001"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["blue", "bright", "calm", "coast", "ghibli", "people", "porco-rosso", "sea", "summer", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco001.jpg"
+sha256 = "2ea9d3dadc5b21671e3d876751ac4b7aefcf29ead6d7cccb47d4f037fbf48e51"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-002_1992.jpg"
+title = "Kurenai no buta — still 002"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "blue", "bright", "clouds", "ghibli", "joyful", "porco-rosso", "red", "sea", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco002.jpg"
+sha256 = "cee1510084c0758b64481c99c18e641d84a5dda6be682de655a70242ee3fa88f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-005_1992.jpg"
+title = "Kurenai no buta — still 005"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "blue", "ghibli", "porco-rosso", "red", "sea", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco005.jpg"
+sha256 = "4657c76b9ec6af75638aa46bcd090b3c7478596f12589e296e88f66e8c77c9a0"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-007_1992.jpg"
+title = "Kurenai no buta — still 007"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "calm", "clouds", "dark", "ghibli", "golden-hour", "orange", "porco-rosso", "sky", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco007.jpg"
+sha256 = "ec9dc817c45464eb9205a82de2ba9f4a89716e910ebaea9575439f4f8b027dcd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-011_1992.jpg"
+title = "Kurenai no buta — still 011"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["bright", "calm", "character", "coast", "ghibli", "porco-rosso", "summer", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco011.jpg"
+sha256 = "900bd1532b7d51f1c9e4fab0ee9ec6401b8f9d55d529bb1ef91e2868003ea706"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-014_1992.jpg"
+title = "Kurenai no buta — still 014"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["blue", "calm", "character", "ghibli", "interior", "porco-rosso"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco014.jpg"
+sha256 = "b40fb005db07be0a4e32a1ad542769b0b28e6b7461a35705375568415596ce42"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-015_1992.jpg"
+title = "Kurenai no buta — still 015"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["calm", "character", "clouds", "ghibli", "melancholic", "pink", "porco-rosso", "purple", "sky", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco015.jpg"
+sha256 = "0a12fb8929d6e1e0bdbce8959c533f9fbb9df6e75361f02bd69d1bfa6c06f49f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-026_1992.jpg"
+title = "Kurenai no buta — still 026"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["bright", "calm", "flowers", "garden", "ghibli", "green", "house", "porco-rosso", "sea", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco026.jpg"
+sha256 = "b9f6ff1f038705bb86a8acd8154a17e8814c7b2ba18271aa32133177465cc7e0"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-028_1992.jpg"
+title = "Kurenai no buta — still 028"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["blue", "bright", "character", "clouds", "ghibli", "joyful", "porco-rosso", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco028.jpg"
+sha256 = "c3cbcf4ba4ae64b344e773cf803d646cac76e9d92afffffe03770b3d19087279"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-029_1992.jpg"
+title = "Kurenai no buta — still 029"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["coast", "crowd", "ghibli", "joyful", "people", "porco-rosso", "whimsical", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco029.jpg"
+sha256 = "f823feffbaf22aa636626e1fb63ba49a7430625b8bbb8d93079ff59524e92201"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-036_1992.jpg"
+title = "Kurenai no buta — still 036"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "blue", "dramatic", "epic", "ghibli", "porco-rosso", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco036.jpg"
+sha256 = "d93e3e988d8e49c9071a65421ed797b6d5b1ec7abbbe9d6016797a3d795f023a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-038_1992.jpg"
+title = "Kurenai no buta — still 038"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["blue", "crowd", "ghibli", "joyful", "porco-rosso", "sea", "ship", "vibrant"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco038.jpg"
+sha256 = "6745bf1ca0a46fb05e177dfff7264fc7453cd11e155f5f1938e65a40cbfc3c81"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-040_1992.jpg"
+title = "Kurenai no buta — still 040"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["crowd", "ghibli", "joyful", "people", "porco-rosso", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco040.jpg"
+sha256 = "52569382dfa216ca29c165e28d39a64efbf45912d03fba0c1c95f0cb72788884"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-041_1992.jpg"
+title = "Kurenai no buta — still 041"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "blue", "dramatic", "ghibli", "porco-rosso", "red", "sea"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco041.jpg"
+sha256 = "0764367e9d0b7dbdb7ec88cb1071b21242fac3c031a756e883a7d6b0d2d7f5f9"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-042_1992.jpg"
+title = "Kurenai no buta — still 042"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["aircraft", "blue", "dramatic", "ghibli", "porco-rosso", "red", "sea", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco042.jpg"
+sha256 = "01573289a1656d8d5366629996667a666149f79c1218f27326909fab8e98d19d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kurenai-no-buta-still-048_1992.jpg"
+title = "Kurenai no buta — still 048"
+artist = "Studio Ghibli"
+year = 1992
+tags = ["blue", "dramatic", "ghibli", "people", "porco-rosso", "sea"]
+license = "ghibli-free-use"
+license_detail = "© 1992 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/porco048.jpg"
+sha256 = "8db033f86363921c58e1df4e29b82be1e64b5364b6de901bcf662e32b9abab1d"
+resolution = [1920, 1038]
