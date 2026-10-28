@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "wallpapers.schema.json",
+  "title": "Wallpaper folder metadata (wallpapers.toml)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["collection", "wallpaper"],
+  "properties": {
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["medium", "movement", "count"],
+      "properties": {
+        "medium": {
+          "enum": ["painting", "drawing", "illustration", "printmaking", "photography",
+                   "animation", "poster", "album-cover", "linux", "ml4w", "personal"]
+        },
+        "movement": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "wallpaper": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["file", "title", "artist", "license", "resolution"],
+        "properties": {
+          "file": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(_[a-z0-9]+(-[a-z0-9]+)*)*\\.(jpg|png)$" },
+          "title": { "type": "string", "minLength": 1 },
+          "artist": { "type": "string", "minLength": 1 },
+          "year": {
+            "oneOf": [
+              { "type": "integer", "minimum": 1400, "maximum": 2100 },
+              { "type": "array", "minItems": 2, "maxItems": 2,
+                "items": { "type": "integer", "minimum": 1400, "maximum": 2100 },
+                "description": "[start, end] with start <= end" }
+            ]
+          },
+          "tags": {
+            "type": "array", "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+          },
+          "license": { "enum": ["public-domain", "CC0-1.0", "CC-BY-1.0", "CC-BY-2.0", "CC-BY-2.5", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-1.0", "CC-BY-SA-2.0", "CC-BY-SA-2.5", "CC-BY-SA-3.0", "CC-BY-SA-3.0-IGO", "CC-BY-SA-4.0", "ghibli-free-use", "official-wallpaper", "all-rights-reserved", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "Apache-2.0", "BSD-3-Clause", "MIT", "LGPL-2.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-3.0-only", "LGPL-3.0-or-later", "unsplash-license", "personal"] },
+          "license_detail": { "type": "string" },
+          "source": { "type": "string", "format": "uri" },
+          "download": { "type": "string", "format": "uri", "description": "direct file URL; files that may not be redistributed are fetched from here by _tools/fetch.py" },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "resolution": {
+            "type": "array", "minItems": 2, "maxItems": 2,
+            "items": { "type": "integer", "minimum": 1 }
+          },
+          "processing": {
+            "type": "array", "uniqueItems": true,
+            "items": { "enum": ["crop", "fit-16x9", "convert", "render"] }
+          },
+          "original": { "type": "string" },
+          "crop": {
+            "type": "array", "minItems": 4, "maxItems": 4,
+            "items": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    }
+  }
+}
