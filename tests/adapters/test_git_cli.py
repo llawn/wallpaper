@@ -283,5 +283,65 @@ class GitCliTest(unittest.TestCase):
             self.assertFalse(g.is_tracked(f))
 
 
+class GitCliBlobTest(unittest.TestCase):
+    """The index TOML is written as a blob: stage_blob / index_blob / head_blob / unstage_path / blob_ids."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.root = Path(self._tmp.name).resolve()
+        git(self.root, "init", "-q")
+        (self.root / "d").mkdir()
+        self.toml = self.root / "d" / "wallpapers.toml"
+        self.toml.write_text("working\n")
+        git(self.root, "add", "d/wallpapers.toml")
+        git(self.root, "commit", "-q", "-m", "init")
+        self.git = GitCli(self.root)
+
+    def test_stage_blob_writes_the_index_only(self):
+        self.git.stage_blob(self.toml, b"generated\n")
+        self.assertEqual(git(self.root, "show", ":d/wallpapers.toml"), "generated\n")
+        self.assertEqual(self.toml.read_text(), "working\n")
+        self.assertEqual(self.git.index_blob(self.toml), b"generated\n")
+        self.assertEqual(self.git.head_blob(self.toml), b"working\n")
+
+    def test_stage_blob_adds_a_new_path_and_unstage_path_removes_it(self):
+        new = self.root / "e [x]" / "wallpapers.toml"  # literal pathspecs: brackets are not a glob
+        self.assertIsNone(self.git.index_blob(new))
+        self.assertIsNone(self.git.head_blob(new))
+        self.git.stage_blob(new, b"n\n")
+        self.assertEqual(self.git.index_blob(new), b"n\n")
+        self.assertFalse(new.exists())
+        self.git.unstage_path(new)
+        self.assertIsNone(self.git.index_blob(new))
+        self.git.unstage_path(new)  # not in the index: no error
+
+    def test_stage_blob_snapshots_the_index_first(self):
+        seen = []
+        self.git.on_index_write = seen.append
+        self.git.stage_blob(self.toml, b"x")
+        self.git.unstage_path(self.toml)
+        self.assertEqual(len(seen), 2)
+        self.assertTrue(str(seen[0]).endswith("index"))
+
+    def test_blob_ids_and_read_blob(self):
+        self.git.stage_blob(self.toml, b"generated\n")
+        missing = self.root / "nope" / "wallpapers.toml"
+        ids = self.git.blob_ids([self.toml, missing])
+        index_id, head_id = ids[self.toml]
+        self.assertEqual(ids[missing], (None, None))
+        self.assertEqual(self.git.read_blob(index_id), b"generated\n")
+        self.assertEqual(self.git.read_blob(head_id), b"working\n")
+        self.assertEqual(self.git.index_blob_id(self.toml), index_id)
+        self.assertIsNone(self.git.index_blob_id(missing))
+
+    def test_outside_a_work_tree(self):
+        with tempfile.TemporaryDirectory() as t:
+            g = GitCli(Path(t))
+            p = Path(t) / "wallpapers.toml"
+            self.assertIsNone(g.index_blob(p))
+            self.assertIsNone(g.blob_ids([p]))
+
+
 if __name__ == "__main__":
     unittest.main()

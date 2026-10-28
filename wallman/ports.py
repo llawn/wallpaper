@@ -4,7 +4,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Protocol
 
-from .domain.models import Change, Collection, CropBox, Issue, Resolution
+from .domain.models import Change, Collection, CropBox, Issue, Resolution, Wallpaper
 
 
 class Catalogue(Protocol):
@@ -14,6 +14,10 @@ class Catalogue(Protocol):
     def create(self, folder: str) -> Collection: ...
     def delete(self, folder: str) -> None: ...  # removes wallpapers.toml
     def structural_issues(self, folder: str) -> list[Issue]: ...
+    def render(self, collection: Collection) -> bytes: ...  # what save() would write (the generated index TOML)
+    def render_parts(self, collection: Collection) -> tuple[bytes, dict[str, str]]: ...  # + file -> table text
+    def entry_text(self, w: Wallpaper) -> str: ...  # one [[wallpaper]] table as save() writes it
+    def blob_entries(self, data: bytes) -> dict[str, str]: ...  # file -> table text, from a TOML's bytes
 
 
 class ImageStore(Protocol):
@@ -44,6 +48,14 @@ class Vcs(Protocol):
     def staged(self) -> list[Path]: ...  # absolute paths staged in the main repo (not deletions)
     def file_states(self, paths: list[Path]) -> dict[Path, str]: ...  # spec git states, absolute keys
     def status(self) -> list[Change]: ...  # main repo + submodules
+    # publish model: the index wallpapers.toml is a generated blob
+    def index_blob(self, path: Path) -> bytes | None: ...  # content in the git index, None when absent
+    def head_blob(self, path: Path) -> bytes | None: ...  # content in HEAD, None when absent
+    def index_blob_id(self, path: Path) -> str | None: ...  # blob id in the git index, None when absent
+    def stage_blob(self, path: Path, data: bytes) -> None: ...  # index content of path := data (file untouched)
+    def unstage_path(self, path: Path) -> None: ...  # git rm --cached, nothing when absent
+    def blob_ids(self, paths: list[Path]) -> dict[Path, tuple[str | None, str | None]] | None: ...  # (index, HEAD)
+    def read_blob(self, blob_id: str) -> bytes: ...
 
 
 class Fetcher(Protocol):

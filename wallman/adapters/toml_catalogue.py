@@ -4,6 +4,7 @@ from __future__ import annotations
 import dataclasses
 import json
 import os
+import re
 import tempfile
 import tomllib
 from pathlib import Path
@@ -113,6 +114,64 @@ def _wallpaper(e: dict) -> Wallpaper:
     )
 
 
+_FILE_LINE = re.compile(r"""(?m)^file[ \t]*=[ \t]*("(?:[^"\\]|\\.)*"|'[^']*')[ \t]*(?:#.*)?$""")
+
+
+def _entry_file(block: str) -> str | None:
+    m = _FILE_LINE.search(block)
+    if m:
+        raw = m.group(1)
+        try:
+            return json.loads(raw) if raw[0] == '"' else raw[1:-1]
+        except ValueError:
+            pass
+    try:  # not the canonical form: the table alone
+        value = tomllib.loads(block).get("wallpaper", [{}])[0].get("file")
+    except (tomllib.TOMLDecodeError, AttributeError, IndexError):
+        return None
+    return value if isinstance(value, str) else None
+
+
+def blob_entries(data: bytes) -> dict[str, str]:
+    """file -> its [[wallpaper]] table text (as save() writes it: no trailing newline), from the bytes of a
+    wallpapers.toml (a git blob). Text-only, no TOML parse: a 10,000-entry blob is split in a few milliseconds
+    (canonical tables, as save() writes them, take a fast path). Tables without a readable `file` are skipped; on
+    a file listed twice the later table wins."""
+    text = "\n" + data.decode("utf-8", errors="replace")
+    out: dict[str, str] = {}
+    for part in text.split("\n[[wallpaper]]")[1:]:
+        block = "[[wallpaper]]" + part.rstrip()
+        name = None
+        if part.startswith('\nfile = "'):
+            end = part.find('"', 9)
+            if end > 0 and part[end + 1:end + 2] in ("\n", "") and "\\" not in part[9:end]:
+                name = part[9:end]
+        if name is None:
+            name = _entry_file(block)
+        if name is not None:
+            out[name] = block
+    return out
+
+
+def entry_text(w: Wallpaper) -> str:
+    """The [[wallpaper]] table save() writes for `w`."""
+    return "\n".join(_entry_lines(w))
+
+
+def render_text(collection: Collection) -> str:
+    """The whole wallpapers.toml save() writes for `collection` (header, [collection] with count, the tables)."""
+    return _join(collection, [_Block.of(w).text for w in collection.wallpapers])
+
+
+def _join(collection: Collection, blocks: list[str]) -> str:
+    header = collection.header
+    if header and not header.endswith("\n"):
+        header += "\n"
+    parts = [COLLECTION_MARKER, f"medium = {_quote(collection.medium)}", f"movement = {_quote(collection.movement)}",
+             f"count = {len(blocks)}", *blocks]
+    return header + "\n".join(parts) + "\n"
+
+
 def _header(text: str) -> str:
     """The comment lines before [collection] (kept by save)."""
     idx = text.find(COLLECTION_MARKER)
@@ -171,6 +230,9 @@ class TomlCatalogue:
         # .gitignore, README). save() stores what it wrote, so the next read does not parse it back either.
         self._cache: dict[str, _Parsed] = {}
         self._blocks: dict[str, dict[int, _Block]] = {}  # folder -> id(Wallpaper) -> its text, from the last save
+        # folder -> id(Wallpaper) -> (that Wallpaper, its table text): what was saved, and what load() then hands out
+        # (render() and entry_text() of those objects render nothing again)
+        self._texts: dict[str, dict[int, tuple[Wallpaper, str]]] = {}
 
     def _toml(self, folder: str) -> Path:
         return self.root / folder / FILENAME
@@ -241,11 +303,7 @@ class TomlCatalogue:
         folder = collection.folder
         if self._toml(folder).exists():
             self._refuse_if_broken(folder)
-        header = collection.header
-        if header and not header.endswith("\n"):
-            header += "\n"
-        parts = [COLLECTION_MARKER, f"medium = {_quote(collection.medium)}", f"movement = {_quote(collection.movement)}",
-                 f"count = {len(collection.wallpapers)}"]
+        texts: list[str] = []
         # each entry's text is kept per Wallpaper object (immutable): saving a 10,000-entry folder after one edit
         # renders one entry, not 10,000
         prev = self._blocks.get(folder, {})
@@ -257,13 +315,18 @@ class TomlCatalogue:
             if b is None or b.wallpaper is not w:
                 b = blocks.get(id(w)) or _Block.of(w)
             blocks[id(w)] = b
-            parts.append(b.text)
+            texts.append(b.text)
             written.append(b.written)
             clean = clean and b.clean
-        text = header + "\n".join(parts) + "\n"
+        text = _join(collection, texts)
         path = self._toml(folder)
         self._cache.pop(folder, None)
         self._blocks[folder] = blocks
+        texts_by_id: dict[int, tuple[Wallpaper, str]] = {}
+        for b in blocks.values():
+            texts_by_id[id(b.wallpaper)] = (b.wallpaper, b.text)
+            texts_by_id[id(b.written)] = (b.written, b.text)
+        self._texts[folder] = texts_by_id
         self._atomic_write(path, text)
         if clean:
             try:
@@ -273,6 +336,33 @@ class TomlCatalogue:
             self._cache[folder] = _Parsed(key, Collection(
                 folder=folder, medium=collection.medium, movement=collection.movement, wallpapers=written,
                 header=_header(text), external=self.store.is_external(folder)), ())
+
+    def render(self, collection: Collection) -> bytes:
+        """What save() would write for `collection`, without writing it (the generated index wallpapers.toml).
+        Entry texts come from the last save of the folder when the same Wallpaper objects are rendered."""
+        return self.render_parts(collection)[0]
+
+    def render_parts(self, collection: Collection) -> tuple[bytes, dict[str, str]]:
+        """render() and file -> table text of each entry (what blob_entries() of the bytes gives back)."""
+        known = self._texts.setdefault(collection.folder, {})
+        texts: dict[str, str] = {}
+        for w in collection.wallpapers:
+            hit = known.get(id(w))
+            if hit is None or hit[0] is not w:
+                hit = known[id(w)] = (w, _Block.of(w).text)
+            texts[w.file] = hit[1]
+        return _join(collection, list(texts.values())).encode("utf-8"), texts
+
+    def entry_text(self, w: Wallpaper) -> str:
+        for known in self._texts.values():
+            hit = known.get(id(w))
+            if hit is not None and hit[0] is w:
+                return hit[1]
+        return entry_text(w)
+
+    @staticmethod
+    def blob_entries(data: bytes) -> dict[str, str]:
+        return blob_entries(data)
 
     def create(self, folder: str) -> Collection:
         if self._toml(folder).exists():
@@ -288,6 +378,7 @@ class TomlCatalogue:
         self._refuse_if_broken(folder)  # raises NotFound when there is no toml
         self._cache.pop(folder, None)
         self._blocks.pop(folder, None)
+        self._texts.pop(folder, None)
         try:
             self._toml(folder).unlink()
         except FileNotFoundError:

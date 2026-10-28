@@ -389,3 +389,44 @@ class YearTagsTest(unittest.TestCase):
             self.toml(extra)
             codes = {i.code for i in self.cat.structural_issues("painting/x")}
             self.assertIn("field-type", codes, extra)
+
+
+class RenderTest(unittest.TestCase):
+    """render() / blob_entries(): the generated index wallpapers.toml (publish model)."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp)
+        (self.tmp / "painting/impressionism").mkdir(parents=True)
+        self.path = self.tmp / "painting/impressionism/wallpapers.toml"
+        self.path.write_text(SAMPLE, encoding="utf-8")
+        from tests.fakes import FakeStore
+        self.cat = TomlCatalogue(self.tmp, FakeStore(root=self.tmp))
+
+    def test_render_of_a_loaded_collection_is_what_save_writes(self):
+        coll = self.cat.load("painting/impressionism")
+        rendered = self.cat.render(coll)
+        self.cat.save(coll)
+        self.assertEqual(rendered, self.path.read_bytes())
+
+    def test_render_of_a_subset_keeps_the_header_and_counts_the_subset(self):
+        coll = self.cat.load("painting/impressionism")
+        coll.wallpapers = coll.wallpapers[1:]
+        text = self.cat.render(coll).decode()
+        self.assertTrue(text.startswith(HEADER))
+        self.assertEqual(tomllib.loads(text)["collection"]["count"], 1)
+        self.assertNotIn("a_b.jpg", text)
+        self.assertEqual(self.path.read_text(encoding="utf-8"), SAMPLE)  # nothing written
+
+    def test_blob_entries_maps_each_file_to_its_table_text(self):
+        coll = self.cat.load("painting/impressionism")
+        entries = self.cat.blob_entries(SAMPLE.encode())
+        self.assertEqual(list(entries), ["a_b.jpg", "c_d.jpg"])
+        for w in coll.wallpapers:
+            self.assertEqual(entries[w.file], self.cat.entry_text(w))
+
+    def test_blob_entries_reads_non_canonical_tables(self):
+        data = b'[collection]\n[[wallpaper]]\nresolution = [1, 2]\nfile = \'lit "x".jpg\'  # c\n\n[[wallpaper]]\n' \
+               b'file = "esc \\"q\\".jpg"\n[[wallpaper]]\ntitle = "no file"\n'
+        self.assertEqual(sorted(self.cat.blob_entries(data)), ['esc "q".jpg', 'lit "x".jpg'])
+        self.assertEqual(self.cat.blob_entries(b""), {})

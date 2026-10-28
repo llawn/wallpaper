@@ -16,6 +16,7 @@ class FakeCatalogue:
         self.raw: dict[str, bytes] = {f: b"" for f in self.data}
         self.issues: dict[str, list[Issue]] = {}  # structural_issues per folder; [] by default
         self.saved: list[str] = []
+        self.root: Path | None = None  # set: save() also writes the rendered TOML under it (and delete() removes it)
 
     def collections(self) -> list[Collection]:
         return [copy.deepcopy(self.data[f]) for f in sorted(self.data)]
@@ -35,6 +36,10 @@ class FakeCatalogue:
         self.data[collection.folder] = copy.deepcopy(collection)
         self.raw[collection.folder] = f"saved:{len(collection.wallpapers)}".encode()
         self.saved.append(collection.folder)
+        if self.root is not None:
+            path = self.root / collection.folder / "wallpapers.toml"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(self.render(collection))
 
     def create(self, folder: str) -> Collection:
         parts = folder.split("/")
@@ -48,9 +53,28 @@ class FakeCatalogue:
         self._refuse_if_broken(folder)
         del self.data[folder]
         self.raw.pop(folder, None)
+        if self.root is not None:
+            (self.root / folder / "wallpapers.toml").unlink(missing_ok=True)
 
     def structural_issues(self, folder: str) -> list[Issue]:
         return list(self.issues.get(folder, []))
+
+    # the TOML text format is the real one: the generated index TOML is checked by content
+    def render(self, collection: Collection) -> bytes:
+        from wallman.adapters.toml_catalogue import render_text
+        return render_text(collection).encode()
+
+    def render_parts(self, collection: Collection):
+        from wallman.adapters.toml_catalogue import entry_text
+        return self.render(collection), {w.file: entry_text(w) for w in collection.wallpapers}
+
+    def entry_text(self, w) -> str:
+        from wallman.adapters.toml_catalogue import entry_text
+        return entry_text(w)
+
+    def blob_entries(self, data: bytes) -> dict[str, str]:
+        from wallman.adapters.toml_catalogue import blob_entries
+        return blob_entries(data)
 
 
 class FakeStore:
@@ -148,10 +172,17 @@ class FakeVcs:
         self.changes: list[Change] = []
         self.staged_files: list[Path] = []
         self.states: dict[Path, str] = {}  # explicit git states; others: committed if tracked else untracked
+        self.index: dict[Path, bytes] = {}  # index blobs (the generated wallpapers.toml)
+        self.head: dict[Path, bytes] = {}  # HEAD blobs
+        # blob_ids answers None (per-file states only, as outside a work tree) unless a test models the TOML blobs
+        self.entry_states = False
 
     def stage_add(self, paths: list[Path], force: bool = False) -> None:
         self.calls.append(("stage_add", list(paths)) + (("force",) if force else ()))
         self.tracked.update(paths)
+        for p in paths:
+            if Path(p).name == "wallpapers.toml" and Path(p).is_file():
+                self.index[Path(p)] = Path(p).read_bytes()
 
     def stage_rm(self, paths: list[Path]) -> None:
         self.calls.append(("stage_rm", list(paths)))
@@ -179,6 +210,41 @@ class FakeVcs:
     def status(self) -> list[Change]:
         self.calls.append(("status",))
         return list(self.changes)
+
+    def index_blob(self, path: Path) -> bytes | None:
+        return self.index.get(Path(path))
+
+    def head_blob(self, path: Path) -> bytes | None:
+        return self.head.get(Path(path))
+
+    def index_blob_id(self, path: Path) -> str | None:
+        return self._id(self.index.get(Path(path)))
+
+    def stage_blob(self, path: Path, data: bytes) -> None:
+        self.calls.append(("stage_blob", Path(path)))
+        self.index[Path(path)] = bytes(data)
+
+    def unstage_path(self, path: Path) -> None:
+        self.calls.append(("unstage_path", Path(path)))
+        self.index.pop(Path(path), None)
+
+    @staticmethod
+    def _id(data: bytes | None) -> str | None:
+        import hashlib
+        return None if data is None else hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+
+    def blob_ids(self, paths: list[Path]):
+        if not self.entry_states:
+            return None
+        self.calls.append(("blob_ids", len(paths)))
+        return {Path(p): (self._id(self.index.get(Path(p))), self._id(self.head.get(Path(p)))) for p in paths}
+
+    def read_blob(self, blob_id: str) -> bytes:
+        self.calls.append(("read_blob", blob_id))
+        for data in [*self.index.values(), *self.head.values()]:
+            if self._id(data) == blob_id:
+                return data
+        raise KeyError(blob_id)
 
 
 class FakeFetcher:

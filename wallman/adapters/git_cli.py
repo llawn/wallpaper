@@ -37,6 +37,18 @@ class GitCli:
             raise GitError(r.stderr.strip())
         return r
 
+    def _run_bytes(self, repo: Path, *args: str, data: bytes | None = None,
+                   check: bool = True) -> subprocess.CompletedProcess:
+        """_run for binary stdin/stdout (blobs)."""
+        try:
+            r = subprocess.run(["git", "-C", str(repo), *args], input=data, capture_output=True,
+                               env={**os.environ, "GIT_OPTIONAL_LOCKS": "0"})
+        except OSError as e:
+            raise GitError(f"cannot run git: {e}") from e
+        if check and r.returncode != 0:
+            raise GitError(r.stderr.decode(errors="replace").strip())
+        return r
+
     def _enabled(self, mutating: bool = True) -> bool:
         if self._work_tree is None:
             try:
@@ -151,7 +163,7 @@ class GitCli:
         self._each(paths, "rm", "-q", "-f")  # -f: also files added or edited since the last commit
 
     def untrack(self, paths: list[Path]) -> None:
-        self._each(paths, "rm", "-q", "--cached")
+        self._each(paths, "rm", "-q", "--cached", "-f")  # -f: index only, even when staged content differs
 
     def stage_mv(self, src: Path, dst: Path) -> None:
         if not self._enabled():
@@ -162,6 +174,83 @@ class GitCli:
             raise GitError(f"cannot move across repositories: {r1} -> {r2}")
         self._before_write(self._repo_dir(r1))
         self._run(self._repo_dir(r1), "mv", "--", s, d)
+
+    # -- blobs: the index wallpapers.toml is generated, never `git add`ed (publish model) ---------------
+    def index_blob(self, path: Path) -> bytes | None:
+        """The content of `path` in the git index, or None when it is not there."""
+        return self._blob(path, ":")
+
+    def head_blob(self, path: Path) -> bytes | None:
+        """The content of `path` in HEAD, or None (no such path, or no commit yet)."""
+        return self._blob(path, "HEAD:")
+
+    def _blob(self, path: Path, rev: str) -> bytes | None:
+        if not self._enabled(mutating=False):
+            return None
+        repo, rel = self._route(path, self._submodules())
+        r = self._run_bytes(self._repo_dir(repo), "cat-file", "blob", f"{rev}{rel}", check=False)
+        return r.stdout if r.returncode == 0 else None
+
+    def index_blob_id(self, path: Path) -> str | None:
+        if not self._enabled(mutating=False):
+            return None
+        repo, rel = self._route(path, self._submodules())
+        out = self._run(self._repo_dir(repo), "--literal-pathspecs", "-c", "core.quotepath=off", "ls-files", "-s",
+                        "-z", "--", rel).stdout
+        for line in out.split("\0"):
+            meta, _, name = line.partition("\t")
+            if name == rel and meta.split()[2] == "0":
+                return meta.split()[1]
+        return None
+
+    def stage_blob(self, path: Path, data: bytes) -> None:
+        """Write `data` as the index version of `path` (the working file is not touched)."""
+        if not self._enabled():
+            return
+        repo, rel = self._route(path, self._submodules())
+        repo_dir = self._repo_dir(repo)
+        # fast zlib level for this loose object: a 10,000-entry TOML is ~2 MB
+        sha = self._run_bytes(repo_dir, "-c", "core.looseCompression=1", "hash-object", "-w", "--stdin",
+                              data=data).stdout.decode().strip()
+        self._before_write(repo_dir)
+        self._run(repo_dir, "update-index", "--add", "--cacheinfo", f"100644,{sha},{rel}")
+
+    def unstage_path(self, path: Path) -> None:
+        """`git rm --cached` of `path`; nothing when it is not in the index."""
+        if not self._enabled():
+            return
+        repo, rel = self._route(path, self._submodules())
+        repo_dir = self._repo_dir(repo)
+        self._before_write(repo_dir)
+        self._run(repo_dir, "--literal-pathspecs", "rm", "--cached", "--quiet", "-f", "--ignore-unmatch", "--", rel)
+
+    def blob_ids(self, paths: list[Path]) -> dict[Path, tuple[str | None, str | None]] | None:
+        """path -> (index blob id, HEAD blob id), None where absent; one git command per repository. None when
+        this is not a git work tree."""
+        if not self._enabled(mutating=False):
+            return None
+        out: dict[Path, tuple[str | None, str | None]] = {}
+        subs = self._submodules()
+        by_repo: dict[str, list[tuple[Path, str]]] = {}
+        for p in paths:
+            repo, rel = self._route(p, subs)
+            by_repo.setdefault(repo, []).append((Path(p), rel))
+        for repo, items in by_repo.items():
+            # one process for both: `git cat-file --batch-check` of ":<path>" (index) and "HEAD:<path>"
+            query = "".join(f":{rel}\nHEAD:{rel}\n" for _, rel in items)
+            r = self._run_bytes(self._repo_dir(repo), "cat-file", "--batch-check=%(objectname) %(objecttype)",
+                                data=query.encode())
+            answers = r.stdout.decode().splitlines()
+            for k, (p, _) in enumerate(items):
+                ids = []
+                for line in answers[2 * k:2 * k + 2]:
+                    parts = line.split()
+                    ids.append(parts[0] if len(parts) == 2 and parts[1] == "blob" else None)
+                out[p] = (ids[0], ids[1]) if len(ids) == 2 else (None, None)
+        return out
+
+    def read_blob(self, blob_id: str) -> bytes:
+        return self._run_bytes(self.root, "cat-file", "blob", blob_id).stdout
 
     def is_tracked(self, path: Path) -> bool:
         if not self._enabled(mutating=False):
