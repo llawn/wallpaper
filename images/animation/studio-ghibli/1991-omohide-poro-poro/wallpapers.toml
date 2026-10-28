@@ -1,0 +1,174 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1991-only-yesterday"
+count = 14
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-003_1991.jpg"
+title = "Omohide Poro Poro — still 003"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["bright", "calm", "countryside", "ghibli", "green", "only-yesterday", "pastel", "summer", "trees"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide003.jpg"
+sha256 = "a1c8e3eced18ade2002eadd3a2b50034766be9d3562f595334a10c49e1f430f1"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-008_1991.jpg"
+title = "Omohide Poro Poro — still 008"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["blue", "calm", "character", "ghibli", "interior", "only-yesterday", "pastel", "purple"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide008.jpg"
+sha256 = "390493d5e94bffbba02e2733e4905d614f0e8a2f517f860cd8434802cfdb54c1"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-016_1991.jpg"
+title = "Omohide Poro Poro — still 016"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["autumn", "calm", "ghibli", "golden-hour", "melancholic", "only-yesterday", "orange", "pastel", "street", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide016.jpg"
+sha256 = "9f1db761263a1a6f71ef08e9616eeaa8a7569db963b5d1e864bc88f5781bac6e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-018_1991.jpg"
+title = "Omohide Poro Poro — still 018"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["character", "dreamy", "ghibli", "only-yesterday", "pastel", "pink", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide018.jpg"
+sha256 = "74b71c49d00ff6e330bbc1936fba8f3f19a4605e7c1122a2d26275a175e20f2b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-019_1991.jpg"
+title = "Omohide Poro Poro — still 019"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "character", "ghibli", "interior", "only-yesterday", "red", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide019.jpg"
+sha256 = "b9a894c878eaa2d8528316d54fd0e18beb417eae7405fbed004190dda93b16c8"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-022_1991.jpg"
+title = "Omohide Poro Poro — still 022"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "dark", "ghibli", "night", "only-yesterday", "people", "teal", "train"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide022.jpg"
+sha256 = "284c14561f81ca019d0163bbaf060273c347cfb77d7e4c00b453c3181df53c6f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-026_1991.jpg"
+title = "Omohide Poro Poro — still 026"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "dark", "field", "flowers", "ghibli", "green", "misty", "mountains", "only-yesterday", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide026.jpg"
+sha256 = "bf8dd6ab066a16a405d1aced0c743aa274789597a84fa9e18470bd7940f90139"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-028_1991.jpg"
+title = "Omohide Poro Poro — still 028"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["blue", "calm", "flowers", "ghibli", "golden-hour", "mountains", "only-yesterday", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide028.jpg"
+sha256 = "a21b9453edb3fd0362ea0aa86d62c59d32df4c7e4c7c7b6f15261662d685b644"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-031_1991.jpg"
+title = "Omohide Poro Poro — still 031"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "character", "countryside", "ghibli", "green", "only-yesterday", "summer", "vehicle", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide031.jpg"
+sha256 = "ec34caeef4499bc7abf3a738f21d326206abcdf2742307c22991a9b768b7ac79"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-033_1991.jpg"
+title = "Omohide Poro Poro — still 033"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["blue", "calm", "ghibli", "mountains", "only-yesterday", "people", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide033.jpg"
+sha256 = "007e60adb4ce98641c1dc1b2a882331075b883a32500b7bae7456145386e6955"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-035_1991.jpg"
+title = "Omohide Poro Poro — still 035"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "countryside", "ghibli", "green", "house", "interior", "only-yesterday", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide035.jpg"
+sha256 = "4bd082268b86ace2024141772c014808fa7f206344f2526bac583946ab3b7e63"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-036_1991.jpg"
+title = "Omohide Poro Poro — still 036"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["calm", "countryside", "ghibli", "golden-hour", "green", "mountains", "only-yesterday", "orange", "people", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide036.jpg"
+sha256 = "825193f68ccdc790c9a3eaa1863f9b5d7b5e1af1bf6195ffd5dbe9f77e7ca898"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-039_1991.jpg"
+title = "Omohide Poro Poro — still 039"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["character", "dreamy", "flowers", "ghibli", "only-yesterday", "pastel", "pink"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide039.jpg"
+sha256 = "28ed0d09418b08894a8ac9d0bf9eee6d0034243032efffb7aa0cb28ed3ff2b72"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_omohide-poro-poro-still-050_1991.jpg"
+title = "Omohide Poro Poro — still 050"
+artist = "Studio Ghibli"
+year = 1991
+tags = ["blue", "countryside", "crowd", "ghibli", "green", "joyful", "mountains", "only-yesterday", "people", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1991 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/omoide050.jpg"
+sha256 = "4c65fbdac6712aa44c1f421ef2667906628228808ec248049728edc1320f8146"
+resolution = [1920, 1038]
