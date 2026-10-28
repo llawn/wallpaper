@@ -47,13 +47,13 @@ class ImporterTest(ServiceCase):
         self.assertIn("painting/new", self.cat.data)
         self.assertNotIn("painting/new/", self.cat.data)
 
-    def test_add_shareable_stages_image_and_toml(self):
+    def test_add_shareable_publishes_nothing(self):
         u = self.up()
         ref = self.importer().add(u, meta())
         self.assertEqual(ref, Ref("painting/impressionism", "claude-monet_water-lilies_1906.jpg"))
         img = self.store.path(ref.folder, ref.file)
         self.assertEqual(img.read_bytes(), b"IMG")
-        self.assertEqual(self.vcs.calls, [("stage_add", [img, self.toml(ref.folder)])])
+        self.assertEqual(self.vcs.calls, [])  # not published: Add to git publishes it
         w = self.cat.load(ref.folder).wallpapers[0]
         self.assertEqual((w.title, w.artist, w.year, w.license, w.resolution, w.processing, w.crop, w.download),
                          ("Water Lilies", "Claude Monet", YearSpan(1906, 1906), "public-domain", Resolution(3840, 2160), (), None, None))
@@ -61,12 +61,12 @@ class ImporterTest(ServiceCase):
         self.assertEqual(self.commits, 1)
         self.assertFalse(u.path.exists())  # upload discarded after success
 
-    def test_add_non_shareable_stages_toml_and_gitignore_only(self):
+    def test_add_non_shareable_publishes_nothing(self):
         self.tool.default = Resolution(3840, 2160)
         self.fetcher.responses["https://d/x.jpg"] = b"DL"
         u = self.uploads.from_url("https://d/x.jpg")
         ref = self.importer().add(u, meta(license="all-rights-reserved", license_detail="© 2009 Pixar"))
-        self.assertEqual(self.vcs.calls, [("stage_add", [self.toml(ref.folder)])])
+        self.assertEqual(self.vcs.calls, [])
         self.assertTrue(self.store.path(ref.folder, ref.file).exists())
         w = self.cat.load(ref.folder).wallpapers[0]
         self.assertEqual((w.download, w.license_detail), ("https://d/x.jpg", "© 2009 Pixar"))

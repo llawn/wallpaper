@@ -839,6 +839,32 @@ class TouchedTest(unittest.TestCase):
         self.assertEqual(self.seen[-1], {"linux"})  # a new outermost unit starts empty
 
 
+class WallpaperStateTest(IndexCase):
+    """Publish model: git states per wallpaper, from the TOML blobs of the index and HEAD plus the image state."""
+
+    def test_states_from_the_index_toml(self):
+        import dataclasses
+        c = self.collection("painting/a", [wp("a.jpg"), wp("b.jpg"), wp("c.jpg", license="all-rights-reserved",
+                                                                      download="https://e/c.jpg", sha256="0" * 64)])
+        self.collection("ml4w", [wp("e.jpg")], medium="ml4w")
+        toml = self.images / "painting/a/wallpapers.toml"
+        self.vcs.entry_states = True
+        self.vcs.head[toml] = self.cat.render(dataclasses.replace(c, wallpapers=c.wallpapers[:1]))
+        self.vcs.index[toml] = self.cat.render(dataclasses.replace(c, wallpapers=[c.wallpapers[0], c.wallpapers[2]]))
+        self.vcs.tracked = {self.images / "painting/a/a.jpg", self.images / "ml4w/e.jpg"}
+        self.vcs.states[self.images / "painting/a/c.jpg"] = "ignored"
+        from unittest import mock
+        with mock.patch.object(self.store, "is_external", side_effect=lambda f: f == "ml4w"):
+            idx = self.index()
+        states = {e.ref.file: e.git_state for e in idx.query(Query()).items}
+        self.assertEqual(states, {"a.jpg": "committed", "b.jpg": "untracked", "c.jpg": "metadata-staged",
+                                  "e.jpg": "committed"})  # external: per-file state as before
+        self.vcs.head[toml] = self.vcs.index[toml]
+        idx.refresh({"painting/a"})
+        idx.wait_for_git()
+        self.assertEqual(idx.entry(Ref("painting/a", "c.jpg")).git_state, "metadata")
+
+
 class BootstrapIndexTest(unittest.TestCase):
     def setUp(self):
         tmp = tempfile.TemporaryDirectory()

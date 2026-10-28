@@ -18,7 +18,8 @@ class GitActionsTest(ServiceCase):
         self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg")])], {"painting/x": {"a.jpg", "b.jpg"}})
         out = self.actions().add([Ref("painting/x", "a.jpg"), Ref("painting/x", "b.jpg")])
         self.assertEqual(len(out), 2)
-        self.assertEqual(self.vcs.calls, [("stage_add", [self.p("painting/x", "a.jpg"), self.p("painting/x", "b.jpg")])])
+        self.assertEqual(self.vcs.calls, [("stage_add", [self.p("painting/x", "a.jpg"), self.p("painting/x", "b.jpg"),
+                                                         self.toml("painting/x")])])
 
     def test_git_writes_are_serialised_with_other_writes(self):
         """add/remove run under the same lock as UnitOfWork writes: two concurrent calls never overlap in git."""
@@ -68,8 +69,8 @@ class GitActionsTest(ServiceCase):
         self.assertEqual(errors, [])
         self.assertEqual(most[0], 1)
 
-    def test_git_add_refuses_non_shareable(self):
-        self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg", license="all-rights-reserved")])],
+    def test_git_add_refuses_personal(self):
+        self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg", license="personal")])],
                    {"painting/x": {"a.jpg", "b.jpg"}})
         with self.assertRaises(NotShareable) as cm:
             self.actions().add([Ref("painting/x", "a.jpg"), Ref("painting/x", "b.jpg")])
@@ -81,9 +82,11 @@ class GitActionsTest(ServiceCase):
     def test_remove_keeps_file(self):
         self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg")])], {"painting/x": {"a.jpg", "b.jpg"}},
                    tracked=[("painting/x", "a.jpg")])
+        self.vcs.index[self.toml("painting/x")] = self.cat.render(col(wallpapers=[wp("a.jpg")]))
         out = self.actions().remove([Ref("painting/x", "a.jpg"), Ref("painting/x", "b.jpg")])
-        self.assertEqual(out, [Ref("painting/x", "a.jpg")])  # untracked b is a no-op
-        self.assertEqual(self.vcs.calls, [("untrack", [self.p("painting/x", "a.jpg")])])
+        self.assertEqual(out, [Ref("painting/x", "a.jpg")])  # unpublished b is a no-op
+        self.assertEqual(self.vcs.calls, [("untrack", [self.p("painting/x", "a.jpg")]),
+                                          ("unstage_path", self.toml("painting/x"))])
         self.assertTrue(self.p("painting/x", "a.jpg").exists())
         self.assertEqual([c for c in self.store.calls if c[0] == "delete"], [])
 
@@ -92,16 +95,15 @@ class GitActionsTest(ServiceCase):
         self.assertEqual(self.actions().remove([Ref("painting/x", "b.jpg")]), [])
         self.assertEqual(self.vcs.calls, [])
 
-    def test_external_allowed_alone_but_not_mixed(self):
+    def test_external_refused_alone_and_mixed(self):
         self.build([col("ml4w", [wp("a.jpg")], "ml4w"), col("painting/x", [wp("b.jpg")])],
                    {"ml4w": {"a.jpg"}, "painting/x": {"b.jpg"}}, external={"ml4w"})
-        self.actions().add([Ref("ml4w", "a.jpg")])
-        self.assertEqual(self.vcs.calls, [("stage_add", [self.p("ml4w", "a.jpg")])])
-        for method in ("add", "remove"):
-            with self.assertRaises(WallmanError) as cm:
-                getattr(self.actions(), method)([Ref("ml4w", "a.jpg"), Ref("painting/x", "b.jpg")])
-            self.assertIn("mixing submodule and main-repo files", str(cm.exception))
-        self.assertEqual(len(self.vcs.calls), 1)
+        for refs in ([Ref("ml4w", "a.jpg")], [Ref("ml4w", "a.jpg"), Ref("painting/x", "b.jpg")]):
+            for method in ("add", "remove"):
+                with self.assertRaises(WallmanError) as cm:
+                    getattr(self.actions(), method)(refs)
+                self.assertIn("external collection ml4w/", str(cm.exception))
+        self.assertEqual(self.vcs.calls, [])
 
     def test_two_external_collections_refused(self):
         self.build([col("ml4w", [wp("a.jpg")], "ml4w"), col("ml4w2", [wp("b.jpg")], "ml4w2")],
@@ -113,9 +115,7 @@ class GitActionsTest(ServiceCase):
         self.build([col(wallpapers=[wp(n) for n in "abcdefg"]), col("ml4w", [wp("m.jpg")], "ml4w")],
                    {"painting/x": {n + ".jpg" for n in "abcdefg"}, "ml4w": {"m.jpg"}}, external={"ml4w"},
                    tracked=[("painting/x", "a.jpg"), ("ml4w", "m.jpg")])
-        self.vcs.states = {self.p("painting/x", "b.jpg"): "staged", self.p("painting/x", "c.jpg"): "modified",
-                           self.p("painting/x", "d.jpg"): "deleted", self.p("painting/x", "e.jpg"): "ignored",
-                           self.p("painting/x", "f.jpg"): "untracked", self.p("painting/x", "g.jpg"): "conflict", self.p("ml4w", "m.jpg"): "committed"}
+        self.vcs.index[self.toml("painting/x")] = self.cat.render(col(wallpapers=[wp(n + ".jpg") for n in "abcdg"]))
         refs = [Ref("painting/x", n + ".jpg") for n in "abcdefg"] + [Ref("ml4w", "m.jpg")]
         plan = self.actions().delete_plan(refs)
         self.assertEqual([r.file for r in plan.tracked], ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "g.jpg"])
@@ -135,7 +135,15 @@ class RemoverKeepTest(ServiceCase):
         self.assertFalse(a.exists())
         self.assertIn(a, self.vcs.tracked)
         self.assertEqual([w.file for w in self.cat.load("painting/x").wallpapers], ["b.jpg"])
-        self.assertIn(("stage_add", [self.toml("painting/x")]), self.vcs.calls)
+        self.assertEqual([c for c in self.vcs.calls if c[0] in ("stage_blob", "unstage_path")], [])  # a unpublished
+
+    def test_delete_keep_of_a_published_wallpaper_drops_its_entry_only(self):
+        self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg")])], {"painting/x": {"a.jpg", "b.jpg"}},
+                   tracked=[("painting/x", "a.jpg")])
+        self.publish_all("painting/x")
+        Remover(self.cat, self.store, self.vcs, self.uow).delete([Ref("painting/x", "a.jpg")], git="keep")
+        self.assertEqual([c for c in self.vcs.calls if c[0] in ("stage_rm", "untrack")], [])
+        self.assertNotIn("a.jpg", self.vcs.index[self.toml("painting/x")].decode())
 
     def test_delete_rejects_unknown_git_mode(self):
         self.build([col(wallpapers=[wp("a.jpg")])], {"painting/x": {"a.jpg"}})

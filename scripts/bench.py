@@ -10,7 +10,8 @@ loopback round trip, an upper bound of the server time):
 - list pages (folder at offsets 0 and N-200, search, tag, year filters);
 - first paint (first page + 40 cached thumbnails), thumbnails warm (304 and cached 200) and cold (real magick);
 - index refresh after an external edit of the big TOML, PATCH of a title (renames the file) and the list page right
-  after it, default /api/status, POST /api/git/add.
+  after it, default /api/status, POST /api/git/add, and last the PATCH again with half the big folder
+  unpublished (the index TOML is then a filtered blob).
 
 Prints a table; exits 1 when a gated row misses its target (unless --no-gate). The user's repository is never
 touched. Except for the cold-thumbnail row the thumbnail pool copies one real thumbnail instead of running magick,
@@ -79,6 +80,8 @@ TARGETS: dict[str, float | None] = {
     "PATCH title": 300,
     "PATCH title p95": None,
     "list right after PATCH": None,
+    "PATCH, half the folder published": 300,
+    "PATCH, half published p95": None,
     "status (default)": 300,
     "git add (1 file)": None,
 }
@@ -362,6 +365,23 @@ def run(n: int, gate: bool, keep: bool, prof: str | None) -> int:
                 adds = [timed(lambda r=r: c.json("POST", "/api/git/add", {"refs": [{"folder": r.folder, "file": r.file}]}))
                         for r in untracked[:5]]
                 rows.append(("git add (1 file)", statistics.median(adds), max(adds), f"{len(adds)} files"))
+
+            # publish model: half the big folder unpublished, so the index TOML is a filtered blob
+            later = set(untracked[:5])  # the git add row above published these: leave them be
+            everything = [e.ref for e in app.index.select(Query(folder=BIG)) if e.ref not in later]
+            app.git_actions.remove(everything[1::2])
+            settle(server, app)
+            half = []
+            for k, r in enumerate(everything[0::2][:PATCH_EDITS + 1]):
+                ref = urllib.parse.quote(f"{r.folder}/{r.file}")
+                t = timed(lambda: c.json("PATCH", f"/api/wallpapers/{ref}", {"title": f"Half {k}"}))
+                if k:
+                    half.append(t)
+                settle(server, app)
+            p95 = statistics.quantiles(half, n=20, method="inclusive")[18]
+            rows.append(("PATCH, half the folder published", statistics.median(half), max(half),
+                         f"{len(half)} edits of published entries, filtered index TOML; p95 {p95:.0f}"))
+            rows.append(("PATCH, half published p95", p95, None, ""))
             c.conn.close()
         finally:
             server.shutdown()

@@ -38,7 +38,8 @@ class Importer:
         self.uow_factory, self.uploads = uow_factory, uploads
 
     def add(self, upload: Upload, meta: NewWallpaper, stage: bool = True) -> Ref:
-        """stage=False: the image is left untracked (the wallpapers.toml is still staged)."""
+        """A new wallpaper is not published (Add to git publishes it). External collections: stage=True stages the
+        image (when shareable) and the TOML in their own repository, as before."""
         shareable = is_shareable(meta.license)
         if needs_download(meta.license) and upload.download is None:
             raise LicenseNeedsDownload(f"{meta.license} files are not committed: add the image from a URL")
@@ -84,6 +85,9 @@ class Importer:
                 processing=upload.processing + (("crop",) if meta.crop is not None else ()),
                 crop=meta.crop if meta.crop is not None and upload.download else None))
             self.catalogue.save(coll)
-            stage_entry(uow, self.store, folder, name, shareable and stage)
+            if external:
+                stage_entry(uow, self.store, folder, name, shareable and stage)
+            elif self.vcs.is_tracked(dst):  # a stale image left in the index under this name: not published
+                self.vcs.untrack([dst])
         self.uploads.discard(upload.id)
         return Ref(folder, name)

@@ -15,7 +15,8 @@ class Remover:
         self.catalogue, self.store, self.vcs, self.uow_factory = catalogue, store, vcs, uow_factory
 
     def delete(self, refs: list[Ref], git: Literal["remove", "keep"] = "remove") -> int:
-        """git="keep": delete the files but never touch the index for the images (their deletion stays unstaged)."""
+        """Published wallpapers leave the index TOML and, with git="remove", their images the index (git rm).
+        git="keep": the images' index entries are never touched (their deletion stays unstaged)."""
         if git not in ("remove", "keep"):
             raise ValueError(f"git must be 'remove' or 'keep', not {git!r}")
         by_folder: dict[str, set[str]] = {}
@@ -33,15 +34,21 @@ class Remover:
             check_structure(self.catalogue, loaded)
             for folder, coll in loaded.items():
                 on_disk = set(self.store.images(folder))
+                external = self.store.is_external(folder)
+                published = set() if external else uow.published(folder)
                 for file in sorted(by_folder[folder]):
                     path = self.store.path(folder, file)
                     if file in on_disk:
                         uow.record_file(path)
+                    # a tracked image (a published shareable one) has its removal staged; an unpublished
+                    # wallpaper's image is not in git, so deleting it changes nothing there
                     if git == "remove" and self.vcs.is_tracked(path):
                         self.vcs.stage_rm([path])
                     elif file in on_disk:
                         self.store.delete(path)
                     count += 1
                 coll.wallpapers = [w for w in coll.wallpapers if w.file not in by_folder[folder]]
+                if published & by_folder[folder]:
+                    uow.set_published(folder, published - by_folder[folder])
                 save_or_drop(uow, self.catalogue, self.store, self.vcs, coll)
         return count

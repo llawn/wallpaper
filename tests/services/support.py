@@ -37,15 +37,20 @@ class ServiceCase(unittest.TestCase):
             for n in names:
                 self.disk(folder, n, b"orig:" + n.encode())
         for c in self.cat.collections():
-            self.cat.raw[c.folder] = f"toml:{c.folder}".encode()
+            self.cat.raw[c.folder] = self.cat.render(c)
             self.toml(c.folder).parent.mkdir(parents=True, exist_ok=True)
             self.toml(c.folder).write_bytes(self.cat.raw[c.folder])
+        self.cat.root = self.root
 
     def uow(self):
         return UnitOfWork(self.cat, self.store, self.vcs, self.on_commit)
 
     def on_commit(self, uow):
         self.commits += 1
+
+    def publish_all(self, folder):
+        """The legacy state: the whole wallpapers.toml in the git index (every entry published)."""
+        self.vcs.index[self.toml(folder)] = self.cat.render(self.cat.load(folder))
 
     def toml(self, folder):
         return self.store.path(folder, "wallpapers.toml")

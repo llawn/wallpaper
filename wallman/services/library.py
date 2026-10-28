@@ -150,6 +150,11 @@ class Library:
                 uow.record_collection(target)
                 if dst is None:
                     dst = self.catalogue.create(target)
+            external = self.store.is_external(ref.folder)
+            # publish model: a published entry stays published under its new name / in its new folder; one that
+            # becomes personal is unpublished (personal wallpapers are never published)
+            was_published = not external and old.file in uow.published(ref.folder)
+            stays_published = was_published and new.license != "personal"
             if file_moves:
                 uow.record_file(src_path)
                 uow.record_file(dst_path)
@@ -157,7 +162,10 @@ class Library:
                     self.vcs.stage_mv(src_path, dst_path)
                 else:
                     self.store.move(src_path, dst_path)
-            if old_share and not new_share and self.vcs.is_tracked(dst_path):
+            # an unpublished wallpaper taking a name whose image is still in the index (a stale one) untracks it
+            stale = file_moves and not external and not stays_published
+            if (old_share and not new_share or was_published and not stays_published or stale) \
+                    and self.vcs.is_tracked(dst_path):
                 self.vcs.untrack([dst_path])
             new = dataclasses.replace(new, file=name)
             if moving:
@@ -167,9 +175,12 @@ class Library:
             else:
                 src.wallpapers[idx] = new
             self.catalogue.save(dst)
-            toml = self.store.path(target, TOML_NAME)
-            uow.stage_add([toml])  # staged with the generated files, in one `git add`
-            if new_share and on_disk and not old_share:
+            if was_published:
+                uow.set_published(ref.folder, uow.published(ref.folder) - {old.file})
+                if stays_published:
+                    uow.set_published(target, uow.published(target) | {name})
+            uow.stage_toml(target)  # regenerated with the generated files, in one commit-time step
+            if new_share and on_disk and not old_share and (stays_published or external):
                 # relicensed to shareable: the image may still be in .gitignore (regenerated on commit), so force
                 # the add -- deferred into on_commit's one batched `git add` (Ruling v2-17). A rename or move keeps
                 # the tracked state instead (Ruling v2-18): git mv above for tracked files, nothing for the others.

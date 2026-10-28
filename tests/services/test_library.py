@@ -18,6 +18,8 @@ class LibraryTest(ServiceCase):
         e = wp(NAME, title="Water Lilies", artist="Claude Monet", year=1906, license=license, **kw)
         self.build([col(f, [e])], {f: {NAME}}, external=external,
                    tracked=[(f, NAME)] if tracked else [])
+        if tracked:
+            self.publish_all(f)  # a tracked image: its entry is published
         return Ref(f, NAME)
 
     def test_rename_on_title_change_uses_git_mv(self):
@@ -28,8 +30,10 @@ class LibraryTest(ServiceCase):
                       self.vcs.calls)
         w = self.cat.load("painting/x").wallpapers[0]
         self.assertEqual((w.file, w.title), (new.file, "Nympheas"))
-        # git mv already staged the image at its new path: only the toml is added, never with -f (Ruling v2-18)
+        # git mv already staged the image at its new path: nothing is added, never with -f (Ruling v2-18); the
+        # index toml is regenerated with the entry under its new name
         self.assertEqual([c for c in self.vcs.calls if c[0] == "stage_add"], [("stage_add", [self.toml(new.folder)])])
+        self.assertIn(f'file = "{new.file}"', self.vcs.index[self.toml(new.folder)].decode())
         self.assertEqual(self.commits, 1)
 
     def test_rename_untracked_uses_store_move(self):
@@ -107,7 +111,7 @@ class LibraryTest(ServiceCase):
         img = self.store.path(ref.folder, ref.file)
         self.assertIn(("untrack", [img]), self.vcs.calls)
         self.assertNotIn(img, self.vcs.tracked)
-        self.assertIn(("stage_add", [self.toml(ref.folder)]), self.vcs.calls)
+        self.assertIn(("stage_add", [self.toml(ref.folder)]), self.vcs.calls)  # still published: entry only
         self.assertEqual(self.cat.load(ref.folder).wallpapers[0].license, "all-rights-reserved")
 
     def test_relicense_to_non_shareable_needs_download(self):
@@ -147,10 +151,11 @@ class LibraryTest(ServiceCase):
 
     def test_relicense_to_shareable_requires_nothing_and_stages(self):
         ref = self.one(tracked=False, license="official-wallpaper", download="https://d/x.jpg", sha256="a" * 64)
+        self.publish_all(ref.folder)  # published, metadata only
         self.lib().update(ref, {"license": "CC0-1.0"})
         img = self.store.path(ref.folder, ref.file)
         # one deferred batch at commit, forced: the image may still be in .gitignore (Ruling v2-17)
-        self.assertIn(("stage_add", [self.toml(ref.folder), img], "force"), self.vcs.calls)
+        self.assertIn(("stage_add", [img, self.toml(ref.folder)], "force"), self.vcs.calls)
         self.assertEqual([c for c in self.vcs.calls if c[0] == "untrack"], [])
 
     def test_update_in_external_collection_runs_git_in_submodule(self):

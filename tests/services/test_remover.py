@@ -14,13 +14,15 @@ class RemoverTest(ServiceCase):
     def test_delete_tracked_uses_git_rm(self):
         self.build([col(wallpapers=[wp("a.jpg"), wp("b.jpg")])], {"painting/x": {"a.jpg", "b.jpg"}},
                    tracked=[("painting/x", "a.jpg")])
+        self.publish_all("painting/x")
         n = self.remover().delete([Ref("painting/x", "a.jpg")])
         self.assertEqual(n, 1)
         a = self.store.path("painting/x", "a.jpg")
         self.assertIn(("stage_rm", [a]), self.vcs.calls)
         self.assertEqual([c for c in self.store.calls if c[0] == "delete"], [])
         self.assertEqual([w.file for w in self.cat.load("painting/x").wallpapers], ["b.jpg"])
-        self.assertIn(("stage_add", [self.toml("painting/x")]), self.vcs.calls)
+        self.assertIn(("stage_add", [self.toml("painting/x")]), self.vcs.calls)  # b.jpg: all that is left
+        self.assertNotIn("a.jpg", self.vcs.index[self.toml("painting/x")].decode())
         self.assertEqual(self.commits, 1)
 
     def test_delete_ignored_removes_file(self):
@@ -34,10 +36,12 @@ class RemoverTest(ServiceCase):
     def test_delete_last_image_removes_folder_and_toml(self):
         self.build([col(wallpapers=[wp("a.jpg")])], {"painting/x": {"a.jpg"}},
                    tracked=[("painting/x", "a.jpg"), ("painting/x", "wallpapers.toml")])
+        self.publish_all("painting/x")
         self.remover().delete([Ref("painting/x", "a.jpg")])
         self.assertNotIn("painting/x", self.cat.data)
         self.assertIn(("remove_dir", "painting/x"), self.store.calls)
-        self.assertIn(("stage_rm", [self.toml("painting/x")]), self.vcs.calls)
+        self.assertIn(("unstage_path", self.toml("painting/x")), self.vcs.calls)
+        self.assertEqual(self.vcs.index, {})
 
     def test_delete_last_image_of_external_collection_keeps_empty_toml(self):
         self.build([col("ml4w", [wp("a.jpg")], "ml4w")], {"ml4w": {"a.jpg"}}, external={"ml4w"},

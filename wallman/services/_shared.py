@@ -76,27 +76,40 @@ def check_structure(catalogue: Catalogue, folders) -> None:
 
 
 def stage_entry(uow: UnitOfWork, store: ImageStore, folder: str, file: str, shareable: bool) -> None:
-    """Shareable: image and TOML; otherwise the TOML only (the image stays ignored). Deferred to the unit's one
-    batched `git add`, so nothing is staged when it rolls back."""
-    toml = store.path(folder, TOML_NAME)
-    uow.stage_add([store.path(folder, file), toml] if shareable else [toml])
+    """After the entry or the image changed: regenerate the folder's index TOML, and re-stage the image when the
+    wallpaper is published and shareable (an unpublished one stays out of git). External collections: image (when
+    shareable) and whole TOML, in their own repository, as before. Deferred to commit time."""
+    if store.is_external(folder):
+        toml = store.path(folder, TOML_NAME)
+        uow.stage_add([store.path(folder, file), toml] if shareable else [toml])
+        return
+    uow.stage_toml(folder)
+    if shareable and file in uow.published(folder) and store.path(folder, file).is_file():
+        uow.stage_add([store.path(folder, file)])
+
+
+def publish(uow: UnitOfWork, store: ImageStore, folder: str, file: str, license: str) -> None:
+    """Add a wallpaper to git: its entry joins the published set; a shareable image is staged too (download-only
+    images stay ignored: their entry is enough to fetch them)."""
+    uow.set_published(folder, uow.published(folder) | {file})
+    image = store.path(folder, file)
+    if is_shareable(license) and image.is_file():
+        uow.stage_add([image])
 
 
 def save_or_drop(uow: UnitOfWork, catalogue: Catalogue, store: ImageStore, vcs: Vcs, coll: Collection) -> None:
-    """Save the collection, or delete it (TOML and folder) when its last entry is gone.
+    """Save the collection, or delete it (TOML and folder) when its last entry is gone; either way its index TOML
+    is regenerated at commit (a dropped collection leaves the index).
 
     Callers ran check_structure first, so every [[wallpaper]] table of the toml was loaded: an empty
     collection here means the raw toml has none left. catalogue.delete() re-checks and refuses otherwise.
     """
     folder = coll.folder
-    toml = store.path(folder, TOML_NAME)
     uow.record_collection(folder)
     if coll.wallpapers or store.is_external(folder):  # an external collection keeps its (empty) toml
         catalogue.save(coll)
-        uow.stage_add([toml])
+        uow.stage_toml(folder)
         return
-    tracked = vcs.is_tracked(toml)
     catalogue.delete(folder)
     store.remove_dir(folder)
-    if tracked:
-        vcs.stage_rm([toml])
+    uow.stage_toml(folder)

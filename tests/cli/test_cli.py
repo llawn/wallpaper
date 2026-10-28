@@ -42,6 +42,10 @@ class CliTest(unittest.TestCase):
             fixture.entry("claude-monet_water-lilies_1906.jpg", "Water Lilies", "Claude Monet", "public-domain",
                           1906, "https://example.org/monet")])
         make_image(self.images / "painting/impressionism/claude-monet_water-lilies_1906.jpg")
+        from wallman.adapters.fs_store import FsStore
+        from wallman.adapters.toml_catalogue import TomlCatalogue
+        cat = TomlCatalogue(self.images, FsStore(self.images))  # as wallman writes it (the owner's tomls are)
+        cat.save(cat.load("painting/impressionism"))
         git(self.root, "init", "-q")
         git(self.root, "add", "-A")
         git(self.root, "commit", "-q", "-m", "init")
@@ -107,7 +111,8 @@ class CliTest(unittest.TestCase):
         ref = "painting/impressionism/edgar-degas_blue-dancers_1893.jpg"
         self.assertEqual(out.strip(), ref)
         self.assertTrue((self.images / ref).is_file())
-        self.assertIn(f"images/{ref}", self.staged())
+        self.assertNotIn(f"images/{ref}", self.staged())  # new wallpapers are not published automatically
+        self.assertNotIn("images/painting/impressionism/wallpapers.toml", self.staged())
         self.assertIn("Blue Dancers", (self.images / "painting/impressionism/wallpapers.toml").read_text())
         self.assertEqual(self.run_cli("validate")[0], 0)
         rc = self.run_cli("rm", ref)
@@ -132,11 +137,12 @@ class CliTest(unittest.TestCase):
         self.assertTrue((self.images / "painting/nocturne/claude-monet_water-lilies_1906.jpg").is_file())
         self.assertFalse((self.images / ref).exists())
 
-    def test_sync_stage_stages_metadata(self):
+    def test_sync_stage_never_publishes_the_new_entry(self):
         make_image(self.images / "painting/impressionism/pierre-renoir_boating_1880.jpg", color="blue")
         code, out, _ = self.run_cli("sync", "--stage")
         self.assertEqual(code, 0, out)
-        self.assertIn("images/painting/impressionism/wallpapers.toml", self.staged())
+        self.assertNotIn("images/painting/impressionism/wallpapers.toml", self.staged())
+        self.assertNotIn("Boating", git(self.root, "show", ":images/painting/impressionism/wallpapers.toml"))
         self.assertIn("README.md", self.staged())
         self.assertIn("Boating", (self.images / "painting/impressionism/wallpapers.toml").read_text())
 
@@ -249,6 +255,22 @@ class CliTest(unittest.TestCase):
                             "commit", "-q", "-m", "x"], capture_output=True, text=True, env=env)
         self.assertNotEqual(r.returncode, 0)
         self.assertIn("commit refused", r.stdout + r.stderr)
+
+    def test_pre_commit_hook_sync_never_publishes_new_images(self):
+        hook_dir = self.root / "scripts" / "hooks"
+        hook_dir.mkdir(parents=True)
+        shutil.copy(Path(__file__).parents[2] / "scripts/hooks/pre-commit", hook_dir / "pre-commit")
+        shutil.copytree(Path(__file__).parents[2] / "wallman", self.root / "wallman",
+                        ignore=shutil.ignore_patterns("__pycache__"))
+        git(self.root, "config", "core.hooksPath", "scripts/hooks")
+        make_image(self.images / "painting/impressionism/pierre-renoir_boating_1880.jpg", color="blue")
+        r = subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "-C", str(self.root),
+                            "commit", "-q", "--allow-empty", "-m", "x"], capture_output=True, text=True, env=ENV)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("pierre-renoir_boating_1880.jpg",
+                      (self.images / "painting/impressionism/wallpapers.toml").read_text())  # working entry added
+        self.assertNotIn("pierre-renoir", git(self.root, "show", "HEAD:images/painting/impressionism/wallpapers.toml"))
+        self.assertNotIn("pierre-renoir", git(self.root, "ls-files"))
 
 
     def test_pre_commit_hook_flags_validation_problems_without_blocking(self):

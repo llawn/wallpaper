@@ -36,7 +36,9 @@ from ..domain.models import Issue, Ref, Resolution, Wallpaper
 from ..domain.rules import TOML_NAME
 from ..domain.years import YearSpan
 from ..errors import InvalidImage, NotFound
+from ..domain.licenses import is_shareable
 from ..ports import Catalogue, ImageStore, ImageTool, Vcs
+from .publish import EntryStates, wallpaper_state
 
 FRESH_SECONDS = 2.0  # stat check of the collection folders at most this often
 GIT_SECONDS = 1.0  # git status at most this often (always right after an operation)
@@ -162,6 +164,7 @@ class LibraryIndex:
         self._stat_at = -math.inf
         self._git_at = -math.inf
         self.git_error: str | None = None  # last git status failure, if any (states then keep their old values)
+        self._entry_states = EntryStates(catalogue, vcs)  # publish model: where each entry stands in the TOMLs
 
     # -- loading -----------------------------------------------------------
     @property
@@ -354,22 +357,26 @@ class LibraryIndex:
             except Exception as e:  # noqa: BLE001 -- a background thread has nobody to raise to
                 print(f"wallman: background re-stat of {folder} failed: {type(e).__name__}: {e}", file=sys.stderr)
 
-    def _reload_stale(self, now: float) -> bool:
-        """Caller holds the lock. Reload the folders whose freshness key changed, appeared or vanished."""
+    def _reload_stale(self, now: float) -> set[str]:
+        """Caller holds the lock. Reload the folders whose freshness key changed, appeared or vanished; returns
+        them."""
         self._stat_at = now
         current = set(self.store.collection_folders())
         stale = (current ^ set(self._folders)) | {
             f for f in current & set(self._folders) if self._key(f) != self._folders[f].key}
         if stale:
             self._reload(stale)
-        return bool(stale)
+        return stale
 
-    def check_external(self) -> None:
+    def check_external(self) -> set[str]:
         """Pick up changes made outside wallman now (no FRESH_SECONDS window): called when an operation starts, so
-        its refresh can trust the previous load for every file it did not write. No-op before the warm-up."""
+        its refresh can trust the previous load for every file it did not write. No-op before the warm-up.
+        Returns the folders reloaded (the operation regenerates their index wallpapers.toml)."""
         with self._lock:
-            if self._warmed and self._reload_stale(self.clock()):
+            stale = self._reload_stale(self.clock()) if self._warmed else set()
+            if stale:
                 self._refresh_git_background(self.clock())  # their git states, as ensure_fresh would
+            return stale
 
     def _key(self, folder: str) -> _Key:
         """Freshness key of a folder: (wallpapers.toml mtime_ns, size, ctime_ns, folder directory mtime_ns).
@@ -687,11 +694,37 @@ class LibraryIndex:
         """One file_states call for all the paths; None when git failed (states then keep their last value)."""
         try:
             states = self.vcs.file_states(paths)
+            out = self._wallpaper_states({r: states.get(p, UNKNOWN_GIT) for r, p in zip(refs, paths)})
         except Exception as e:  # noqa: BLE001 -- git states are informative: never break listing or an operation
             self.git_error = f"{type(e).__name__}: {e}"
             return None
         self.git_error = None
-        return {r: states.get(p, UNKNOWN_GIT) for r, p in zip(refs, paths)}
+        return out
+
+    def _wallpaper_states(self, files: dict[Ref, str]) -> dict[Ref, str]:
+        """Per-file image states -> per-wallpaper states (publish model): two git commands for every TOML involved
+        (blob ids), blobs read once per id. External collections keep per-file states; so does everything when
+        the Vcs cannot tell blob ids (not a work tree)."""
+        by_folder: dict[str, list[Ref]] = {}
+        for r in files:
+            by_folder.setdefault(r.folder, []).append(r)
+        folders = {f: self._folders.get(f) for f in by_folder}
+        main = [f for f, d in folders.items() if d is not None and not d.external]
+        if not main:
+            return files
+        tomls = {f: self.store.path(f, TOML_NAME) for f in main}
+        ids = self.vcs.blob_ids(list(tomls.values()))
+        if ids is None:
+            return files
+        out = dict(files)
+        for f in main:
+            data = folders[f]
+            known = [(r, data.by_file[r.file].wallpaper) for r in by_folder[f] if r.file in data.by_file]
+            standing = self._entry_states.folder(tomls[f], ids.get(tomls[f], (None, None)),
+                                                 [(r.file, w) for r, w in known])
+            for r, w in known:
+                out[r] = wallpaper_state(standing[r.file], files[r], is_shareable(w.license))
+        return out
 
     def _apply_git(self, git: dict[Ref, str]) -> None:
         """Merge an answer into the known states and replace the entries whose state changed (entries loaded after

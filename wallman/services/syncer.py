@@ -71,11 +71,18 @@ class Syncer:
             if stage:
                 # images deleted by hand: stage their deletion too (git rm of a missing file only touches the index)
                 missing = [self.store.path(r.folder, r.file) for r in report.removed[before:]]
-                gone = [p for p in missing + dropped if self.vcs.is_tracked(p)]
+                gone = [p for p in missing if self.vcs.is_tracked(p)]
                 if gone:
                     self.vcs.stage_rm(gone)
-                if changed:
-                    self.vcs.stage_add(changed)
+                # new entries are never published: an image of theirs still in the index (a stale name) leaves it
+                fresh = [self.store.path(r.folder, r.file) for r in report.added if not self.store.is_external(r.folder)]
+                stale = [p for p in fresh if self.vcs.is_tracked(p)]
+                if stale:
+                    self.vcs.untrack(stale)
+                # each changed TOML's index version is regenerated: removed entries leave it, new entries are not
+                # published (never automatically); a dropped collection leaves the index
+                for toml in changed + dropped:
+                    uow.stage_toml(toml.parent.relative_to(self.store.path("", "")).as_posix())
         return report
 
     def _sync_collection(self, uow: UnitOfWork, coll: Collection, report: SyncReport) -> bool:

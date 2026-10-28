@@ -31,6 +31,10 @@ class ReadmeTest(unittest.TestCase):
         self.assertIn("`just sync --stage`", text)
         self.assertIn("stages their deletion", text)
         self.assertIn("just crop ", text)
+        self.assertIn("Nothing is staged until you publish: Add to git publishes a wallpaper (its image and its entry; "
+                      "download-only images publish their entry only)", text)
+        self.assertNotIn("only stage", text)
+        self.assertIn("Personal wallpapers are never published", text)
 
     def test_no_counts_or_tables_per_image(self):
         text = self.svc.render()

@@ -9,7 +9,7 @@ from .adapters.fs_store import FsStore
 from .adapters.git_cli import GitCli
 from .adapters.http_fetcher import HttpFetcher
 from .adapters.magick import Magick
-from .domain.rules import MEDIA_DIR
+from .domain.rules import MEDIA_DIR, TOML_NAME
 from .errors import WallmanError
 from .adapters.toml_catalogue import TomlCatalogue
 from .ports import Catalogue, Fetcher, ImageStore, ImageTool, Vcs
@@ -83,6 +83,7 @@ def build(root: Path, cache_dir: Path | None = None, fetcher: Fetcher | None = N
         readme.write()
         # one `git add` for the operation's tomls and the generated files: each call rewrites .git/index
         # every index write of the operation lands here, after the last step that can fail (Ruling v2-17)
+        uow.write_index()  # the generated index wallpapers.toml of every folder the operation touched
         force = uow.stage_force
         staged = uow.take_staged() + ([p for p in generated if p.exists()] if uow.stage else [])
         if staged:
@@ -90,9 +91,12 @@ def build(root: Path, cache_dir: Path | None = None, fetcher: Fetcher | None = N
         index.refresh(uow.touched, uow.touched_paths)  # no-op until the index has been warmed
 
     def uow_factory() -> UnitOfWork:
+        changed: set[str] = set()
         if not in_unit():  # external edits are loaded before the operation: its refresh only re-reads its own files
-            index.check_external()
-        return UnitOfWork(catalogue, store, vcs, on_commit)
+            changed = index.check_external()
+        # a TOML edited outside wallman: published names whose entry is gone leave its index TOML in this unit
+        return UnitOfWork(catalogue, store, vcs, on_commit,
+                          regenerate=[f for f in sorted(changed) if store.path(f, TOML_NAME).is_file()])
 
     cfg, noctalia_dir, noctalia_state, gtk_css = config_paths(config_home)
     uploads = Uploads(cache_dir / "uploads", tool, fetcher)

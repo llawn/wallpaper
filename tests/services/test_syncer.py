@@ -131,17 +131,21 @@ class SyncerTest(unittest.TestCase):
         self.assertEqual(self.vcs.calls, [])
         self.build([self.col(wallpapers=[wp("a.jpg"), wp("gone.jpg")])], {"painting/x": {"a.jpg", "n-m.jpg"}},
                    sizes={("painting/x", "n-m.jpg"): R})
+        toml = self.store.path("painting/x", "wallpapers.toml")
+        self.vcs.index[toml] = self.cat.render(self.col(wallpapers=[wp("a.jpg"), wp("gone.jpg")]))
         self.syncer.sync(stage=True)
-        self.assertEqual(self.vcs.calls, [("stage_add", [self.store.path("painting/x", "wallpapers.toml")])])
+        self.assertEqual(self.vcs.calls, [("stage_blob", toml)])  # gone.jpg leaves the index toml, n-m.jpg stays out
+        self.assertEqual(sorted(self.cat.blob_entries(self.vcs.index[toml])), ["a.jpg"])
 
     def test_emptied_collection_removed_with_dir_and_toml_unstaged(self):
         self.build([self.col(wallpapers=[wp("gone.jpg")])], {"painting/x": set()},
                    tracked=[("painting/x", "wallpapers.toml")])
         toml = self.store.path("painting/x", "wallpapers.toml")
+        self.vcs.index[toml] = self.cat.render(self.col(wallpapers=[wp("gone.jpg")]))
         self.syncer.sync(stage=True)
         self.assertNotIn("painting/x", self.cat.data)
         self.assertIn(("remove_dir", "painting/x"), self.store.calls)
-        self.assertEqual(self.vcs.calls, [("stage_rm", [toml])])
+        self.assertEqual(self.vcs.calls, [("unstage_path", toml)])
         self.assertIn(("coll", "painting/x"), self.recorded)
 
     def test_emptied_collection_untracked_toml_no_vcs_call(self):

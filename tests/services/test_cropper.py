@@ -27,6 +27,7 @@ class CropperTest(ServiceCase):
 
     def test_recrop_from_original_when_downloadable(self):
         ref = self.setup_entry()
+        self.publish_all(ref.folder)
         w = self.cropper().crop(ref, BOX)
         img = self.store.path(ref.folder, ref.file)
         self.assertEqual(self.fetcher.calls, [URL])
@@ -35,6 +36,7 @@ class CropperTest(ServiceCase):
         self.assertEqual((crop_call[2], crop_call[3]), (BOX, img))
         self.assertEqual((w.resolution, w.processing, w.crop), (Resolution(3200, 1800), ("crop",), BOX))
         self.assertEqual(self.cat.load(ref.folder).wallpapers[0], w)
+        # everything published: the index takes the working toml itself, in the one batched `git add`
         self.assertEqual(self.vcs.calls, [("stage_add", [img, self.toml(ref.folder)])])
         self.assertEqual(self.commits, 1)
         self.assertEqual(sorted(p.name for p in img.parent.iterdir()), ["a.jpg", "wallpapers.toml"])  # temps cleaned
@@ -139,8 +141,14 @@ class CropperTest(ServiceCase):
 
     def test_non_shareable_stages_toml_only(self):
         ref = self.setup_entry(license="all-rights-reserved")
+        self.publish_all(ref.folder)
         self.cropper().crop(ref, BOX)
         self.assertEqual(self.vcs.calls, [("stage_add", [self.toml(ref.folder)])])
+
+    def test_unpublished_stages_nothing(self):
+        ref = self.setup_entry()
+        self.cropper().crop(ref, BOX)
+        self.assertEqual(self.vcs.calls, [])
 
     def test_processing_not_duplicated(self):
         ref = self.setup_entry(processing=("crop",))
