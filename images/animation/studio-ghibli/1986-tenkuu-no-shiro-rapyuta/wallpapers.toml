@@ -5,7 +5,7 @@ medium = "animation"
 movement = "1986-castle-in-the-sky"
 count = 13
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-001_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_001.jpg"
 title = "Tenkū no shiro Rapyuta — still 001"
 artist = "Studio Ghibli"
 year = 1986
@@ -17,7 +17,7 @@ download = "https://www.ghibli.jp/gallery/laputa001.jpg"
 sha256 = "55cfbce834ca89eb2124f60b7e6f49ee344935b08397f98c8e99a6143f49b46d"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-004_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_004.jpg"
 title = "Tenkū no shiro Rapyuta — still 004"
 artist = "Studio Ghibli"
 year = 1986
@@ -29,7 +29,7 @@ download = "https://www.ghibli.jp/gallery/laputa004.jpg"
 sha256 = "88501cb2d589f0929424e6d15f9e12b2f1f580d0d310da9aba4800ce9e30e40e"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-020_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_020.jpg"
 title = "Tenkū no shiro Rapyuta — still 020"
 artist = "Studio Ghibli"
 year = 1986
@@ -41,7 +41,7 @@ download = "https://www.ghibli.jp/gallery/laputa020.jpg"
 sha256 = "a44578bf24ca5e0049712924eb30fc748077442b3067135e0972e06254aab195"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-025_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_025.jpg"
 title = "Tenkū no shiro Rapyuta — still 025"
 artist = "Studio Ghibli"
 year = 1986
@@ -53,7 +53,7 @@ download = "https://www.ghibli.jp/gallery/laputa025.jpg"
 sha256 = "7f9be8f1be7d46da5275a3882db44b10ba94e2c6c771f83109edfbefe0784780"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-028_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_028.jpg"
 title = "Tenkū no shiro Rapyuta — still 028"
 artist = "Studio Ghibli"
 year = 1986
@@ -65,7 +65,7 @@ download = "https://www.ghibli.jp/gallery/laputa028.jpg"
 sha256 = "ab33a4bdffefcc51da9b4c9173fb8b34bbfa5325a3f55412bb429119d95df5f1"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-034_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_034.jpg"
 title = "Tenkū no shiro Rapyuta — still 034"
 artist = "Studio Ghibli"
 year = 1986
@@ -77,7 +77,7 @@ download = "https://www.ghibli.jp/gallery/laputa034.jpg"
 sha256 = "682182f44eedba7092179703d921fd03c920909ef65078d9e5d32edd1c348c08"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-036_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_036.jpg"
 title = "Tenkū no shiro Rapyuta — still 036"
 artist = "Studio Ghibli"
 year = 1986
@@ -89,7 +89,7 @@ download = "https://www.ghibli.jp/gallery/laputa036.jpg"
 sha256 = "4c376a04992b6322ab2216e816e16439f1eaa3a3aa8097e6000445c3353bd65e"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-037_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_037.jpg"
 title = "Tenkū no shiro Rapyuta — still 037"
 artist = "Studio Ghibli"
 year = 1986
@@ -101,7 +101,7 @@ download = "https://www.ghibli.jp/gallery/laputa037.jpg"
 sha256 = "797cff9e5ce04de015854b7227f22bbe8c40a12ebc1ac96ac90cba6f2056bb6c"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-038_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_038.jpg"
 title = "Tenkū no shiro Rapyuta — still 038"
 artist = "Studio Ghibli"
 year = 1986
@@ -113,7 +113,7 @@ download = "https://www.ghibli.jp/gallery/laputa038.jpg"
 sha256 = "7c00da60fa45363d9df644c62a281b49d4ed7c668332a29f10cc134a52685386"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-039_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_039.jpg"
 title = "Tenkū no shiro Rapyuta — still 039"
 artist = "Studio Ghibli"
 year = 1986
@@ -125,7 +125,7 @@ download = "https://www.ghibli.jp/gallery/laputa039.jpg"
 sha256 = "ede37606f28b345327a2e1bfbcde2761f51a1401b9270597884a54045a04ab5b"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-040_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_040.jpg"
 title = "Tenkū no shiro Rapyuta — still 040"
 artist = "Studio Ghibli"
 year = 1986
@@ -137,7 +137,7 @@ download = "https://www.ghibli.jp/gallery/laputa040.jpg"
 sha256 = "a7780c0acddb27da3fc1d903e84d01d3f6fe65787c48e384c90df24cf2198e7f"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-041_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_041.jpg"
 title = "Tenkū no shiro Rapyuta — still 041"
 artist = "Studio Ghibli"
 year = 1986
@@ -149,7 +149,7 @@ download = "https://www.ghibli.jp/gallery/laputa041.jpg"
 sha256 = "9aac49443402f914790e25e6060e42877f1233d52903febf9517e47c6d411588"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_tenku-no-shiro-rapyuta-still-050_1986.jpg"
+file = "studio-ghibli_tenku-no-shiro-rapyuta_1986_050.jpg"
 title = "Tenkū no shiro Rapyuta — still 050"
 artist = "Studio Ghibli"
 year = 1986

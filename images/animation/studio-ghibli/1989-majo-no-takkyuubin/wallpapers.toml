@@ -5,7 +5,7 @@ medium = "animation"
 movement = "1989-kiki-s-delivery-service"
 count = 13
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-002_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_002.jpg"
 title = "Majo no takkyūbin — still 002"
 artist = "Studio Ghibli"
 year = 1989
@@ -17,7 +17,7 @@ download = "https://www.ghibli.jp/gallery/majo002.jpg"
 sha256 = "389797ed9cb2db1d6f0750412f1e877fda86928553206828cd822e92206e51eb"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-006_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_006.jpg"
 title = "Majo no takkyūbin — still 006"
 artist = "Studio Ghibli"
 year = 1989
@@ -29,7 +29,7 @@ download = "https://www.ghibli.jp/gallery/majo006.jpg"
 sha256 = "2983fe0ec151242cf3ad4a67e3dfeffd010efc89349c69611aaf9337389f2a8e"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-011_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_011.jpg"
 title = "Majo no takkyūbin — still 011"
 artist = "Studio Ghibli"
 year = 1989
@@ -41,7 +41,7 @@ download = "https://www.ghibli.jp/gallery/majo011.jpg"
 sha256 = "29f2875f9b4a8ea50ea513ff26bfa3b3ddbd8c2686719ac20e166c4dcf6b6fa5"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-018_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_018.jpg"
 title = "Majo no takkyūbin — still 018"
 artist = "Studio Ghibli"
 year = 1989
@@ -53,7 +53,7 @@ download = "https://www.ghibli.jp/gallery/majo018.jpg"
 sha256 = "5d6317e875e2e64f22506661126fc7cfa00e152b162f97fc335ba7832a0338d6"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-024_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_024.jpg"
 title = "Majo no takkyūbin — still 024"
 artist = "Studio Ghibli"
 year = 1989
@@ -65,7 +65,7 @@ download = "https://www.ghibli.jp/gallery/majo024.jpg"
 sha256 = "2409e8968eb1ac4574df3f3f5ee3929dfc03d0b9f2382b8d7e4ef8bb653ab474"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-028_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_028.jpg"
 title = "Majo no takkyūbin — still 028"
 artist = "Studio Ghibli"
 year = 1989
@@ -77,7 +77,7 @@ download = "https://www.ghibli.jp/gallery/majo028.jpg"
 sha256 = "d4aff410c8d14ae7fbc37a91d258a99f632c027952b8d5bb053346ec3f1e4470"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-036_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_036.jpg"
 title = "Majo no takkyūbin — still 036"
 artist = "Studio Ghibli"
 year = 1989
@@ -89,7 +89,7 @@ download = "https://www.ghibli.jp/gallery/majo036.jpg"
 sha256 = "f4833c8d4c4583eb4b9b564051487b46241acfed684be28bc5d452c2e89cd3a1"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-037_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_037.jpg"
 title = "Majo no takkyūbin — still 037"
 artist = "Studio Ghibli"
 year = 1989
@@ -101,7 +101,7 @@ download = "https://www.ghibli.jp/gallery/majo037.jpg"
 sha256 = "9bb83804040ffe18a9c5b0bbfdefd111c5f05b0afc43295d40ce04e1993829a3"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-038_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_038.jpg"
 title = "Majo no takkyūbin — still 038"
 artist = "Studio Ghibli"
 year = 1989
@@ -113,7 +113,7 @@ download = "https://www.ghibli.jp/gallery/majo038.jpg"
 sha256 = "6bbafa03105da1709b6ce6fb97f9787f75e59e6e30a4f011bff8564e9f875267"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-041_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_041.jpg"
 title = "Majo no takkyūbin — still 041"
 artist = "Studio Ghibli"
 year = 1989
@@ -125,7 +125,7 @@ download = "https://www.ghibli.jp/gallery/majo041.jpg"
 sha256 = "fb5a222d31ffd0f5517618efe7bddce3a049c06e7320662e03157043ffcd49ed"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-046_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_046.jpg"
 title = "Majo no takkyūbin — still 046"
 artist = "Studio Ghibli"
 year = 1989
@@ -137,7 +137,7 @@ download = "https://www.ghibli.jp/gallery/majo046.jpg"
 sha256 = "fd3e53f97115f798af26885d90b956214fcc7cdb4773e5fd248890588d41104f"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-047_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_047.jpg"
 title = "Majo no takkyūbin — still 047"
 artist = "Studio Ghibli"
 year = 1989
@@ -149,7 +149,7 @@ download = "https://www.ghibli.jp/gallery/majo047.jpg"
 sha256 = "09794b2729fd010158e97477dd7995efe6fbc924f5f290f56251a457710ccfa1"
 resolution = [1920, 1038]
 [[wallpaper]]
-file = "studio-ghibli_majo-no-takkyubin-still-048_1989.jpg"
+file = "studio-ghibli_majo-no-takkyubin_1989_048.jpg"
 title = "Majo no takkyūbin — still 048"
 artist = "Studio Ghibli"
 year = 1989
