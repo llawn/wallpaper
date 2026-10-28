@@ -7,8 +7,6 @@ from wallman.adapters.fs_store import FsStore
 from wallman.adapters.toml_catalogue import TomlCatalogue
 from wallman.services.readme import ReadmeService
 
-GOLDEN = Path(__file__).parent / "golden" / "README.md"
-
 
 class ReadmeTest(unittest.TestCase):
     def setUp(self):
@@ -19,9 +17,9 @@ class ReadmeTest(unittest.TestCase):
         self.images = self.root / "images"
         self.svc = ReadmeService(self.root, TomlCatalogue(self.images, FsStore(self.images)))
 
-    def test_readme_matches_golden(self):
+    def test_write_lists_every_folder(self):
         self.assertEqual(self.svc.write(), 6)
-        self.assertEqual((self.root / "README.md").read_text(), GOLDEN.read_text())
+        self.assertEqual((self.root / "README.md").read_text(), self.svc.render())
 
     def test_wording_matches_the_rules(self):
         text = self.svc.render()

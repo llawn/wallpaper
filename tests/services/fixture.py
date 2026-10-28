@@ -1,4 +1,4 @@
-"""A small repo tree on disk shared by the service tests (README golden, gitignore)."""
+"""A small repo tree on disk shared by the service tests (README, gitignore)."""
 from __future__ import annotations
 
 from pathlib import Path
