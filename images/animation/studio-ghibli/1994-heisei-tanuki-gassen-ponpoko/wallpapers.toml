@@ -1,0 +1,198 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1994-heisei-tanuki-gassen-ponpoko"
+count = 16
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_004.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 004"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["city", "epic", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "mountains", "village", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki004.jpg"
+sha256 = "afde0ced6a1ba9d8b9514bf592a0447589fb90264b612608f5522dfa0d85045d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_009.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 009"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "cat", "creature", "field", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "joyful", "whimsical", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki009.jpg"
+sha256 = "f634d4df0a48007c935a3b312d089653d81bb4290be770a42331c340dafa4a92"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_010.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 010"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "creature", "field", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "joyful", "whimsical", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki010.jpg"
+sha256 = "ec56badcf48e1bf8f6a90273ebba9111d4edb5a2baaf067ecb739e69c356a1b9"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_011.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 011"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "calm", "creature", "forest", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "mysterious"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki011.jpg"
+sha256 = "832ef44d428e5787476896c34d28852fe50ddcf51053c2970013b8916b11cbca"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_012.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 012"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "bright", "creature", "forest", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "joyful", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki012.jpg"
+sha256 = "51075f469d8f209b2e288944e4d094a3f19e086d679a99e7888b677a41de8fec"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_013.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 013"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["bright", "calm", "countryside", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "people", "street"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki013.jpg"
+sha256 = "f005675c7d2aa0deaa2382cc84d4964db1411f70785cad9a5404c026f136cc23"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_019.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 019"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "blue", "calm", "creature", "dreamy", "field", "ghibli", "heisei-tanuki-gassen-ponpoko", "moon", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki019.jpg"
+sha256 = "743bd861448291761e195a0ed5e646489b121f7dc08d6576dabffea6c205b241"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_020.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 020"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "blue", "calm", "creature", "dreamy", "field", "ghibli", "heisei-tanuki-gassen-ponpoko", "night", "orange"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki020.jpg"
+sha256 = "72ed545756f1477d8c51969c46d85c77f5e33dd999e16cd375b98eb5fcea70ba"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_021.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 021"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "calm", "cozy", "creature", "ghibli", "heisei-tanuki-gassen-ponpoko", "interior", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki021.jpg"
+sha256 = "400f61eb512f2c0371167a5e964b999c83dd7a55722c3e1fd36d1ca28ff15f94"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_027.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 027"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["blue", "character", "creature", "dreamy", "ghibli", "heisei-tanuki-gassen-ponpoko", "night", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki027.jpg"
+sha256 = "ab0b1f092a774ee1f4cd3d18e76976e4c148a33b5ba6eddada2ea875d0e0c9b2"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_028.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 028"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["blue", "dreamy", "ghibli", "green", "heisei-tanuki-gassen-ponpoko", "night", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki028.jpg"
+sha256 = "1baec2afc285067debc65876aa5c8b9b8081a33c94d9a084143fbc1ee39f031c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_029.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 029"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["blue", "creature", "eerie", "ghibli", "heisei-tanuki-gassen-ponpoko", "night", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki029.jpg"
+sha256 = "22653b1be7c1e39d07cea57cea6f96519c0046f0a5a954ccb0e1b40f8384c9f7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_030.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 030"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["crowd", "dark", "dramatic", "flowers", "ghibli", "heisei-tanuki-gassen-ponpoko", "mysterious", "night", "pink"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki030.jpg"
+sha256 = "bf70ffdc6903b90f381904dc10a7aff78efcf7571256dca8cec8389a4f410a3c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_040.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 040"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "blue", "creature", "dark", "ghibli", "heisei-tanuki-gassen-ponpoko", "mysterious", "night", "trees"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki040.jpg"
+sha256 = "bc9e2eb18357fc19309e5c31980bc0f8f2c134bf86d48bf02ba5ff30e4099fa2"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_041.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 041"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["animals", "blue", "creature", "dark", "eerie", "ghibli", "heisei-tanuki-gassen-ponpoko", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki041.jpg"
+sha256 = "f45536d512ab378a4a837d3164dba0b94c4fec3185f02d36fba393397e09211e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_heisei-tanuki-gassen-ponpoko_1994_045.jpg"
+title = "Heisei tanuki gassen Ponpoko — still 045"
+artist = "Studio Ghibli"
+year = 1994
+tags = ["blue", "calm", "dark", "ghibli", "heisei-tanuki-gassen-ponpoko", "lake", "mysterious", "night", "ship"]
+license = "ghibli-free-use"
+license_detail = "© 1994 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/tanuki045.jpg"
+sha256 = "042ce43d6b5bac4fdb6bdc6ff2fd0e6800e94d40d712f66e90269d05ae9b1359"
+resolution = [1920, 1038]

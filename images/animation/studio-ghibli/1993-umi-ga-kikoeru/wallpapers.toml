@@ -1,0 +1,186 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1993-umi-ga-kikoeru"
+count = 15
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_001.jpg"
+title = "Umi ga kikoeru — still 001"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["calm", "city", "ghibli", "pastel", "people", "street", "summer", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi001.jpg"
+sha256 = "63dac7ed6b82e53e5f8434c8762bc00978f05cd662b58505588978f477d89943"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_003.jpg"
+title = "Umi ga kikoeru — still 003"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["calm", "city", "ghibli", "red", "train", "umi-ga-kikoeru", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi003.jpg"
+sha256 = "81c0f46300f9c3c75e2f2aa911e9138a6e50a972dadddd70664da4cf6e816cd6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_005.jpg"
+title = "Umi ga kikoeru — still 005"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["blue", "bridge", "bright", "calm", "ghibli", "mountains", "red", "sky", "summer", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi005.jpg"
+sha256 = "b3d11895675d3e7773821dad4f09f63905922d362de9380689727bf2c7c801a4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_008.jpg"
+title = "Umi ga kikoeru — still 008"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["calm", "ghibli", "interior", "pastel", "umi-ga-kikoeru", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi008.jpg"
+sha256 = "4d6a72380f49f90ccf65c9ef84f0a29b0d61b6b3650a6e1dbce13865e0737332"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_015.jpg"
+title = "Umi ga kikoeru — still 015"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["character", "dark", "ghibli", "interior", "melancholic", "umi-ga-kikoeru", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi015.jpg"
+sha256 = "28ecea1af6880956c2c32c5b8cf048f61abc4b41f5731a081d9c9372bfd8d669"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_023.jpg"
+title = "Umi ga kikoeru — still 023"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["bright", "calm", "ghibli", "green", "people", "street", "summer", "trees", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi023.jpg"
+sha256 = "672cc4869eceeee39ac802cf0a60ea132302bc3a7c5d3a537977d502f266e8f7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_025.jpg"
+title = "Umi ga kikoeru — still 025"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["calm", "character", "dreamy", "flowers", "ghibli", "interior", "umi-ga-kikoeru", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi025.jpg"
+sha256 = "305cf6fddfd62bd3a66ffb19caa457352d8ea235a3567db85e49d69642965770"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_027.jpg"
+title = "Umi ga kikoeru — still 027"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["character", "dark", "ghibli", "interior", "melancholic", "teal", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi027.jpg"
+sha256 = "8993b50c4a35e1171c491acf16f01fe89f7e2306aa3829403538ebe29e1ff63e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_031.jpg"
+title = "Umi ga kikoeru — still 031"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["architecture", "bright", "calm", "castle", "city", "ghibli", "pastel", "sky", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi031.jpg"
+sha256 = "136a4477aa7ec624e3128a2d38118145073966f1762af8d81f0ee555994ae70d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_035.jpg"
+title = "Umi ga kikoeru — still 035"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["bright", "city", "crowd", "ghibli", "joyful", "street", "umi-ga-kikoeru", "vibrant"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi035.jpg"
+sha256 = "064c11588672cecf3edb757ab9ee509c1341d44626c86602f4d33877d1e1bd78"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_040.jpg"
+title = "Umi ga kikoeru — still 040"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["bright", "calm", "city", "ghibli", "people", "street", "summer", "umi-ga-kikoeru", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi040.jpg"
+sha256 = "01005325e3df2ad7951d8d21bc83e33e5a55eeeb5fb030cfd7f064cf1c0cb828"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_041.jpg"
+title = "Umi ga kikoeru — still 041"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["bright", "calm", "city", "ghibli", "street", "summer", "train", "umi-ga-kikoeru", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi041.jpg"
+sha256 = "fcd7906c545a5040e8d9ad8ec64a41a6db8dc9cc5fc24919d9d66cc48942b06b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_042.jpg"
+title = "Umi ga kikoeru — still 042"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["calm", "coast", "ghibli", "melancholic", "sea", "umi-ga-kikoeru", "village", "warm", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi042.jpg"
+sha256 = "af96cc588835ceaf5e57f59b428dd63f8b02e539a5fcff69d2b70888cf64e500"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_049.jpg"
+title = "Umi ga kikoeru — still 049"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["bright", "calm", "city", "cool", "ghibli", "people", "train", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi049.jpg"
+sha256 = "e42b2150390f5d8a6344762cae9f39f49dba9f5aeeb396c72bbe7cdb0c980ea6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_umi-ga-kikoeru_1993_050.jpg"
+title = "Umi ga kikoeru — still 050"
+artist = "Studio Ghibli"
+year = 1993
+tags = ["blue", "bright", "calm", "character", "city", "ghibli", "summer", "umi-ga-kikoeru"]
+license = "ghibli-free-use"
+license_detail = "© 1993 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/umi050.jpg"
+sha256 = "7e6569006b68ad3c2ddb9e06c9af79b5a151196f6cd70dbcbf8f7a622c00176a"
+resolution = [1920, 1038]
