@@ -1,0 +1,54 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2020-aya-to-majo"
+count = 4
+[[wallpaper]]
+file = "studio-ghibli_aya-to-majo_2020_003.jpg"
+title = "Âya to majo — still 003"
+artist = "Studio Ghibli"
+year = 2020
+tags = ["abstract", "aya-to-majo", "character", "creature", "ghibli", "green", "pink", "vibrant", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2020 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/aya003.jpg"
+sha256 = "58802f5c6750caf2e160360d33a0fb8fa9338a39a972b98b6e46bb023be700e4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_aya-to-majo_2020_019.jpg"
+title = "Âya to majo — still 019"
+artist = "Studio Ghibli"
+year = 2020
+tags = ["aya-to-majo", "character", "ghibli", "green", "interior", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2020 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/aya019.jpg"
+sha256 = "c2ec4387f0b3a7d4877aad6cb30cc275161de676c1042df56099f31ddb31924a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_aya-to-majo_2020_029.jpg"
+title = "Âya to majo — still 029"
+artist = "Studio Ghibli"
+year = 2020
+tags = ["aya-to-majo", "cat", "dark", "eerie", "ghibli", "green", "mysterious"]
+license = "ghibli-free-use"
+license_detail = "© 2020 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/aya029.jpg"
+sha256 = "5b24dfbedc5675e6099cf87bea282b04718971c014c2e5869656d8130ebe2199"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_aya-to-majo_2020_036.jpg"
+title = "Âya to majo — still 036"
+artist = "Studio Ghibli"
+year = 2020
+tags = ["aya-to-majo", "blue", "bright", "cat", "cozy", "flowers", "ghibli", "interior", "pink"]
+license = "ghibli-free-use"
+license_detail = "© 2020 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/aya036.jpg"
+sha256 = "6b8879a6ddcfcd913909fa0f6b6f699cc17a61d77d6ed336ce031189d2b88c4d"
+resolution = [1920, 1038]
