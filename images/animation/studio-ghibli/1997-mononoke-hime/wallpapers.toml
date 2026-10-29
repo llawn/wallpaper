@@ -1,0 +1,246 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1997-mononoke-hime"
+count = 20
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_002.jpg"
+title = "Mononoke hime — still 002"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["animals", "character", "dramatic", "epic", "field", "ghibli", "green", "mononoke-hime"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke002.jpg"
+sha256 = "80aa2260c7dd35a287bdab1594037f5fc904990b866a63dbc30c8039e6d3bfd6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_010.jpg"
+title = "Mononoke hime — still 010"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["creature", "dreamy", "forest", "ghibli", "golden-hour", "green", "mononoke-hime", "mysterious", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke010.jpg"
+sha256 = "f33ffea9605e1ca87a699169412bd5602bc8d5c014b1b9a73b66c847bc9b74d7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_014.jpg"
+title = "Mononoke hime — still 014"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["animals", "blue", "cool", "epic", "forest", "ghibli", "mononoke-hime", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke014.jpg"
+sha256 = "339ae4dee6388565727760e59747e6a9d6356b1cf060cbdc622a1c873bb7589a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_015.jpg"
+title = "Mononoke hime — still 015"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "character", "dark", "dramatic", "ghibli", "mononoke-hime"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke015.jpg"
+sha256 = "659d33718205bce7c4e9b0aabe619b330e4af97100c09c267506899d591e6169"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_017.jpg"
+title = "Mononoke hime — still 017"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["crowd", "dark", "dramatic", "ghibli", "mononoke-hime", "night", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke017.jpg"
+sha256 = "d10045926e2ee50b64676c1929f864793444137e1d378e050c79209a533e37b1"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_018.jpg"
+title = "Mononoke hime — still 018"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["dark", "dramatic", "ghibli", "mononoke-hime", "people", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke018.jpg"
+sha256 = "3d21bf3f02a6c065021279dc6e6199de8c1d8203f41d93b9ec45ac6613b909ce"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_019.jpg"
+title = "Mononoke hime — still 019"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "character", "dark", "dramatic", "ghibli", "mononoke-hime", "night", "purple"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke019.jpg"
+sha256 = "58f9c3556166018cd6b8684783ad64bdd63c057c6946f0e7f17882815eb10a0b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_021.jpg"
+title = "Mononoke hime — still 021"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "character", "dark", "dramatic", "ghibli", "mononoke-hime", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke021.jpg"
+sha256 = "c8f7a30c02daf13b43e967c572dad88c35da3fd45cb2ef80fc1b8bed6e55d3c9"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_022.jpg"
+title = "Mononoke hime — still 022"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "character", "dark", "dramatic", "ghibli", "mononoke-hime", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke022.jpg"
+sha256 = "6994b260057ce73a2682ecd620f63d0f5a29d47a4ea824c15f7d5d76e355b6d4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_023.jpg"
+title = "Mononoke hime — still 023"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["creature", "dark", "dreamy", "forest", "ghibli", "green", "mononoke-hime", "mysterious", "night", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke023.jpg"
+sha256 = "411cd14d6118bb3a0adf93d9424251b424decd469b59f07735bf78e763ea0b09"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_024.jpg"
+title = "Mononoke hime — still 024"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["creature", "dreamy", "forest", "ghibli", "green", "mononoke-hime", "mysterious", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke024.jpg"
+sha256 = "e88887847ce148e6d67850ccdf938edae196dc8c2af782fe044f65e904c6e282"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_025.jpg"
+title = "Mononoke hime — still 025"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "creature", "dreamy", "eerie", "epic", "ghibli", "mononoke-hime", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke025.jpg"
+sha256 = "9d05387114cf6348cbf6b832ec478e141439e524f38d8f8c91117a458d7cec0a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_031.jpg"
+title = "Mononoke hime — still 031"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["animals", "calm", "character", "dark", "dramatic", "ghibli", "mononoke-hime"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke031.jpg"
+sha256 = "73b1d1a30430c0eedcc897ab9fc4ede076f27f8d66fbe155ababbb2d29af2296"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_032.jpg"
+title = "Mononoke hime — still 032"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["calm", "character", "dramatic", "forest", "ghibli", "green", "mononoke-hime"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke032.jpg"
+sha256 = "7ffe94d218ef7eca448d07fd5112763a6fe4eb73bdb56126efa22dcbc7ea5fd4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_033.jpg"
+title = "Mononoke hime — still 033"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["animals", "calm", "character", "forest", "ghibli", "green", "mononoke-hime", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke033.jpg"
+sha256 = "a9ea22439f1419f048a5e1d3f9eac20c8f4f1ff43ec35ebc4dc09efc4809d365"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_035.jpg"
+title = "Mononoke hime — still 035"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["character", "dramatic", "epic", "ghibli", "mononoke-hime", "orange", "red"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke035.jpg"
+sha256 = "dc1061403e9ae0c4b03d140f8dc1b317015bf0267e8b513886283727a9fb7c9b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_042.jpg"
+title = "Mononoke hime — still 042"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "character", "dark", "dramatic", "forest", "ghibli", "mononoke-hime"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke042.jpg"
+sha256 = "7c496cced0d12e549ccc9103bc1e8c4fa0142ef9e84cf569f790184d7ae31e56"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_045.jpg"
+title = "Mononoke hime — still 045"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "dark", "dramatic", "epic", "ghibli", "mononoke-hime", "mountains", "night"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke045.jpg"
+sha256 = "a6945b04505765d21703f40af2893bb2444dd82c14e95eb307484113584c1640"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_046.jpg"
+title = "Mononoke hime — still 046"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["animals", "blue", "character", "dramatic", "epic", "ghibli", "mononoke-hime", "mountains"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke046.jpg"
+sha256 = "d39bcd3499a2ee4ec2d00b5062195f48caa38d0470d1c8823d54097062482646"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mononoke-hime_1997_049.jpg"
+title = "Mononoke hime — still 049"
+artist = "Studio Ghibli"
+year = 1997
+tags = ["blue", "bright", "calm", "character", "clouds", "ghibli", "mononoke-hime", "sky", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 1997 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mononoke049.jpg"
+sha256 = "f75188e4a252031fb8d7bcd70accccd63adad38538d4f9cd12f037d1491384b8"
+resolution = [1920, 1038]
