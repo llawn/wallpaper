@@ -1,0 +1,126 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1995-mimi-o-sumaseba"
+count = 10
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_011.jpg"
+title = "Mimi o sumaseba — still 011"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["architecture", "calm", "ghibli", "house", "mimi-o-sumaseba", "red", "street", "summer", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi011.jpg"
+sha256 = "7aad13f81dfb3c226191823c7bd10ee1642331ee9690762d7994bf5ad7e55a55"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_017.jpg"
+title = "Mimi o sumaseba — still 017"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["calm", "character", "forest", "ghibli", "green", "mimi-o-sumaseba", "summer", "trees"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi017.jpg"
+sha256 = "d2473d4b9208d99ee01e7d1a6b0df517848bccf57ce30ad73bb0c527bbf71622"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_019.jpg"
+title = "Mimi o sumaseba — still 019"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["calm", "cat", "character", "flowers", "ghibli", "green", "mimi-o-sumaseba", "summer", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi019.jpg"
+sha256 = "54ad997360270267a92d49bb97e3e9968033fcaec5518dc944e9211883f25ab0"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_032.jpg"
+title = "Mimi o sumaseba — still 032"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["bright", "cat", "character", "dreamy", "epic", "ghibli", "green", "mimi-o-sumaseba", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi032.jpg"
+sha256 = "9ba544bc62bcb3c47b6d04ff5be73d0fb23a1e8acc728d288ed3f370e0fe35ce"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_033.jpg"
+title = "Mimi o sumaseba — still 033"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "character", "clouds", "dreamy", "epic", "ghibli", "mimi-o-sumaseba", "pastel", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi033.jpg"
+sha256 = "889a1cf61faef1ccd3e7a81f4c9e669593bef0a30fc9dede1939fcef1f302f0a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_034.jpg"
+title = "Mimi o sumaseba — still 034"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "character", "dreamy", "ghibli", "mimi-o-sumaseba", "pink", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi034.jpg"
+sha256 = "72880c8977b7d15c4d60fb4a116f79bdf4c47073224dba0395dc542a866d99b3"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_040.jpg"
+title = "Mimi o sumaseba — still 040"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "character", "dark", "dreamy", "ghibli", "mimi-o-sumaseba", "mysterious", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi040.jpg"
+sha256 = "383e21b1a02ac7441c1b2846156b41e10ba8f893c6ff73950259a30560761641"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_041.jpg"
+title = "Mimi o sumaseba — still 041"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "character", "dark", "dreamy", "ghibli", "mimi-o-sumaseba", "mysterious"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi041.jpg"
+sha256 = "e67b09947c69e4d68584f63b0a5a5a737d2fcac97a0ce21083f829b51616aa8a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_047.jpg"
+title = "Mimi o sumaseba — still 047"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "bright", "calm", "character", "ghibli", "green", "mimi-o-sumaseba", "sky", "summer", "trees"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi047.jpg"
+sha256 = "0fcae4df7e7e54a00fd0fd167adc6e95d0ad1258c379cd9e8d79df06af438df3"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_mimi-o-sumaseba_1995_048.jpg"
+title = "Mimi o sumaseba — still 048"
+artist = "Studio Ghibli"
+year = 1995
+tags = ["blue", "calm", "city", "dreamy", "ghibli", "golden-hour", "mimi-o-sumaseba", "river", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 1995 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/mimi048.jpg"
+sha256 = "794946b68a190abafbf385032e37dac86cf35b7928a49395e73283e8856e2e23"
+resolution = [1920, 1038]
