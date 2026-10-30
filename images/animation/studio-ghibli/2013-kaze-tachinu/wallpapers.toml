@@ -1,0 +1,234 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2013-kaze-tachinu"
+count = 19
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_002.jpg"
+title = "Kaze tachinu — still 002"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "bright", "clouds", "epic", "ghibli", "kaze-tachinu", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu002.jpg"
+sha256 = "015d44077964aa2131798d7ddea44a74ccb1d4385a0a588ad56b66abf3ff097c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_006.jpg"
+title = "Kaze tachinu — still 006"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["city", "crowd", "dark", "dramatic", "ghibli", "kaze-tachinu", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu006.jpg"
+sha256 = "97f61f5fa57269758619c8894391392c009646c86cbda6f4935a5ff4e157e163"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_008.jpg"
+title = "Kaze tachinu — still 008"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "ghibli", "green", "interior", "kaze-tachinu", "people", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu008.jpg"
+sha256 = "67d1e49875beb52dcdce00d98d56f2b9607c8aa279fb08f6e82c9cb927bb2b76"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_009.jpg"
+title = "Kaze tachinu — still 009"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "city", "ghibli", "green", "kaze-tachinu", "street", "train", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu009.jpg"
+sha256 = "061e9697e1e84274a0c19eb03e3e5168338e458354ee21a8b075b0add6e66e92"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_011.jpg"
+title = "Kaze tachinu — still 011"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["architecture", "blue", "calm", "ghibli", "kaze-tachinu", "people", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu011.jpg"
+sha256 = "0b5d36a7f49370a592c5340d537b2efde1afc2f72ecc4830ec0245f226685f0e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_013.jpg"
+title = "Kaze tachinu — still 013"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "dark", "dramatic", "ghibli", "kaze-tachinu", "night"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu013.jpg"
+sha256 = "ffe3a8e243738a9f6aeeb7c09160b5b191d671da34f1c4e496d3033f13415fd6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_019.jpg"
+title = "Kaze tachinu — still 019"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "bright", "field", "ghibli", "green", "joyful", "kaze-tachinu", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu019.jpg"
+sha256 = "7e05b29c90f9e1a41e53b70db434ea096067abfaac9975cf1eed70a886d5562f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_022.jpg"
+title = "Kaze tachinu — still 022"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "bright", "character", "clouds", "epic", "ghibli", "kaze-tachinu", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu022.jpg"
+sha256 = "23661b0f0af81e99798d48e887064ba8d0cc5cc10200d80ca79566819e599228"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_024.jpg"
+title = "Kaze tachinu — still 024"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["blue", "bright", "calm", "clouds", "field", "ghibli", "green", "kaze-tachinu", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu024.jpg"
+sha256 = "6803b10a7e88a8c4a61a7592dd3dfcf91df212ba4be6d5b7a8ae2155b7f0e30b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_025.jpg"
+title = "Kaze tachinu — still 025"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "dark", "ghibli", "kaze-tachinu", "melancholic", "ruins", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu025.jpg"
+sha256 = "ab1d70aaefde0c0edf044bfa98d60e0b8aeff235d7d126375a68b5f1af859b9a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_028.jpg"
+title = "Kaze tachinu — still 028"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "bright", "calm", "character", "forest", "ghibli", "green", "kaze-tachinu"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu028.jpg"
+sha256 = "a025dd0a353784c3dd2e042cff3f6476697e7456b1b718c64463a5d56fa92648"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_030.jpg"
+title = "Kaze tachinu — still 030"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "calm", "ghibli", "interior", "kaze-tachinu"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu030.jpg"
+sha256 = "6a06f269fe09b59dc8c8c542d7b761ed673360c82792652129977dbcc662ecc2"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_032.jpg"
+title = "Kaze tachinu — still 032"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "character", "ghibli", "green", "house", "interior", "kaze-tachinu", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu032.jpg"
+sha256 = "a175bd784c1e167e4018e3f2568088551a87bbab18f9a0ea2e108c5076aa52fd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_037.jpg"
+title = "Kaze tachinu — still 037"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["character", "dark", "ghibli", "kaze-tachinu", "melancholic", "night", "red"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu037.jpg"
+sha256 = "b956ab38aad3b2c35a80a731f9ce17325f7ff3e4a7b7e4233324e59264ecb646"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_042.jpg"
+title = "Kaze tachinu — still 042"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "garden", "ghibli", "green", "house", "kaze-tachinu", "pastel", "spring", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu042.jpg"
+sha256 = "b709f3b844f22c7cddfc28829bba2e2df0e42e9b07436c29e7da9f168fdff85c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_043.jpg"
+title = "Kaze tachinu — still 043"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "bright", "calm", "character", "clouds", "ghibli", "kaze-tachinu", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu043.jpg"
+sha256 = "d8aa5d3f0b503e5406f5a607a9a6f0780d1f03ea88882430c703e2a117682cf0"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_044.jpg"
+title = "Kaze tachinu — still 044"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "blue", "bright", "ghibli", "kaze-tachinu", "sky", "sun"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu044.jpg"
+sha256 = "1ac9690bac14d8e6d9132e1d340ba2510f2400e4ecbc33fb025da9b1df1698f7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_046.jpg"
+title = "Kaze tachinu — still 046"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["aircraft", "bright", "dramatic", "field", "ghibli", "green", "kaze-tachinu"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu046.jpg"
+sha256 = "08ebe9bf57c175802b1f47ab2422321f5def112909888a73590413b6cd2c7d6a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaze-tachinu_2013_050.jpg"
+title = "Kaze tachinu — still 050"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["bright", "calm", "forest", "ghibli", "green", "kaze-tachinu", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kazetachinu050.jpg"
+sha256 = "2b1a0e87ed234970cb8452b795b47378e5459304d1032daf4d8d033b428b8816"
+resolution = [1920, 1038]

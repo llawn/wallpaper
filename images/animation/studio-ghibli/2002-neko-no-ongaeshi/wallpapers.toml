@@ -1,0 +1,150 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2002-neko-no-ongaeshi"
+count = 12
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_003.jpg"
+title = "Neko no ongaeshi — still 003"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["animals", "calm", "cat", "flowers", "garden", "ghibli", "green", "neko-no-ongaeshi", "pink", "spring"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron003.jpg"
+sha256 = "d07c1e5948de46316e1f95e34eeccf30619e6496ff94e9dacb7d0f4555898704"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_004.jpg"
+title = "Neko no ongaeshi — still 004"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["animals", "cat", "dark", "ghibli", "green", "mysterious", "neko-no-ongaeshi", "night", "street", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron004.jpg"
+sha256 = "d797da3b9cdc3e9b955ebcd79bd0b28e6fd247a15287486034ca3fb2b7ed6805"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_010.jpg"
+title = "Neko no ongaeshi — still 010"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["calm", "cat", "character", "ghibli", "green", "melancholic", "neko-no-ongaeshi"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron010.jpg"
+sha256 = "5b3f9dd193152b5741b1d97cf8f9fd5b62afeafc628f240368ce35594130ee2e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_011.jpg"
+title = "Neko no ongaeshi — still 011"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["cat", "character", "ghibli", "neko-no-ongaeshi", "red", "vibrant", "whimsical", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron011.jpg"
+sha256 = "6e0a9640abe90c58180d2e792174f610c860533cee5e5355eb871af072ea47bc"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_013.jpg"
+title = "Neko no ongaeshi — still 013"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["bright", "calm", "cat", "ghibli", "green", "neko-no-ongaeshi", "street"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron013.jpg"
+sha256 = "a7cd517da49d5c1c9cb9430b1cd2ae59b994934f7a840d0b39c64924218b9040"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_014.jpg"
+title = "Neko no ongaeshi — still 014"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["architecture", "bright", "calm", "character", "city", "clouds", "ghibli", "neko-no-ongaeshi", "pastel", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron014.jpg"
+sha256 = "d5c911f6c667c7b82c9cb1277ad018b4975f0739fdfed6f3fbf51adf8bd3156b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_016.jpg"
+title = "Neko no ongaeshi — still 016"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["architecture", "calm", "city", "ghibli", "mysterious", "neko-no-ongaeshi", "night", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron016.jpg"
+sha256 = "e6dc766d8ee68c9fb7220d0db4c04558a848de1733f2479e6a5f0d7cf40e23e3"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_022.jpg"
+title = "Neko no ongaeshi — still 022"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["calm", "castle", "dreamy", "field", "ghibli", "green", "neko-no-ongaeshi", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron022.jpg"
+sha256 = "d46cee2527557b89f39287bea751ac8cd348a09478c6cde56b58f328ca792e51"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_032.jpg"
+title = "Neko no ongaeshi — still 032"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["architecture", "calm", "cat", "epic", "ghibli", "neko-no-ongaeshi", "ruins", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron032.jpg"
+sha256 = "d58f14c3d828592bd688861758af1660e06733ac130aa229dbbadd3fa09b8572"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_034.jpg"
+title = "Neko no ongaeshi — still 034"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["cat", "character", "dramatic", "ghibli", "green", "neko-no-ongaeshi", "ruins"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron034.jpg"
+sha256 = "2757a09b13ac2cada1b807a30bddb0f76e5ed9dc5e6f8210698174c61d0f706d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_044.jpg"
+title = "Neko no ongaeshi — still 044"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["blue", "bright", "calm", "character", "clouds", "epic", "ghibli", "neko-no-ongaeshi", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron044.jpg"
+sha256 = "3c8ed147dc1f1907a3e186a0d35e2578664c9e1459d098769394454ea466c95a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_neko-no-ongaeshi_2002_046.jpg"
+title = "Neko no ongaeshi — still 046"
+artist = "Studio Ghibli"
+year = 2002
+tags = ["birds", "blue", "city", "dark", "dramatic", "epic", "ghibli", "neko-no-ongaeshi", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2002 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/baron046.jpg"
+sha256 = "8d4e5e49fe06d78547023b1e1caf7266dd98309a207cb57e3b7e59073d10902d"
+resolution = [1920, 1038]

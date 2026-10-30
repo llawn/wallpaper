@@ -1,0 +1,246 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2013-kaguya-hime-no-monogatari"
+count = 20
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_001.jpg"
+title = "Kaguya-Hime no Monogatari — still 001"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "dreamy", "forest", "ghibli", "green", "kaguya-hime-no-monogatari", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime001.jpg"
+sha256 = "b9da92569fa99f1b2722024ce86552e7acdf68e66ed907a0db6fcffc5b56aa5a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_004.jpg"
+title = "Kaguya-Hime no Monogatari — still 004"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "character", "forest", "ghibli", "green", "kaguya-hime-no-monogatari", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime004.jpg"
+sha256 = "36343ea5660a4780cda3c4a03930a8269c8c0b75698360dd99c0f4db38d18dae"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_005.jpg"
+title = "Kaguya-Hime no Monogatari — still 005"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "character", "dreamy", "ghibli", "kaguya-hime-no-monogatari", "pastel", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime005.jpg"
+sha256 = "a839fc49247fc70014c94c0a7e996ebef04f73d9563a22e454f62e55540e6566"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_006.jpg"
+title = "Kaguya-Hime no Monogatari — still 006"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "countryside", "ghibli", "green", "house", "kaguya-hime-no-monogatari", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime006.jpg"
+sha256 = "bed6e7277d60e1c41c4e54247bca9a6f79f71c0fee5be635b2a1d6f9b25c7411"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_013.jpg"
+title = "Kaguya-Hime no Monogatari — still 013"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "flowers", "forest", "ghibli", "green", "kaguya-hime-no-monogatari", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime013.jpg"
+sha256 = "fd385846efb71d5403603e7d503611ce1c7f7cd69cd49ecd92a1454ee8c35a8e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_014.jpg"
+title = "Kaguya-Hime no Monogatari — still 014"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["forest", "ghibli", "green", "joyful", "kaguya-hime-no-monogatari", "pastel", "people"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime014.jpg"
+sha256 = "7608d94512af701c9d4a969d5499345ade81e457ee9fafc6a6ee0a5d4cddb06a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_021.jpg"
+title = "Kaguya-Hime no Monogatari — still 021"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["character", "ghibli", "green", "interior", "joyful", "kaguya-hime-no-monogatari", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime021.jpg"
+sha256 = "e7685a92bc0e8306f4f177693b9f0beca67a6de973d840ff771813b17db8d670"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_023.jpg"
+title = "Kaguya-Hime no Monogatari — still 023"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "character", "ghibli", "interior", "kaguya-hime-no-monogatari", "pink", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime023.jpg"
+sha256 = "7f0f0531f07b5a7089887075914af1f750b4e4a3342b97509d2423b81a9f7a87"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_027.jpg"
+title = "Kaguya-Hime no Monogatari — still 027"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["blue", "character", "ghibli", "interior", "kaguya-hime-no-monogatari", "melancholic", "pastel"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime027.jpg"
+sha256 = "138d8d4e4ee716920e316d2be038d513aaa8cacd8fc292e1107d1a3295bb1fab"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_029.jpg"
+title = "Kaguya-Hime no Monogatari — still 029"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["city", "dark", "dramatic", "ghibli", "kaguya-hime-no-monogatari", "monochrome", "moon", "night"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime029.jpg"
+sha256 = "220b137d74b297635071c5ac44686642dbd8c020fcc7ebc7de2273a14ff83c10"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_034.jpg"
+title = "Kaguya-Hime no Monogatari — still 034"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["epic", "flowers", "garden", "ghibli", "kaguya-hime-no-monogatari", "pastel", "people", "pink"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime034.jpg"
+sha256 = "cba9070b4388e3da1c591ddeb23e7fe445ca4ed24d20811f1ecbb73f12c91a3b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_036.jpg"
+title = "Kaguya-Hime no Monogatari — still 036"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "countryside", "field", "flowers", "ghibli", "green", "kaguya-hime-no-monogatari", "pastel", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime036.jpg"
+sha256 = "159778866f0b2564483e6f310e33c405a1021d8d0fd55b9e6249cc2633f609c6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_037.jpg"
+title = "Kaguya-Hime no Monogatari — still 037"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["dreamy", "field", "flowers", "ghibli", "kaguya-hime-no-monogatari", "pastel", "pink", "spring", "trees"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime037.jpg"
+sha256 = "25c35a157081bed4f1bbf67486eebfef59f333e42cda3a39f0dd2eb5c7aab7e4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_038.jpg"
+title = "Kaguya-Hime no Monogatari — still 038"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["character", "flowers", "ghibli", "joyful", "kaguya-hime-no-monogatari", "pastel", "pink", "spring"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime038.jpg"
+sha256 = "2b47ab7b743f8010b0b22cd539073213be7f8ccc2e33869ded58d0e64fe5d916"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_039.jpg"
+title = "Kaguya-Hime no Monogatari — still 039"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["character", "ghibli", "joyful", "kaguya-hime-no-monogatari", "pastel", "pink", "spring"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime039.jpg"
+sha256 = "df6494f78a1772d8e5eecc87463ada933cf28de543622355ba5f926a5d380734"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_042.jpg"
+title = "Kaguya-Hime no Monogatari — still 042"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "ghibli", "house", "interior", "kaguya-hime-no-monogatari", "pastel", "pink"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime042.jpg"
+sha256 = "0126781f9cdbf240a9133708d16c31be1835a54588a68e96578288b0a01456b5"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_045.jpg"
+title = "Kaguya-Hime no Monogatari — still 045"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["birds", "blue", "character", "dreamy", "epic", "ghibli", "kaguya-hime-no-monogatari", "pastel", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime045.jpg"
+sha256 = "2c8faa96df413c5701c6433727928348c8575925f4f6024e6c8b26015d050cf7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_046.jpg"
+title = "Kaguya-Hime no Monogatari — still 046"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["clouds", "dreamy", "epic", "ghibli", "kaguya-hime-no-monogatari", "pastel", "people"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime046.jpg"
+sha256 = "5b134627146149cdc23785ab816b8a039d57bc21f7b30e82080745498604a6f8"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_047.jpg"
+title = "Kaguya-Hime no Monogatari — still 047"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["calm", "clouds", "dreamy", "ghibli", "kaguya-hime-no-monogatari", "pastel", "people"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime047.jpg"
+sha256 = "1225b685ac0fa9571cd3ab5cb03788e7324e94f0843cb1a80569e0f7cdf7b029"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kaguya-hime-no-monogatari_2013_050.jpg"
+title = "Kaguya-Hime no Monogatari — still 050"
+artist = "Studio Ghibli"
+year = 2013
+tags = ["character", "dark", "ghibli", "kaguya-hime-no-monogatari", "melancholic", "moon", "pastel", "space"]
+license = "ghibli-free-use"
+license_detail = "© 2013 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kaguyahime050.jpg"
+sha256 = "da7339d5e35658e7bbaa4a553a180941df1bbbb20396cdebf5e6f94f2793bde9"
+resolution = [1920, 1038]

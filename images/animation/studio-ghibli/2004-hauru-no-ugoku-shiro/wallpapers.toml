@@ -1,0 +1,246 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2004-hauru-no-ugoku-shiro"
+count = 20
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_001.jpg"
+title = "Hauru no ugoku shiro — still 001"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["calm", "character", "cozy", "flowers", "ghibli", "hauru-no-ugoku-shiro", "interior", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl001.jpg"
+sha256 = "503cb942f1bb0962c87a160165e288cecc1199bf0b2b65fce01d421cbac2378d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_002.jpg"
+title = "Hauru no ugoku shiro — still 002"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["character", "dramatic", "ghibli", "hauru-no-ugoku-shiro", "interior", "people", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl002.jpg"
+sha256 = "392929c7f563d5e7cb1ab8d6c5659aba746e4ef7495ccec43dd570a03eb17072"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_004.jpg"
+title = "Hauru no ugoku shiro — still 004"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["architecture", "character", "city", "ghibli", "hauru-no-ugoku-shiro", "joyful", "red", "village", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl004.jpg"
+sha256 = "f7dbb0966ce31c65fdfc19816f9ec99a82f27228adbbdbeba61143cfadad7b9d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_006.jpg"
+title = "Hauru no ugoku shiro — still 006"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["architecture", "crowd", "ghibli", "hauru-no-ugoku-shiro", "joyful", "street", "vibrant", "village", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl006.jpg"
+sha256 = "9bcbeabe8b6b7f7b5f4f78aa03c6adf98c8611f22a0723364ad10d8f647b43cf"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_009.jpg"
+title = "Hauru no ugoku shiro — still 009"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "bright", "calm", "countryside", "field", "ghibli", "green", "hauru-no-ugoku-shiro", "mountains"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl009.jpg"
+sha256 = "d8a723cce3d33f663fe54cd1e6adfe9548357ff80824f4fe01a7b39c99fe8d40"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_010.jpg"
+title = "Hauru no ugoku shiro — still 010"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["character", "dramatic", "epic", "ghibli", "hauru-no-ugoku-shiro", "mountains", "purple", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl010.jpg"
+sha256 = "2b53d487c1daaa5d635ceb8379a84bdf71ea337f9e4e704a45fc9e4ba3dd0206"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_011.jpg"
+title = "Hauru no ugoku shiro — still 011"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["castle", "clouds", "dark", "epic", "ghibli", "hauru-no-ugoku-shiro", "mysterious", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl011.jpg"
+sha256 = "81d88d7b481bbfc4e0ce46c6825a026329e66b5fc2f408af4dc458ee8fadc7dd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_012.jpg"
+title = "Hauru no ugoku shiro — still 012"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["creature", "ghibli", "hauru-no-ugoku-shiro", "interior", "orange", "vibrant", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl012.jpg"
+sha256 = "ea10a3fd9b1274f30a12435208776f7aab277a977ac3fdd9cfcaacda5fd60c4b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_032.jpg"
+title = "Hauru no ugoku shiro — still 032"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["clouds", "dramatic", "epic", "field", "ghibli", "green", "hauru-no-ugoku-shiro", "sky", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl032.jpg"
+sha256 = "2747614718fe9472a840dcf745b8f2028c5ad3a338e9f40323f10e42ef20f7f5"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_033.jpg"
+title = "Hauru no ugoku shiro — still 033"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "clouds", "dramatic", "epic", "ghibli", "hauru-no-ugoku-shiro", "sky", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl033.jpg"
+sha256 = "5dd9ff05be2e74738a7b916f16764445c5c2758bb41b08f4d01893b0303e2c5c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_035.jpg"
+title = "Hauru no ugoku shiro — still 035"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["animals", "blue", "character", "field", "ghibli", "green", "hauru-no-ugoku-shiro", "joyful", "sky", "summer"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl035.jpg"
+sha256 = "5d77748325857d1297f19c4f4b70a1f96649bd5dbd0ffc65265085afb6588d4c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_037.jpg"
+title = "Hauru no ugoku shiro — still 037"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["bright", "character", "field", "flowers", "ghibli", "green", "hauru-no-ugoku-shiro", "joyful", "spring"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl037.jpg"
+sha256 = "15601a3b149b86abc6226618addf63b076f7f4edc8f0d9f429af002d1d37a730"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_038.jpg"
+title = "Hauru no ugoku shiro — still 038"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["city", "dark", "dramatic", "epic", "ghibli", "hauru-no-ugoku-shiro", "night", "orange", "red"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl038.jpg"
+sha256 = "6688ef6b9a9ead68cde367e1502fd56ea878fc1efc7654f5d8561c2f301430e8"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_041.jpg"
+title = "Hauru no ugoku shiro — still 041"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["character", "cozy", "creature", "ghibli", "hauru-no-ugoku-shiro", "interior", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl041.jpg"
+sha256 = "1bcb22df95d1115f4d8946f305d7e762cf56ab1c6ef63ed7a4e6c01ec38bdc65"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_043.jpg"
+title = "Hauru no ugoku shiro — still 043"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "character", "dreamy", "ghibli", "hauru-no-ugoku-shiro", "night", "stars"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl043.jpg"
+sha256 = "51f7dd54e0d0f4fe64c01a2339f6889afc7224ee140d889ef63451841dfec98f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_044.jpg"
+title = "Hauru no ugoku shiro — still 044"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "character", "dark", "dramatic", "ghibli", "hauru-no-ugoku-shiro", "night", "orange", "stars"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl044.jpg"
+sha256 = "46cb513ce83976cf93a42fbbf6fa88f313d67082ef317eb22c0495a08d8a0e0c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_045.jpg"
+title = "Hauru no ugoku shiro — still 045"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["character", "epic", "ghibli", "golden-hour", "hauru-no-ugoku-shiro", "sky", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl045.jpg"
+sha256 = "86251a2de440f12ad102d210a308108b912e90a0a33dc3e1fa02980a9e3471dc"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_048.jpg"
+title = "Hauru no ugoku shiro — still 048"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["bright", "calm", "character", "creature", "field", "ghibli", "green", "hauru-no-ugoku-shiro", "mountains"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl048.jpg"
+sha256 = "77f2e3d9da2ccd674fb81b06190628838e2b118f025fd16e170ed2ea99f8bb9f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_049.jpg"
+title = "Hauru no ugoku shiro — still 049"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "bright", "castle", "clouds", "epic", "ghibli", "hauru-no-ugoku-shiro", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl049.jpg"
+sha256 = "54d570f3c5035e7c66baae9d76a157db3ed86b98106022566b0d91ef510b912c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_hauru-no-ugoku-shiro_2004_050.jpg"
+title = "Hauru no ugoku shiro — still 050"
+artist = "Studio Ghibli"
+year = 2004
+tags = ["blue", "character", "clouds", "dreamy", "ghibli", "hauru-no-ugoku-shiro", "joyful", "sky", "yellow"]
+license = "ghibli-free-use"
+license_detail = "© 2004 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/howl050.jpg"
+sha256 = "f45c9779d4b99c36da228bb6f2527e87b1e8a30b0d3c29106d26f6111833e696"
+resolution = [1920, 1038]
