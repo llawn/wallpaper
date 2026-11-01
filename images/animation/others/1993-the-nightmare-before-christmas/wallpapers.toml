@@ -1,0 +1,18 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "1993-the-nightmare-before-christmas"
+count = 1
+[[wallpaper]]
+file = "skellington-productions_the-nightmare-before-christmas_1993_01.png"
+title = "The Nightmare Before Christmas"
+artist = "Skellington Productions"
+year = 1993
+tags = ["character", "dark", "eerie", "monochrome", "mysterious", "night", "the-nightmare-before-christmas"]
+license = "all-rights-reserved"
+license_detail = "© 1993 Touchstone Pictures / Disney Enterprises, Inc. — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/4285jm"
+download = "https://w.wallhaven.cc/full/42/wallhaven-4285jm.png"
+sha256 = "5d39918ab2a1eeab2f0297de1eb172941993c4832bf6c43cfbb512b81585ec7e"
+resolution = [1920, 1080]

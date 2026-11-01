@@ -1,0 +1,18 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2014-song-of-the-sea"
+count = 1
+[[wallpaper]]
+file = "cartoon-saloon_song-of-the-sea_2014_01.png"
+title = "Song of the Sea"
+artist = "Cartoon Saloon"
+year = 2014
+tags = ["calm", "coast", "melancholic", "sea", "song-of-the-sea", "teal", "warm", "yellow"]
+license = "all-rights-reserved"
+license_detail = "© 2014 Cartoon Saloon, Melusine Productions, The Big Farm, Superprod, Noerlum — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/l32z9q"
+download = "https://w.wallhaven.cc/full/l3/wallhaven-l32z9q.png"
+sha256 = "550f7609c104fa0ede673a22eae7b66a83851c218abfafd5a8a50d4e647b4ca1"
+resolution = [1920, 1080]

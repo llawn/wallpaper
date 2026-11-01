@@ -1,0 +1,30 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2018-spider-man-into-the-spider-verse"
+count = 2
+[[wallpaper]]
+file = "sony-pictures-animation_spider-man-into-the-spider-verse_2018_01.jpg"
+title = "Spider-Man: Into the Spider-Verse"
+artist = "Sony Pictures Animation"
+year = 2018
+tags = ["architecture", "blue", "character", "city", "cool", "dramatic", "sky", "spider-man-into-the-spider-verse"]
+license = "all-rights-reserved"
+license_detail = "© 2018 Sony Pictures Animation Inc.; Spider-Man characters Marvel — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/83ow1j"
+download = "https://w.wallhaven.cc/full/83/wallhaven-83ow1j.jpg"
+sha256 = "19ccd38e4b7af57375c72c1edfe05eec839f1348efd38168937c9639a981d237"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "sony-pictures-animation_spider-man-into-the-spider-verse_2018_02.jpg"
+title = "Spider-Man: Into the Spider-Verse"
+artist = "Sony Pictures Animation"
+year = 2018
+tags = ["blue", "city", "epic", "golden-hour", "people", "sky", "spider-man-into-the-spider-verse", "yellow"]
+license = "all-rights-reserved"
+license_detail = "© 2018 Sony Pictures Animation Inc.; Spider-Man characters Marvel — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/v9pqym"
+download = "https://w.wallhaven.cc/full/v9/wallhaven-v9pqym.jpg"
+sha256 = "bd698a8238262afc369f76576dce22f34643bee27754d1efe13583e5f0fe6ebb"
+resolution = [3840, 2160]

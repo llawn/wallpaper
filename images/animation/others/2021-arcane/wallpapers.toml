@@ -1,0 +1,90 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2021-arcane"
+count = 7
+[[wallpaper]]
+file = "fortiche_arcane_2021_01.png"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "bridge", "character", "dark", "dramatic", "melancholic", "moon", "red", "sky"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/1ko8mg"
+download = "https://w.wallhaven.cc/full/1k/wallhaven-1ko8mg.png"
+sha256 = "5d6b8089295572b500bd43dc6ba6f2b9d451cdea51075af4db750c50fb468b65"
+resolution = [1920, 1080]
+[[wallpaper]]
+file = "fortiche_arcane_2021_02.jpg"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "blue", "character", "dramatic", "epic", "people", "pink"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/1kojg1"
+download = "https://w.wallhaven.cc/full/1k/wallhaven-1kojg1.jpg"
+sha256 = "c02a305964bec30a4b802ccfdef38db132912e6f83dcd90225a4baf6374b5097"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fortiche_arcane_2021_03.jpg"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "blue", "character", "dramatic", "purple", "technology", "vibrant"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/57pr63"
+download = "https://w.wallhaven.cc/full/57/wallhaven-57pr63.jpg"
+sha256 = "cc063fd41d96fbd60982ba6199b70ff72a384261fb5709a32329d9d12da40c94"
+resolution = [1920, 1080]
+[[wallpaper]]
+file = "fortiche_arcane_2021_04.jpg"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "character", "creature", "dark", "dramatic", "mysterious", "purple", "vibrant"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/9dqx2k"
+download = "https://w.wallhaven.cc/full/9d/wallhaven-9dqx2k.jpg"
+sha256 = "879cc6c6ad97d65a3ab3ef50035bde79c589843b52d5ecb7b15d046e68231727"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fortiche_arcane_2021_05.png"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "architecture", "calm", "character", "interior", "orange", "warm"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/q2p98l"
+download = "https://w.wallhaven.cc/full/q2/wallhaven-q2p98l.png"
+sha256 = "56d188b315b7598174698419663842f3ef89e222e9903fa12359b6d5f53e8401"
+resolution = [1920, 1080]
+[[wallpaper]]
+file = "fortiche_arcane_2021_06.png"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "character", "dark", "dramatic", "eerie", "teal"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/wqrk67"
+download = "https://w.wallhaven.cc/full/wq/wallhaven-wqrk67.png"
+sha256 = "6253b8bc46eb09c31f0bf7e66955b1867f8e7214f50169266a2eda749aecd2da"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fortiche_arcane_2021_07.png"
+title = "Arcane"
+artist = "Fortiche"
+year = 2021
+tags = ["arcane", "character", "dark", "eerie", "mysterious", "teal"]
+license = "all-rights-reserved"
+license_detail = "© 2021 Riot Games, Inc. (animation by Fortiche) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/x8k5wz"
+download = "https://w.wallhaven.cc/full/x8/wallhaven-x8k5wz.png"
+sha256 = "5f31831a75e460268c262543e8f25725611f00a23fd95f6f93a9e45d8e67cf8c"
+resolution = [1920, 1080]

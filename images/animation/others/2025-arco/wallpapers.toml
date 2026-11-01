@@ -1,0 +1,90 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2025-arco"
+count = 7
+[[wallpaper]]
+file = "remembers_arco_2025_01.jpg"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["abstract", "arco", "bright", "character", "epic", "vibrant"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco.jpg"
+sha256 = "037ede771fc88080b4eec8db0dff24157fc0f9a73ebf81d4d94882b1abbbd9bb"
+resolution = [1920, 1080]
+[[wallpaper]]
+file = "remembers_arco_2025_02.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["architecture", "arco", "calm", "dreamy", "pink", "purple", "sky", "sunset", "trees"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-01--remembers-mountaina-1.png"
+sha256 = "7be2abb81b8e2483725722d7cfdcd2982417e25efbf6a8a902a61ce78de118d2"
+resolution = [1898, 1075]
+[[wallpaper]]
+file = "remembers_arco_2025_03.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["arco", "bright", "calm", "dreamy", "forest", "garden", "green", "house"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-03-remembers-mountaina.png"
+sha256 = "c5efa677343f5e25774c3637668bbfdced1024ad653d34778cafe48acef40231"
+resolution = [3834, 2158]
+[[wallpaper]]
+file = "remembers_arco_2025_04.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["arco", "calm", "character", "dark", "forest", "green", "melancholic"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-05-remembers-mountaina.png"
+sha256 = "8b81494c935b46aca291c08033bc91dcdae5e5d6f78fa57d1710cb84c93a2bdc"
+resolution = [3835, 2146]
+[[wallpaper]]
+file = "remembers_arco_2025_06.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["arco", "birds", "blue", "character", "dark", "mysterious", "sky"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-07--remembers-mountaina.png"
+sha256 = "c73bbdc7fc838927daa74d6019942f178d36ae7f508cbd40421824e38a18abc6"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "remembers_arco_2025_07.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["arco", "bright", "calm", "countryside", "green", "summer", "trees", "village"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-08-remembers-mountaina.png"
+sha256 = "bc3684841890ddbbd56e2c51974d930d1a5ce9c131c215295af5136a0a37d77c"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "remembers_arco_2025_08.png"
+title = "Arco"
+artist = "Remembers"
+year = 2025
+tags = ["arco", "clouds", "dreamy", "orange", "pastel", "pink", "sky", "sunset"]
+license = "all-rights-reserved"
+license_detail = "© 2025 Remembers / MountainA — official press still, Diaphana Distribution; personal desktop use only"
+source = "https://diaphana.fr/film/arco/"
+download = "https://diaphana.fr/wp-content/uploads/2025/04/arco-photo-09-remembers-mountaina.png"
+sha256 = "083f02ee35b315c51fc2c21e3968711434ab4928cdd6877ac46d6fc8b64a6c36"
+resolution = [1909, 1079]

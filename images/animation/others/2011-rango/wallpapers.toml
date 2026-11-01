@@ -1,0 +1,18 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2011-rango"
+count = 1
+[[wallpaper]]
+file = "industrial-light_rango_2011_01.jpg"
+title = "Rango"
+artist = "Industrial Light & Magic"
+year = 2011
+tags = ["animals", "bright", "clouds", "creature", "rango", "sky", "teal", "whimsical"]
+license = "all-rights-reserved"
+license_detail = "© 2011 Paramount Pictures Corporation (animation by Industrial Light & Magic) — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/n612px"
+download = "https://w.wallhaven.cc/full/n6/wallhaven-n612px.jpg"
+sha256 = "9c67fe34e5477bea03285ffab4c4e256c2b9b46137c8aa36baa49475c5e02c02"
+resolution = [1920, 1080]

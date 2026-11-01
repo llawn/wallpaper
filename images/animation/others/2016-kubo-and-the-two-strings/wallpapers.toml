@@ -1,0 +1,30 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2016-kubo-and-the-two-strings"
+count = 2
+[[wallpaper]]
+file = "laika_kubo-and-the-two-strings_2016_01.jpg"
+title = "Kubo and the Two Strings"
+artist = "Laika"
+year = 2016
+tags = ["blue", "character", "crowd", "epic", "forest", "kubo-and-the-two-strings", "orange"]
+license = "all-rights-reserved"
+license_detail = "© 2016 Laika, LLC — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/8xrzq1"
+download = "https://w.wallhaven.cc/full/8x/wallhaven-8xrzq1.jpg"
+sha256 = "59a277a819cdc332fc69e68c1a15622cc3f4abb7398d92c213df15c7f59d1aa9"
+resolution = [2048, 1151]
+[[wallpaper]]
+file = "laika_kubo-and-the-two-strings_2016_02.jpg"
+title = "Kubo and the Two Strings"
+artist = "Laika"
+year = 2016
+tags = ["blue", "character", "dramatic", "epic", "kubo-and-the-two-strings", "moon", "pastel", "sea"]
+license = "all-rights-reserved"
+license_detail = "© 2016 Laika, LLC — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/d58yzj"
+download = "https://w.wallhaven.cc/full/d5/wallhaven-d58yzj.jpg"
+sha256 = "cec4137582084620184bcce252c1331c76f9e7b93f89b63fecde74a690f9eda5"
+resolution = [5120, 2880]

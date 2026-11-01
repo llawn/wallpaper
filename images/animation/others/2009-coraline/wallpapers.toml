@@ -1,0 +1,30 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2009-coraline"
+count = 2
+[[wallpaper]]
+file = "laika_coraline_2009_01.png"
+title = "Coraline"
+artist = "Laika"
+year = 2009
+tags = ["character", "coraline", "dark", "eerie", "mysterious", "teal"]
+license = "all-rights-reserved"
+license_detail = "© 2009 Laika, LLC — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/3ldje6"
+download = "https://w.wallhaven.cc/full/3l/wallhaven-3ldje6.png"
+sha256 = "49d977fd61d0bb320f44d0597281d593b1f14ff31aa55797a923e6b236f62fb4"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "laika_coraline_2009_02.jpg"
+title = "Coraline"
+artist = "Laika"
+year = 2009
+tags = ["blue", "character", "coraline", "dreamy", "mysterious", "purple", "vibrant"]
+license = "all-rights-reserved"
+license_detail = "© 2009 Laika, LLC — film still / key art; personal desktop use only"
+source = "https://wallhaven.cc/w/d6qmkl"
+download = "https://w.wallhaven.cc/full/d6/wallhaven-d6qmkl.jpg"
+sha256 = "bcb10283bc6319698d5b48a7bc1b4e8b8a00709790d36c2dbc65b1c511bf6e56"
+resolution = [1920, 1080]
