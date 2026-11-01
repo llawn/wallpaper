@@ -1,0 +1,210 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2011-kokuriko-zaka-kara"
+count = 17
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_003.jpg"
+title = "Kokuriko zaka kara — still 003"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["calm", "ghibli", "green", "house", "kokuriko-zaka-kara", "trees", "village"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka003.jpg"
+sha256 = "e59e7aa7aa911a1c9a766898f143830e007078e34f5f394cdfb5b8b579523743"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_004.jpg"
+title = "Kokuriko zaka kara — still 004"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["birds", "blue", "bright", "calm", "character", "ghibli", "kokuriko-zaka-kara", "ship", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka004.jpg"
+sha256 = "da51e34b933284f1da6c3976ef3d11d23a4c4dd85423a559077d725056a5ddd7"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_008.jpg"
+title = "Kokuriko zaka kara — still 008"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["blue", "bright", "calm", "coast", "ghibli", "green", "kokuriko-zaka-kara", "ship", "village"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka008.jpg"
+sha256 = "a964a4108926540839c2f155c8579de3c0faabfa2f54bc839a70b94f8b763cb6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_010.jpg"
+title = "Kokuriko zaka kara — still 010"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["architecture", "dramatic", "ghibli", "house", "kokuriko-zaka-kara", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka010.jpg"
+sha256 = "0194c213cee0b99529ac4a3cfdb331ec5cdec5d942316ce883a114fe956a1c8d"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_011.jpg"
+title = "Kokuriko zaka kara — still 011"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["character", "dark", "ghibli", "interior", "kokuriko-zaka-kara", "mysterious", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka011.jpg"
+sha256 = "7db4f1c7c9bc1201df7e753dcc62c96672f4e58e5a9e17a7215ae5c64dbe8765"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_012.jpg"
+title = "Kokuriko zaka kara — still 012"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["architecture", "dark", "ghibli", "interior", "kokuriko-zaka-kara", "mysterious", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka012.jpg"
+sha256 = "755310da98ab3b0f058e50156934ffe47e3d26a4bba1116602f9ea00b0ca6fe6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_017.jpg"
+title = "Kokuriko zaka kara — still 017"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["blue", "ghibli", "golden-hour", "kokuriko-zaka-kara", "people", "street", "sunset", "vehicle", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka017.jpg"
+sha256 = "4e9a1cb3a827907b1c013198e0fb0e73179a62df2ff936ae657820ad2f9af720"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_027.jpg"
+title = "Kokuriko zaka kara — still 027"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["blue", "dark", "ghibli", "kokuriko-zaka-kara", "melancholic", "people", "rain", "red"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka027.jpg"
+sha256 = "0534140dfd898f09b490186f2b33417d67bbb5d1560394374427f33b24b5479a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_029.jpg"
+title = "Kokuriko zaka kara — still 029"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["architecture", "calm", "ghibli", "kokuriko-zaka-kara", "people", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka029.jpg"
+sha256 = "bce804a452b8dee295322b20263d9d57bc3c567d3f7845f273bba7fa811be2a2"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_030.jpg"
+title = "Kokuriko zaka kara — still 030"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["architecture", "blue", "bright", "clouds", "ghibli", "kokuriko-zaka-kara", "sky", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka030.jpg"
+sha256 = "33d0523c2bbf8617605abccf98fc23413332e06f6e4890995e03df380ed0bffd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_031.jpg"
+title = "Kokuriko zaka kara — still 031"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["bright", "calm", "city", "ghibli", "kokuriko-zaka-kara", "street", "train", "vehicle"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka031.jpg"
+sha256 = "f38a8e29854992de72503f010b69bc8e139c0351a96e9b9d81d2b0343e1da0dd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_036.jpg"
+title = "Kokuriko zaka kara — still 036"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["blue", "calm", "dark", "ghibli", "green", "kokuriko-zaka-kara", "night", "ship"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka036.jpg"
+sha256 = "4e1b4ecf63697f41da0d644d7e991ffba757fdbc8d3dfbe18b8fd6ec3eb9b777"
+resolution = [1919, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_038.jpg"
+title = "Kokuriko zaka kara — still 038"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["blue", "calm", "dark", "ghibli", "kokuriko-zaka-kara", "night", "street", "train"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka038.jpg"
+sha256 = "d3005ec61bb901d192a741032771b22c73714c40d172c7c44a0d2aac92a87547"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_039.jpg"
+title = "Kokuriko zaka kara — still 039"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["ghibli", "interior", "joyful", "kokuriko-zaka-kara", "people", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka039.jpg"
+sha256 = "9b764bc13392f7c81efe74e885213b070527bd516b7188893b70b899f2aca85c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_046.jpg"
+title = "Kokuriko zaka kara — still 046"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["countryside", "ghibli", "green", "joyful", "kokuriko-zaka-kara", "road", "vehicle", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka046.jpg"
+sha256 = "f0e6cadb7f5c42bb3096b90aa6ea7ae783980c5ab57aee751eb98de381dcb0e4"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_049.jpg"
+title = "Kokuriko zaka kara — still 049"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["calm", "ghibli", "golden-hour", "green", "house", "kokuriko-zaka-kara", "sunset", "village", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka049.jpg"
+sha256 = "6c8054629e5762fc2ad71a8e3eaf7d9119fd25342c413d9b64f2a28927112da1"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_kokuriko-zaka-kara_2011_050.jpg"
+title = "Kokuriko zaka kara — still 050"
+artist = "Studio Ghibli"
+year = 2011
+tags = ["calm", "clouds", "ghibli", "kokuriko-zaka-kara", "orange", "people", "sky", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2011 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/kokurikozaka050.jpg"
+sha256 = "adfce561fdeccaadf9f3b6b901ac4b012bc19f11f9267990df336451b70dcf54"
+resolution = [1920, 1038]

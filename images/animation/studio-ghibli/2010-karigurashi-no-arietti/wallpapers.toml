@@ -1,0 +1,234 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2010-karigurashi-no-arietti"
+count = 19
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_001.jpg"
+title = "Karigurashi no Arietti — still 001"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "dreamy", "forest", "ghibli", "green", "house", "karigurashi-no-arietti"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi001.jpg"
+sha256 = "1f4773e6ea1134abf65fbda2e30e510f68d3b9301dd8d30da778238373191b1e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_002.jpg"
+title = "Karigurashi no Arietti — still 002"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "countryside", "garden", "ghibli", "green", "house", "karigurashi-no-arietti", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi002.jpg"
+sha256 = "668716aa20e1906fa0e2614d06cf71a5b7f233fcb74fdba4cdb5327991bffc6c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_003.jpg"
+title = "Karigurashi no Arietti — still 003"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "character", "garden", "ghibli", "green", "karigurashi-no-arietti"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi003.jpg"
+sha256 = "eb453f79e65cfacb6f94b0e6f0649512bbd2d51270c65276508ea1164fd75a0c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_005.jpg"
+title = "Karigurashi no Arietti — still 005"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["animals", "blue", "character", "dark", "dramatic", "ghibli", "karigurashi-no-arietti"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi005.jpg"
+sha256 = "215af10776866e872075ca3defae45f5d3966ca40ba3025d3981c1dd622588dd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_006.jpg"
+title = "Karigurashi no Arietti — still 006"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["character", "cozy", "ghibli", "green", "interior", "karigurashi-no-arietti", "warm", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi006.jpg"
+sha256 = "81a12d9e3cd141a3f7d672a22d1c6c77382451db0992910c8250adfa0c0fd8be"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_007.jpg"
+title = "Karigurashi no Arietti — still 007"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["character", "cozy", "ghibli", "green", "interior", "karigurashi-no-arietti", "warm", "whimsical"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi007.jpg"
+sha256 = "cbb02c03685a01455c51dc3d940ae7bee0ef7b4c3c3ac4427a834da20be512fe"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_018.jpg"
+title = "Karigurashi no Arietti — still 018"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "character", "forest", "ghibli", "green", "karigurashi-no-arietti", "rain"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi018.jpg"
+sha256 = "0c4b13861ff3209390a7d0e1920569814b8de81c7ab42f3ce72b2a98e2161b05"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_020.jpg"
+title = "Karigurashi no Arietti — still 020"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "ghibli", "green", "karigurashi-no-arietti", "people", "ruins", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi020.jpg"
+sha256 = "80ee078949638b8f7b9a89d45b5a46523e79f6da9fd76d83b76552583c3c242a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_021.jpg"
+title = "Karigurashi no Arietti — still 021"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "character", "forest", "garden", "ghibli", "green", "karigurashi-no-arietti", "red"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi021.jpg"
+sha256 = "2027627c751a26bbbe9d056f47691eee19dbbc2ed401ac0c3b81608213db15dd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_022.jpg"
+title = "Karigurashi no Arietti — still 022"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "character", "flowers", "garden", "ghibli", "green", "karigurashi-no-arietti"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi022.jpg"
+sha256 = "41d762605d378a535508a086ba9e933ad19760a00d297f551aa3718275d21787"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_024.jpg"
+title = "Karigurashi no Arietti — still 024"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["calm", "character", "ghibli", "green", "karigurashi-no-arietti", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi024.jpg"
+sha256 = "ad886fbdc6998450a95f693eb7a0935ba148abbd610072df9a68070fbc9bd28e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_031.jpg"
+title = "Karigurashi no Arietti — still 031"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["blue", "dark", "ghibli", "karigurashi-no-arietti", "mysterious", "night", "people", "ruins"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi031.jpg"
+sha256 = "8062bd328e913d41df4eaf8afd78ef14c7c7da22878d1fda55e7f07fa3beec2e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_032.jpg"
+title = "Karigurashi no Arietti — still 032"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["bright", "calm", "character", "flowers", "ghibli", "karigurashi-no-arietti", "orange", "pink", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi032.jpg"
+sha256 = "c9516622c904eee00ab9388bd4c0434f3288a85cfb418b52315d4a532a5486cc"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_033.jpg"
+title = "Karigurashi no Arietti — still 033"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["bright", "calm", "character", "flowers", "garden", "ghibli", "green", "karigurashi-no-arietti", "orange"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi033.jpg"
+sha256 = "23dd85e4f8eca0669bcc5579aaedbe3cf865b3487a2c06aa0e0566ffb92fc9fb"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_042.jpg"
+title = "Karigurashi no Arietti — still 042"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["character", "dark", "forest", "ghibli", "karigurashi-no-arietti", "mysterious", "night", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi042.jpg"
+sha256 = "be83a06d08cfe74e88263548b10411154410bfa1285c58e698334301596c40fd"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_043.jpg"
+title = "Karigurashi no Arietti — still 043"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["blue", "calm", "character", "dark", "ghibli", "house", "karigurashi-no-arietti", "night"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi043.jpg"
+sha256 = "494cb4b176fbd8cadc2b8beece6aca8d9bfa4d8081180905c772ca4a2444072b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_044.jpg"
+title = "Karigurashi no Arietti — still 044"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["character", "dark", "forest", "ghibli", "green", "karigurashi-no-arietti", "mysterious", "night"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi044.jpg"
+sha256 = "50261a1258361e22ad5e0b4f2c659d34d3476a72c44a801cfbf7857891318e10"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_047.jpg"
+title = "Karigurashi no Arietti — still 047"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["blue", "bright", "calm", "cat", "character", "city", "field", "ghibli", "green", "karigurashi-no-arietti"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi047.jpg"
+sha256 = "afd9a061e5fc0e64455bba46fd8ceb232f49cf1a7bccccfb9d1298505f66c72a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_karigurashi-no-arietti_2010_049.jpg"
+title = "Karigurashi no Arietti — still 049"
+artist = "Studio Ghibli"
+year = 2010
+tags = ["animals", "calm", "character", "dark", "ghibli", "green", "karigurashi-no-arietti", "river"]
+license = "ghibli-free-use"
+license_detail = "© 2010 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/karigurashi049.jpg"
+sha256 = "1b5d29b1472ddeb29fbff813d46b674ebb4ad117ce271b80dcc11913b31e9c2b"
+resolution = [1920, 1038]

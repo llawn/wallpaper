@@ -1,0 +1,186 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "animation"
+movement = "2006-gedo-senki"
+count = 15
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_001.jpg"
+title = "Gedo senki — still 001"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["architecture", "epic", "gedo-senki", "ghibli", "golden-hour", "interior", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged001.jpg"
+sha256 = "91be7ba86902accd7888d66a2baa3e53bee0f466fc0bd65a74ac0b72b4ec4474"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_007.jpg"
+title = "Gedo senki — still 007"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["blue", "calm", "city", "coast", "epic", "gedo-senki", "ghibli", "green", "sea", "village"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged007.jpg"
+sha256 = "7dc9296a0f87aef18b2985cc7147ed679823fe3cf83b772aa032bdc6f1b29ea6"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_009.jpg"
+title = "Gedo senki — still 009"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["calm", "city", "epic", "gedo-senki", "ghibli", "ruins", "sea", "ship", "teal"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged009.jpg"
+sha256 = "c324deab28bfb76590e5ee04e52ef09260f0aad509d5f4ba3e622845e85d3248"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_011.jpg"
+title = "Gedo senki — still 011"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["blue", "calm", "character", "gedo-senki", "ghibli", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged011.jpg"
+sha256 = "a149ba315e5d0290f55383e7b7b2139b01858dffa364e67e9735b76d6fec139a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_014.jpg"
+title = "Gedo senki — still 014"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["calm", "character", "epic", "gedo-senki", "ghibli", "golden-hour", "island", "orange", "sea", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged014.jpg"
+sha256 = "5a67b513377aa1c7c75c073840f1515124b39f0c1e1f4f8318151e6d639bb67e"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_020.jpg"
+title = "Gedo senki — still 020"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["blue", "calm", "character", "dreamy", "gedo-senki", "ghibli", "night", "stars"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged020.jpg"
+sha256 = "07d0e900507cb771d3f2132068b4c7c0e3a2f39ed0ceae39111ee722ae23381a"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_023.jpg"
+title = "Gedo senki — still 023"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["calm", "castle", "epic", "field", "gedo-senki", "ghibli", "green", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged023.jpg"
+sha256 = "2a60617c0773d3c58dbd14ba011239a6a1a9ca41b0ca36728507f7d1c50dc17c"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_024.jpg"
+title = "Gedo senki — still 024"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["blue", "calm", "character", "clouds", "gedo-senki", "ghibli", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged024.jpg"
+sha256 = "8a41acd4092be8e164aa310f9afc4bade22f68d7ae8898047fde5b77fe22ea8b"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_025.jpg"
+title = "Gedo senki — still 025"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["calm", "dreamy", "field", "gedo-senki", "ghibli", "golden-hour", "green", "orange", "sunset"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged025.jpg"
+sha256 = "a8fdaa6c68b45cd1ee494cd15f12a63fa44076f0f1b9faf4f801b2a9ca0f9156"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_035.jpg"
+title = "Gedo senki — still 035"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["character", "dark", "dramatic", "gedo-senki", "ghibli", "interior"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged035.jpg"
+sha256 = "f520825a74ca6b485b71395c0d2694f56035fac967b7804deff90e5e51b7d165"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_039.jpg"
+title = "Gedo senki — still 039"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["calm", "gedo-senki", "ghibli", "golden-hour", "people", "sea", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged039.jpg"
+sha256 = "bdf4fe9553e9b7de57ccf76e152f69bd1552324d3d4d8cb48bd9bdaf2978253f"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_040.jpg"
+title = "Gedo senki — still 040"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["character", "creature", "dark", "dramatic", "gedo-senki", "ghibli", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged040.jpg"
+sha256 = "b60007eed816700292d2a0d4dfb0aa1b0fab2fc77259ecc3cc926e5bea4b18bb"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_045.jpg"
+title = "Gedo senki — still 045"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["character", "dreamy", "gedo-senki", "ghibli", "golden-hour", "orange", "sea", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged045.jpg"
+sha256 = "1eb07b7565ff0dfe323c70be15dc9ce267d17ae7ef1e3f211d04c72b1ef7c434"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_047.jpg"
+title = "Gedo senki — still 047"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["character", "clouds", "epic", "gedo-senki", "ghibli", "orange", "sky", "sunset", "warm"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged047.jpg"
+sha256 = "66e05a74f67405445618e65913d1e01df18d7ee5a6cf6bca7236f7c0799a3fb9"
+resolution = [1920, 1038]
+[[wallpaper]]
+file = "studio-ghibli_gedo-senki_2006_048.jpg"
+title = "Gedo senki — still 048"
+artist = "Studio Ghibli"
+year = 2006
+tags = ["blue", "calm", "clouds", "dragon", "epic", "field", "gedo-senki", "ghibli", "green", "sky"]
+license = "ghibli-free-use"
+license_detail = "© 2006 Studio Ghibli — free stills, use within common sense"
+source = "https://www.ghibli.jp/info/013344/"
+download = "https://www.ghibli.jp/gallery/ged048.jpg"
+sha256 = "af4731fe44a87a7d5c45c7b8b3fbc771032ea744ae23b50991db7ad92eb7bbfa"
+resolution = [1920, 1038]
