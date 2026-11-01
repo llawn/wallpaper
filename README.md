@@ -59,7 +59,7 @@ wallpapers/
   - [`animation/disney/`](images/animation/disney/) — one folder per subfolder
   - [`animation/dreamworks/`](images/animation/dreamworks/) — one folder per subfolder
   - [`animation/illumination/`](images/animation/illumination/) — one folder per subfolder
-  - [`animation/independent/`](images/animation/independent/) — one folder per subfolder
+  - [`animation/others/`](images/animation/others/) — one folder per subfolder
   - [`animation/pixar/`](images/animation/pixar/) — one folder per subfolder
   - [`animation/studio-ghibli/`](images/animation/studio-ghibli/) — one folder per subfolder
 - Linux (official distribution and desktop wallpapers)
