@@ -1,0 +1,72 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "cosmic"
+count = 6
+[[wallpaper]]
+file = "cosmic_a-stormy-stellar-nursery-esa-379309.jpg"
+title = "A stormy stellar nursery esa 379309"
+artist = "ESA"
+tags = ["blue", "cosmic", "epic", "mysterious", "orange", "space", "stars"]
+license = "CC-BY-4.0"
+license_detail = "CC BY 4.0 — ESA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/A_stormy_stellar_nursery_esa_379309.jpg"
+sha256 = "a76cfb42a0b33e4dee7e977ea97ab892bc0d10e03bc5a7261a5570928cd014aa"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "cosmic_orion-nebula-nasa-heic0601a.jpg"
+title = "Orion nebula nasa heic0601a"
+artist = "NASA"
+tags = ["cosmic", "dreamy", "epic", "orange", "purple", "space", "stars"]
+license = "public-domain"
+license_detail = "Public domain — NASA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/orion_nebula_nasa_heic0601a.jpg"
+sha256 = "7500f702f0488d4a8df2c5abeb7ca9107a7ca7998e0441727cbaf79465b02388"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "cosmic_otherworldly-earth-nasa-iss064-e-29444.jpg"
+title = "Otherworldly earth nasa ISS064 E 29444"
+artist = "NASA"
+tags = ["blue", "cosmic", "dark", "dramatic", "orange", "planet", "space"]
+license = "public-domain"
+license_detail = "Public domain — NASA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/otherworldly_earth_nasa_ISS064-E-29444.jpg"
+sha256 = "6d6c3590b7365c8c5c754edd4a336ab38c8eedc3ba6cc9139572bb11aac059ae"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "cosmic_phytoplankton-bloom-nasa-oli2-20240121.jpg"
+title = "Phytoplankton bloom nasa oli2 20240121"
+artist = "NASA"
+tags = ["abstract", "calm", "cosmic", "dreamy", "green", "teal"]
+license = "public-domain"
+license_detail = "Public domain — NASA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/phytoplankton_bloom_nasa_oli2_20240121.jpg"
+sha256 = "d8cac87b51f60cbd95eaa8b2772f00cf14025c907eaf1ccb72d98902332b399c"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "cosmic_round-moons-nasa.jpg"
+title = "Round moons nasa"
+artist = "NASA"
+tags = ["calm", "cosmic", "dark", "moon", "planet", "space"]
+license = "public-domain"
+license_detail = "Public domain — NASA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/round_moons_nasa.jpg"
+sha256 = "d78bb03c77c04ae5aad0bc29c59e2a59a8df8f5efa1839d3063d465f1459c285"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "cosmic_tarantula-nebula-nasa-pia23646.jpg"
+title = "Tarantula nebula nasa PIA23646"
+artist = "NASA"
+tags = ["cosmic", "dramatic", "epic", "orange", "space", "stars", "warm"]
+license = "public-domain"
+license_detail = "Public domain — NASA"
+source = "https://github.com/pop-os/cosmic-wallpapers"
+download = "https://media.githubusercontent.com/media/pop-os/cosmic-wallpapers/master/original/tarantula_nebula_nasa_PIA23646.jpg"
+sha256 = "4f8b878fc2b653e230cf0a45530433a9aaf5cf5e71d0ede02a566e808137a597"
+resolution = [3840, 2160]

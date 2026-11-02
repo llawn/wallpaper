@@ -1,0 +1,248 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "fedora"
+count = 22
+[[wallpaper]]
+file = "fedora_f26-00-dawn.png"
+title = "F26 00 dawn"
+artist = "Fedora Design Team"
+tags = ["blue", "calm", "dreamy", "fedora", "lake", "misty", "trees"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f26-backgrounds/default/tv-wide/f26-00-dawn.png"
+sha256 = "733c32d63c45062eee340155c4c21c00442496e9dedafb426978768aff4defae"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f26-01-day.png"
+title = "F26 01 day"
+artist = "Fedora Design Team"
+tags = ["blue", "bright", "calm", "dreamy", "fedora", "lake", "misty", "pastel", "trees"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f26-backgrounds/default/tv-wide/f26-01-day.png"
+sha256 = "6e0b0bd3465ab30e47c9f10824935101b22aaabd749549636a31fd8fe8b76c2f"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f26-02-dusk.png"
+title = "F26 02 dusk"
+artist = "Fedora Design Team"
+tags = ["calm", "dreamy", "fedora", "lake", "misty", "pink", "purple", "trees"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f26-backgrounds/default/tv-wide/f26-02-dusk.png"
+sha256 = "54c3d7f1cda14cb1d8e4c8e8b40962d1dd1472bf8d62dec3a81209114e768d87"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f26-03-night.png"
+title = "F26 03 night"
+artist = "Fedora Design Team"
+tags = ["blue", "calm", "dark", "fedora", "lake", "melancholic", "misty", "trees"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f26-backgrounds/default/tv-wide/f26-03-night.png"
+sha256 = "8e0f0702ac68a78e4e18f1b66aba6e5de4227aa74204e8ec9b2a5591e6b0574f"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f27.png"
+title = "F27"
+artist = "Fedora Design Team"
+tags = ["animals", "blue", "calm", "dreamy", "fedora", "purple", "underwater"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f27-backgrounds/default/tv-wide/f27.png"
+sha256 = "6b6c97956f3aaea226147fda2b2bb81813433c37613764e28618c49c3d0a3b9c"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f28.png"
+title = "F28"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "calm", "dark", "fedora", "technology"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f28-backgrounds/default/tv-wide/f28.png"
+sha256 = "4100f6095cc6170fac9a9a262db4332b3688deb7b3d5173d5c2ab7f0950e55a2"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "fedora_f29-00-dawn.png"
+title = "F29 00 dawn"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dark", "dreamy", "fedora", "pink", "technology"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f29-backgrounds/default/tv-wide/f29-00-dawn.png"
+sha256 = "3404baab773eae335da732e8e8c3746fff527f35f27097dffb94a331480cae6e"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "fedora_f29-01-day.png"
+title = "F29 01 day"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dark", "dreamy", "fedora", "pink", "technology"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f29-backgrounds/default/tv-wide/f29-01-day.png"
+sha256 = "75f6e2a9192a39ca9d1d66abeb50cac2320d5cfc88158579751ff6b131842092"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "fedora_f29-02-dusk.png"
+title = "F29 02 dusk"
+artist = "Fedora Design Team"
+tags = ["abstract", "dark", "dreamy", "fedora", "pattern", "pink", "purple"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f29-backgrounds/default/tv-wide/f29-02-dusk.png"
+sha256 = "62ecfdf0426bdddafcbf2f55fd3f005e2c2719fd84c4030bf43cdefabd154b8f"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "fedora_f29-03-night.png"
+title = "F29 03 night"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dark", "fedora", "mysterious", "pattern", "purple"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f29-backgrounds/default/tv-wide/f29-03-night.png"
+sha256 = "e8c2e61c85646fefab9dd4199a747ef0dedba2af884c099c1da3e1e2999d7e31"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "fedora_f31-00-dawn.png"
+title = "F31 00 dawn"
+artist = "Fedora Design Team"
+tags = ["abstract", "bright", "calm", "fedora", "pastel", "pattern", "sky"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f31-backgrounds/default/tv-wide/f31-00-dawn.png"
+sha256 = "5a3bf87e3d7bc7cec7160bcfaee8f2490198de8031af5c8787b5de9932b93d9f"
+resolution = [4200, 2363]
+[[wallpaper]]
+file = "fedora_f31-01-day.png"
+title = "F31 01 day"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "bright", "calm", "fedora", "pastel", "pattern", "sky"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f31-backgrounds/default/tv-wide/f31-01-day.png"
+sha256 = "2734af1cc80ce878ccae86be03e696209e6b205f6a8cd4fb3e3a06c682101306"
+resolution = [4200, 2363]
+[[wallpaper]]
+file = "fedora_f31-02-sunset.png"
+title = "F31 02 sunset"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dreamy", "fedora", "pastel", "pattern", "pink"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f31-backgrounds/default/tv-wide/f31-02-sunset.png"
+sha256 = "152ea9c9a8580902eab294418292fbdfb107782e21728206347f8c3121c8f272"
+resolution = [4200, 2363]
+[[wallpaper]]
+file = "fedora_f31-03-twilight.png"
+title = "F31 03 twilight"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "calm", "fedora", "pastel", "pattern"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f31-backgrounds/default/tv-wide/f31-03-twilight.png"
+sha256 = "98025b0a561a6f9fca4af6445ddca0bbf9ab5c83902733a706e8b8fbf5b912d2"
+resolution = [4200, 2363]
+[[wallpaper]]
+file = "fedora_f32-01-dawn.png"
+title = "F32 01 dawn"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dramatic", "fedora", "geometric", "vibrant"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f32-backgrounds/default/f32-01-dawn.png"
+sha256 = "8227739d7457c89ed8db18f97e77ad0e120ad640e02893d8b08c8e74bf23a40d"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f32-02-day.png"
+title = "F32 02 day"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "bright", "fedora", "geometric", "joyful"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f32-backgrounds/default/f32-02-day.png"
+sha256 = "e31ba1d1bd5eedb2b9a4d6c4e99a75106322d4e03c35b569128f57feb2b37142"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f32-03-dusk.png"
+title = "F32 03 dusk"
+artist = "Fedora Design Team"
+tags = ["abstract", "dramatic", "fedora", "geometric", "orange", "purple", "vibrant"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f32-backgrounds/default/f32-03-dusk.png"
+sha256 = "c526e32b4a310422b2b5a4d12e6461605bcc1b5200c2982d22228e704beee978"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f32-04-twilight.png"
+title = "F32 04 twilight"
+artist = "Fedora Design Team"
+tags = ["abstract", "blue", "dark", "dramatic", "fedora", "geometric", "night"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f32-backgrounds/default/f32-04-twilight.png"
+sha256 = "668f707cb801763f358bd60484bb59e3c1f5eb1a12989cf62d9b059ea1a2b3df"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f33-01-dawn.png"
+title = "F33 01 dawn"
+artist = "Fedora Design Team"
+tags = ["dark", "fedora", "mysterious", "night", "planet", "space", "stars"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f33-backgrounds/default/f33-01-dawn.png"
+sha256 = "219f997ff4aa506ea4ec4b3f82d380f32e2411027f3d62f8d8b059d55ed3c3b3"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f33-02-day.png"
+title = "F33 02 day"
+artist = "Fedora Design Team"
+tags = ["blue", "epic", "fedora", "green", "planet", "space", "stars", "sunrise"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f33-backgrounds/default/f33-02-day.png"
+sha256 = "da4ef05e3becacc2eef9f95714389554c73e9f89a33f0d673b6edd83a15f6813"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f33-03-dusk.png"
+title = "F33 03 dusk"
+artist = "Fedora Design Team"
+tags = ["blue", "dark", "dreamy", "fedora", "night", "planet", "space", "stars"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f33-backgrounds/default/f33-03-dusk.png"
+sha256 = "1186721791093781fe67313ab1d1dbf78c758ea9647c19f0b3f8f21d97767001"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "fedora_f33-04-night.png"
+title = "F33 04 night"
+artist = "Fedora Design Team"
+tags = ["blue", "dark", "epic", "fedora", "night", "planet", "space", "stars"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC BY-SA 4.0 — Fedora Design Team (COPYING in fedoradesign/backgrounds)"
+source = "https://github.com/fedoradesign/backgrounds"
+download = "https://raw.githubusercontent.com/fedoradesign/backgrounds/f33-backgrounds/default/f33-04-night.png"
+sha256 = "1ab07b4a11444ccd11471fcbc3501838826fd6ad072475d1136906c1265490d1"
+resolution = [3840, 2160]

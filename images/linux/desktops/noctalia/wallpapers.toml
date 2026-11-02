@@ -1,0 +1,17 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "noctalia"
+count = 1
+[[wallpaper]]
+file = "noctalia_noctalia-wallpaper.png"
+title = "Noctalia wallpaper"
+artist = "Noctalia project"
+tags = ["birds", "blue", "calm", "dreamy", "moon", "night", "noctalia", "yellow"]
+license = "MIT"
+license_detail = "MIT — noctalia-dev/noctalia-shell repository LICENSE"
+source = "https://github.com/noctalia-dev/noctalia-shell"
+download = "https://raw.githubusercontent.com/noctalia-dev/noctalia-shell/main/assets/noctalia-wallpaper.png"
+sha256 = "52c1e64926a698edf9b3e45c6e82dd31c2320f3ff4684fa2a83d1eefabe21daf"
+resolution = [3840, 2160]

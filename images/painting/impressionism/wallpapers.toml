@@ -1,0 +1,70 @@
+#:schema ../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "painting"
+movement = "impressionism"
+count = 6
+[[wallpaper]]
+file = "berthe-morisot_jour-d-ete_1879.jpg"
+title = "Jour d'été"
+artist = "Berthe Morisot"
+year = 1879
+tags = ["blue", "bright", "green", "joyful", "lake", "people", "summer"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_Jour_d%27%C3%A9t%C3%A9,_1879.jpg"
+resolution = [3840, 2347]
+[[wallpaper]]
+file = "camille-pissarro_la-marne-a-chennevieres_1864.jpg"
+title = "La Marne à Chennevières"
+artist = "Camille Pissarro"
+year = [1864, 1865]
+tags = ["blue", "calm", "countryside", "green", "river"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_The_Marne_at_Chennevi%C3%A8res_-_Google_Art_Project.jpg"
+resolution = [3840, 2395]
+[[wallpaper]]
+file = "berthe-morisot_dans-les-bles_1875.jpg"
+title = "Dans les blés"
+artist = "Berthe Morisot"
+year = 1875
+tags = ["calm", "field", "people", "summer", "warm", "yellow"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_Dans_les_bl%C3%A9s.jpg"
+resolution = [1920, 1080]
+processing = ["crop"]
+[[wallpaper]]
+file = "camille-pissarro_l-usine-a-pontoise_1873.jpg"
+title = "L'Usine à Pontoise"
+artist = "Camille Pissarro"
+year = 1873
+tags = ["calm", "green", "river", "village", "warm", "yellow"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_The_Factory_at_Pontoise_-_Google_Art_Project.jpg"
+resolution = [3840, 2160]
+processing = ["crop"]
+[[wallpaper]]
+file = "childe-hassam_the-water-garden_1909.jpg"
+title = "The Water Garden"
+artist = "Childe Hassam"
+year = 1909
+tags = ["bright", "flowers", "garden", "green", "joyful", "pastel", "spring"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Childe_Hassam_The_Water_Garden_1909.jpg"
+resolution = [1920, 1080]
+processing = ["crop"]
+[[wallpaper]]
+file = "claude-monet_la-pie_1868.jpg"
+title = "La Pie"
+artist = "Claude Monet"
+year = [1868, 1869]
+tags = ["birds", "bright", "calm", "cool", "countryside", "snow", "winter"]
+license = "public-domain"
+license_detail = "Public domain"
+source = "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg"
+resolution = [3840, 2160]
+processing = ["crop"]

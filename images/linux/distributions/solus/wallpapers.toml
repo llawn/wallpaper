@@ -1,0 +1,61 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "solus"
+count = 5
+[[wallpaper]]
+file = "solus_circumpolar-trails-sunset.jpg"
+title = "Circumpolar trails sunset"
+artist = "Antoine Lamielle"
+tags = ["blue", "calm", "dark", "night", "sea", "sky", "solus", "stars"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC-BY-SA-4.0 — Antoine Lamielle (Attribution file in getsolus/artwork)"
+source = "https://github.com/getsolus/artwork"
+download = "https://raw.githubusercontent.com/getsolus/artwork/main/backgrounds/circumpolar-trails-sunset.jpg"
+sha256 = "fcf8c3c08a68e87b1d0c8b69b8c7f73addad53f45630dbc69fcd117810f1a131"
+resolution = [4096, 2304]
+[[wallpaper]]
+file = "solus_matador-rocks.jpg"
+title = "Matador rocks"
+artist = "Mica Semrick"
+tags = ["calm", "coast", "dreamy", "misty", "purple", "sea", "solus"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC-BY-SA-4.0 — Mica Semrick (Attribution file in getsolus/artwork)"
+source = "https://github.com/getsolus/artwork"
+download = "https://raw.githubusercontent.com/getsolus/artwork/main/backgrounds/matador-rocks.jpg"
+sha256 = "de716689e05c00623a6fa5e097da7076ea544f9904375539ffd58544aaf62e26"
+resolution = [3840, 2160]
+[[wallpaper]]
+file = "solus_milky-way.jpg"
+title = "Milky way"
+artist = "John Badham"
+tags = ["calm", "dark", "lake", "mountains", "night", "solus", "stars", "teal"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC-BY-SA-4.0 — John Badham (Attribution file in getsolus/artwork)"
+source = "https://github.com/getsolus/artwork"
+download = "https://raw.githubusercontent.com/getsolus/artwork/main/backgrounds/milky-way.jpg"
+sha256 = "fc6ecb091de1f73c159ec8abf2b015d2356d4f22a1273512d4e78a5c3c6c637e"
+resolution = [8192, 4494]
+[[wallpaper]]
+file = "solus_vents-du-sud.jpg"
+title = "Vents du sud"
+artist = "Christian Ferrer"
+tags = ["blue", "calm", "golden-hour", "orange", "sea", "ship", "solus", "sunset"]
+license = "CC-BY-4.0"
+license_detail = "CC-BY-4.0 — Christian Ferrer (Attribution file in getsolus/artwork)"
+source = "https://github.com/getsolus/artwork"
+download = "https://raw.githubusercontent.com/getsolus/artwork/main/backgrounds/vents-du-sud.jpg"
+sha256 = "43de38ae68ecea971353be165c4d29ef9ebe8d8b67d937b707b3d6b68d0e0aee"
+resolution = [4096, 2559]
+[[wallpaper]]
+file = "solus_wild-golden-eagle.jpg"
+title = "Wild golden eagle"
+artist = "Giles Laurent"
+tags = ["animals", "birds", "blue", "bright", "mountains", "snow", "solus"]
+license = "CC-BY-SA-4.0"
+license_detail = "CC-BY-SA-4.0 — Giles Laurent (Attribution file in getsolus/artwork)"
+source = "https://github.com/getsolus/artwork"
+download = "https://raw.githubusercontent.com/getsolus/artwork/main/backgrounds/wild-golden-eagle.jpg"
+sha256 = "d06d12a639163b2e0de2fcefece4455d93497066466b2800902555b0db348b99"
+resolution = [8192, 4474]

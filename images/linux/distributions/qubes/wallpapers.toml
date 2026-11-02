@@ -1,0 +1,17 @@
+#:schema ../../../../wallman/schema/wallpapers.schema.json
+
+[collection]
+medium = "linux"
+movement = "qubes"
+count = 1
+[[wallpaper]]
+file = "qubes_usukhbayar-gankhuyag-m-mdxo-axyg-unsplash.jpg"
+title = "Usukhbayar gankhuyag m MdXo axyg unsplash"
+artist = "Usukhbayar Gankhuyag"
+tags = ["calm", "dark", "mysterious", "night", "people", "qubes", "space", "stars", "teal"]
+license = "unsplash-license"
+license_detail = "Unsplash License — Usukhbayar Gankhuyag"
+source = "https://github.com/QubesOS/qubes-artwork"
+download = "https://raw.githubusercontent.com/QubesOS/qubes-artwork/main/backgrounds/usukhbayar-gankhuyag-m_MdXo-axyg-unsplash.jpg"
+sha256 = "a6d8b9e6dde42734cec5c2a0dc8da93e1a2e9616161b1d01d42f0c599b12f7b8"
+resolution = [4096, 2328]
